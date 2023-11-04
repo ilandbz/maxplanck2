@@ -4,7 +4,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-2">
                     <div class="header-logo">
-                        <a href="/"><img src="{{asset('storage/imagenes/'.$organizacion->logo);}}" width="120" height="" alt="Logo"></a>
+                        <a href="/"><img src="{{asset('storage/imagenes/'.$organizacion->logo);}}" width="120" height="" alt="Logo"></a>askjgdaskjhgasdkjhgadsgkjh
                     </div>
                 </div>
                 <div class="col-lg-8 position-static">
