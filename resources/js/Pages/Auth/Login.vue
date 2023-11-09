@@ -1,94 +1,81 @@
 <script setup>
-import Checkbox from '@/Components/Checkbox.vue';
-import GuestLayout from '@/Layouts/GuestLayout.vue';
-import InputError from '@/Components/InputError.vue';
-import InputLabel from '@/Components/InputLabel.vue';
-import PrimaryButton from '@/Components/PrimaryButton.vue';
-import TextInput from '@/Components/TextInput.vue';
-import { Head, Link, useForm } from '@inertiajs/vue3';
+import { ref, onMounted } from 'vue';
+import {useAutenticacion} from '@/Composables/autenticacion';
 
-defineProps({
-    canResetPassword: {
-        type: Boolean,
-    },
-    status: {
-        type: String,
-    },
-});
-
-const form = useForm({
-    email: '',
-    password: '',
-    remember: false,
-});
-
-const submit = () => {
-    form.post(route('login'), {
-        onFinish: () => form.reset('password'),
+    const user = ref({
+        name:'',
+        pasword:'',
+        remember:false,
+        errors:[]
     });
-};
+
+    const {errors, loginUsuario, obtenerMarcaciones } = useAutenticacion();
+
+    onMounted(() => {
+        //obtenerMarcaciones()    
+    });
+
+    const autenticar = async() => {
+        await loginUsuario(user.value);
+    }
 </script>
 
 <template>
-    <GuestLayout>
-        <Head title="Log in" />
+    <div class="login-logo ">
+        <img src="/adminlte4/assets/img/log.png">
+        <h2 class="text-white"><b>ILAN CMS</b></h2>
+    </div>
+    <div class="card">
+        <div class="card-body login-card-body">
+            <p class="login-box-msg">Iniciar Sesi&oacute;n</p>
+            <form action="" @submit.prevent="autenticar">
+                <div class="form-group row">
+                    <div class="col-md-12 mb-2">
+                        <div class="input-group ">
+                            <input type="text" class="form-control" placeholder="Nombre de Usuario"
+                                v-model="user.name"
+                                :class="{ 'is-invalid' : errors.name }"/>
+                            <div class="input-group-text">
+                                <span class="fa-solid fa-user"></span>
+                            </div>
+                        </div>
+                        <small class="text-danger" v-for="error in errors.name"
+                            :key="error">{{ error }}</small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-12 mb-2">
+                        <div class="input-group">
+                            <input type="password" class="form-control" placeholder="Contraseña"
+                                v-model="user.password"
+                                :class="{ 'is-invalid' : errors.password }" />
 
-        <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
-            {{ status }}
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                        <small class="text-danger" v-for="error in errors.password"
+                            :key="error">{{ error }}</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="icheck-primary">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">
+                            Recordarme
+                        </label>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Acceder
+                        </button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
         </div>
-
-        <form @submit.prevent="submit">
-            <div>
-                <InputLabel for="email" value="Email" />
-
-                <TextInput
-                    id="email"
-                    type="email"
-                    class="mt-1 block w-full"
-                    v-model="form.email"
-                    required
-                    autofocus
-                    autocomplete="username"
-                />
-
-                <InputError class="mt-2" :message="form.errors.email" />
-            </div>
-
-            <div class="mt-4">
-                <InputLabel for="password" value="Password" />
-
-                <TextInput
-                    id="password"
-                    type="password"
-                    class="mt-1 block w-full"
-                    v-model="form.password"
-                    required
-                    autocomplete="current-password"
-                />
-
-                <InputError class="mt-2" :message="form.errors.password" />
-            </div>
-
-            <div class="block mt-4">
-                <label class="flex items-center">
-                    <Checkbox name="remember" v-model:checked="form.remember" />
-                    <span class="ml-2 text-sm text-gray-600">Remember me</span>
-                </label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <Link
-                    v-if="canResetPassword"
-                    :href="route('password.request')"
-                    class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                    Forgot your password?
-                </Link>
-
-                <PrimaryButton class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                    Log in
-                </PrimaryButton>
-            </div>
-        </form>
-    </GuestLayout>
+    </div>
 </template>

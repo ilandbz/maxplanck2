@@ -4,6 +4,7 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -41,4 +42,15 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function role(): BelongsTo
+    {
+        return $this->belongsTo(Role::class, 'role_id');
+    }
+    public function obtenerMenus($roles)
+    {
+        return Menu::join('menu_role as mr','menus.id','=','mr.menu_id')
+                        ->select('menus.id','menus.nombre','menus.slug','menus.icono')
+                        ->where('mr.role_id',$roles)
+                        ->orderBy('menus.id','asc')->get();
+    }
 }
