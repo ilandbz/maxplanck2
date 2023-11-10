@@ -29,11 +29,10 @@ class MenuSeeder extends Seeder
                                     'icono' => 'fas fa-file', 'padre_id' => null,'orden' => 2
         ])
         ;
-        $menu4 = Menu::firstOrCreate(['nombre' => 'Menus','slug' => 'navs',
+        $menu4 = Menu::firstOrCreate(['nombre' => 'Menus','slug' => 'menus',
                                     'icono' => 'fas fa-bars', 'padre_id' => null,'orden' => 3
         ])
         ;
-
 
         $menu5 = Menu::firstOrCreate(['nombre' => 'Slider','slug' => 'slider',
                                     'icono' => 'fas fa-sliders-h', 'padre_id' => null,'orden' => 4
@@ -81,8 +80,53 @@ class MenuSeeder extends Seeder
         ])
         ;  
 
+        $menu13 = Menu::firstOrCreate(['nombre' => 'Enlaces Externos','slug' => 'enlaces',
+                                    'icono' => 'fas fa-external-link-alt', 'padre_id' => null,'orden' => 5
+        ])
+        ;  
         
-        $role1->menus()->sync([$menu1->id,$menu2->id,$menu3->id, $menu4->id, 
-        $menu5->id, $menu6->id, $menu7->id, $menu8->id, $menu9->id, $menu10->id, $menu11->id, $menu12->id]);
+        $menu14 = Menu::firstOrCreate(['nombre' => 'Redes Sociales','slug' => 'redes',
+                                    'icono' => 'fab fa-facebook', 'padre_id' => null,'orden' => 6
+        ])
+        ;  
+
+        $menu15 = Menu::firstOrCreate(['nombre' => 'Datos Generales','slug' => 'redes',
+                                    'icono' => 'fas fa-cogs', 'padre_id' => null,'orden' => 7
+        ])
+        ;
+
+        $menu16 = Menu::firstOrCreate(['nombre' => 'Roles','slug' => 'roles',
+        'icono' => 'fas fa-user-lock', 'padre_id' => null,'orden' => 8
+        ]);
+
+        $menu17 = Menu::firstOrCreate(['nombre' => 'Usuarios','slug' => 'usuarios',
+        'icono' => 'fa-solid fa-users', 'padre_id' => null,'orden' => 9
+        ]);
+
+        $menu18 = Menu::firstOrCreate(['nombre' => 'Menu Roles','slug' => 'menu-roles',
+        'icono' => 'fas fa-user-minus fa-fw', 'padre_id' => null,'orden' => 10
+        ]);        
+        
+
+        $role1->menus()->sync([
+            $menu1->id, 
+            $menu2->id,
+            $menu3->id,
+            $menu4->id, 
+            $menu5->id,
+            $menu6->id,
+            $menu7->id,
+            $menu8->id,
+            $menu9->id,
+            $menu10->id,
+            $menu11->id,
+            $menu12->id,
+            $menu13->id,
+            $menu14->id,
+            $menu15->id,
+            $menu16->id,
+            $menu17->id,
+            $menu18->id,            
+        ]);
     }
 }

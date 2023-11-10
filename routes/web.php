@@ -32,12 +32,13 @@ Route::group(['middleware' => ['auth:sanctum']],function(){
     Route::post('/logout',[LoginController::class,'logout']);
     Route::get('/intranet/usuario-session-data',[UserController::class,'mostrarDatoUsuario']);
 });
-Route::get('/intranet', [IntranetController::class, 'index'])->name('intranet');
+Route::get('/intranet/principal', [IntranetController::class, 'index'])->name('intranet');
 Route::get('/intranet/{path}',[IntranetController::class,'index'])->where('path','.*');
 Route::post('/intranet/login',[LoginController::class,'validarLogin']);
 Route::group(['prefix' => 'noticia', 'middleware' => ['auth:sanctum']], function () {
     Route::get('mostrar', [NoticiaController::class, 'show']);
     Route::post('actualizar', [NoticiaController::class, 'update']);
+    Route::post('actualizar-con-imagen', [NoticiaController::class, 'updateconimagen']);
     Route::post('eliminar', [NoticiaController::class, 'destroy']);
     Route::post('guardar', [NoticiaController::class, 'store']);
     Route::get('listar', [NoticiaController::class, 'listar']);
@@ -51,6 +52,7 @@ Route::get('quienes-somos', [HomeController::class,'quienessomos'])->name('quien
 Route::get('mision-vision', [HomeController::class,'misionvision'])->name('misionvision');
 Route::get('ambo-historia', [HomeController::class,'historia'])->name('historia');
 Route::get('ambo-turismo', [HomeController::class,'turismo'])->name('turismo');
+Route::get('informacion-demografica', [HomeController::class,'informacionDemografica'])->name('informaciondemografica');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -60,3 +62,4 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 require __DIR__.'/routesEntradas.php';
+require __DIR__.'/detallesEntradas.php';

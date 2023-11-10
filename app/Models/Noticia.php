@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Noticia extends Model
@@ -18,5 +19,14 @@ class Noticia extends Model
     public function imagen(): HasOne
     {
         return $this->hasOne(ImagenNoticia::class, 'noticia_id');
+    }
+    /**
+     * Get all of the imagenes for the Noticia
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function imagenes(): HasMany
+    {
+        return $this->hasMany(ImagenNoticia::class, 'noticia_id');
     }
 }

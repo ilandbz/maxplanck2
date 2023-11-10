@@ -13,6 +13,7 @@ class RedesSocialesSeeder extends Seeder
      */
     public function run(): void
     {
+    
         RedSocial::firstOrCreate([
             'titulo' => 'Facebook',
             'url' => 'https://www.facebook.com/muniambo.pe',
@@ -21,33 +22,17 @@ class RedesSocialesSeeder extends Seeder
         ]);
         RedSocial::firstOrCreate([
             'titulo' => 'Youtube',
-            'url' => 'https://www.youtube.com/@municipalidadprovincialdeambo',
+            'url' => 'https://www.youtube.com/channel/UCVmWraKZdpxlQJ97dSGryyQ',
             'icono' => 'fab fa-youtube',
             'colorfondo' => '#ff0000'
         ]);
+
+
         RedSocial::firstOrCreate([
-            'titulo' => 'Twitter',
-            'url' => '#',
-            'icono' => 'fab fa-twitter',
-            'colorfondo' => '#1da1f2'
-        ]);
-        RedSocial::firstOrCreate([
-            'titulo' => 'Correo',
-            'url' => '#',
-            'icono' => 'fa fa-envelope',
-            'colorfondo' => '#db4437'
-        ]);
-        RedSocial::firstOrCreate([
-            'titulo' => 'Instagram',
-            'url' => '#',
-            'icono' => 'fab fa-instagram',
-            'colorfondo' => '#c13584'
-        ]);
-        RedSocial::firstOrCreate([
-            'titulo' => 'Google Plus',
-            'url' => '#',
-            'icono' => 'fab fa-google-plus-g',
+            'titulo' => 'Tik Tok',
+            'url' => 'https://www.tiktok.com/@municipalidaddeambo?_t=8gqH4fQKkar&_r=1',
+            'icono' => 'fab fa-tiktok',
             'colorfondo' => '#dd4b39'
-        ]);        
+        ]); 
     }
 }

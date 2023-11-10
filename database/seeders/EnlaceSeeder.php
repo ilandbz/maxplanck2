@@ -42,7 +42,12 @@ class EnlaceSeeder extends Seeder
             'title'         => 'INEI',
             'link'          => "http://www.inei.gob.pe/",
             'nombreImagen'  => "inei.jpg"
-        ]);   
+        ]); 
+        Enlace::firstOrCreate([
+            'title'         => 'RENIEC',
+            'link'          => "https://www.reniec.gob.pe/portal/masServiciosLinea.htm",
+            'nombreImagen'  => "reniec.png"
+        ]); 
 
     }
 }

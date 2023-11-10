@@ -8,11 +8,8 @@ import LayoutDefault from '@/Layouts/AppLayoutDefault.vue'
 import Principal from '@/Pages/Principal.vue'
 import Login from '@/Pages/Auth/Login.vue'
 import Noticia from '@/Pages/noticias/Inicio.vue'
+import Menu from '@/Pages/menus/Inicio.vue'
 const routes = [
-    {
-        path: '/intranet', name:'Int', component: Principal ,
-        meta:{layout: LayoutDefault}
-    },
     {
         path: '/intranet/principal', name:'Intranet', component: Principal ,
         meta:{layout: LayoutDefault}
@@ -25,7 +22,10 @@ const routes = [
         path: '/intranet/noticia',name: 'Noticia', component: Noticia,
         meta: {layout: LayoutDefault}
     },
-    
+    {
+        path: '/intranet/menus', name:'Menus', component: Menu ,
+        meta:{layout: LayoutDefault}
+    },
 ]
 
 export default createRouter({

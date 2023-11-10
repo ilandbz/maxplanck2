@@ -35,15 +35,7 @@
         }
     </style>
     <!--====== Page Banner Start ======-->
-    <section class="page-banner">
-        <div class="page-banner-bg bg_cover" style="background-image: url(edumate/assets/images/pagebanner.jpeg);">
-            <div class="container">
-                <div class="banner-content text-center">
-                    <h2 class="title">{{$titulo}}</h2>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('componentes.banner')
     <!--====== Page Banner Ends ======-->
     <section class="about-area pt-2">
         <div class="container mb-4 pt-2">
@@ -265,42 +257,31 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quisquam natus q
 
                 </div>
             </div>
-
-
         </div>
-
-
-
     </section>
-<!--====== About Ends ======-->
+    <!--====== About Ends ======-->
     @include('componentes.footer')
-<script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var enlaces = document.querySelectorAll(".cargar");
 
-document.addEventListener("DOMContentLoaded", function() {
-    var enlaces = document.querySelectorAll(".cargar");
+        enlaces.forEach(function(enlace) {
+            enlace.addEventListener("click", function() {
+                var nombreDiv = enlace.getAttribute("data-nombre");
+                var contenido = document.getElementById(nombreDiv).innerHTML;
+                var divDestino = document.getElementById("contenido");
+                divDestino.innerHTML = contenido;
 
-    enlaces.forEach(function(enlace) {
-        enlace.addEventListener("click", function() {
-            var nombreDiv = enlace.getAttribute("data-nombre");
-            var contenido = document.getElementById(nombreDiv).innerHTML;
-            var divDestino = document.getElementById("contenido");
-            divDestino.innerHTML = contenido;
+                if (!divDestino.classList.contains("show")) {
+                    divDestino.classList.toggle("show");
+                }else{
+                    //divDestino.classList.remove("show");
+                }
 
-            if (!divDestino.classList.contains("show")) {
-                divDestino.classList.toggle("show");
-            }else{
-                //divDestino.classList.remove("show");
-            }
-
+            });
         });
     });
-
-
-
-});
-
-</script>
-
+    </script>
 @endsection
 
 

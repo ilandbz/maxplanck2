@@ -1,15 +1,7 @@
 @extends('layout')
 @section('body-content')
     <!--====== Page Banner Start ======-->
-    <section class="page-banner">
-        <div class="page-banner-bg bg_cover" style="background-image: url(edumate/assets/images/pagebanner.jpeg);">
-            <div class="container">
-                <div class="banner-content text-center">
-                    <h2 class="title">{{$titulo}}</h2>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('componentes.banner')
     <!--====== Page Banner Ends ======-->
     <section class="about-area">
         <div class="container mb-4">

@@ -92,7 +92,6 @@
 
     @yield('body-content')
 
-    
     <!--====== BACK TOP TOP PART START ======-->
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
@@ -114,11 +113,11 @@
     <script src="edumate/assets/js/plugins/ajax-contact.js"></script>
 
 
-<!-- owl-carousel min js  --> 
-<script src="componentes/owlcarousel/js/owl.carousel.js"></script> 
+    <!-- owl-carousel min js  --> 
+    <script src="componentes/owlcarousel/js/owl.carousel.js"></script> 
 
-<!-- scripts js --> 
-<script src="componentes/owlcarousel/js/scripts.js"></script>
+    <!-- scripts js --> 
+    <script src="componentes/owlcarousel/js/scripts.js"></script>
 
 
     <!--====== Main Activation  js ======-->

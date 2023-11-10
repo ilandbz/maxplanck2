@@ -6,6 +6,7 @@ use App\Models\Enlace;
 use App\Models\Organizacion;
 use App\Models\Menu;
 use App\Models\Nav;
+use App\Models\Noticia;
 use App\Models\RedSocial;
 use App\Models\SeccionesPrincipal;
 use App\Models\Slider;
@@ -20,6 +21,7 @@ class HomeController extends Controller
         $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
         $data['enlaces'] = Enlace::get();
         $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
+        $data['noticias']=Noticia::with('imagen')->latest()->limit(3)->get();
         return view('app', $data);
     }
     public function nosotros(){
@@ -32,7 +34,6 @@ class HomeController extends Controller
         $data['page']='paginas.nosotros';
         return view('app', $data);    
     }
-
     public function quienessomos(){
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
@@ -90,8 +91,32 @@ class HomeController extends Controller
         $data['titulo']='Prueba';
         $data['enlaces'] = Enlace::get();
         $data['paginaprueba']='paginas.prueba';
-        
         return view('app', $data);
     }
+
+
+    public function noticia(Request $request){
+        $data['titulo']='NOTICIAS';
+        $data['sliders']=Slider::where('es_activo', 1)->get();
+        $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
+        $data['organizacion'] = Organizacion::first();
+        $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
+        $data['enlaces'] = Enlace::get();
+        $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
+        $data['noticia'] = Noticia::with('imagenes')->where('slug', $request->s)->first();
+        return view('paginas.noticia', $data);
+    }
+    public function informacionDemografica(){
+        $data['titulo']='INFORMACION DEMOGRAFICA';
+        $data['sliders']=Slider::where('es_activo', 1)->get();
+        $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
+        $data['organizacion'] = Organizacion::first();
+        $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
+        $data['enlaces'] = Enlace::get();
+        $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
+        return view('paginas.informacion-demografica', $data);
+    }
+
+
 
 }
