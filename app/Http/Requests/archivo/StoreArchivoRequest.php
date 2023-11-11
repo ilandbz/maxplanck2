@@ -25,8 +25,8 @@ class StoreArchivoRequest extends FormRequest
     {
 
         return [
-            'archivo' => 'required|file|max:2000', 
-            'titulo'        => 'required|string',
+            'titulo'    => 'required|string',
+            'archivo'   => 'required|file|max:2000|mimes:pdf,doc,docx,ppt,pptx,xls,xlsx,jpg,jpeg,png,gif,webp',
         ];
     }
 
@@ -34,13 +34,13 @@ class StoreArchivoRequest extends FormRequest
     {
         return [
             'required' => '* Dato Obligatorio',
-            'max' => 'Ingrese Máximo :max caracteres',
+            'max' => 'Ingrese Máximo :max Bytes',
             'string' => 'Ingrese caracteres alfanuméricos',
             'number' => 'Ingrese solo numeros',
             'unique' => 'El :nombre ya existe',
             'image' => 'Debe ser de tipo Imagen',
-            'mimes' => 'La imagen debe ser solo de tipo: jpg, jpeg, png, gif, webp.',
-            'file' => 'La imagen debe ser un archivo'
+            'mimes' => 'Solo se acepta tipo de archivos como pdf,doc,docx,ppt,pptx,xls,xlsx,jpg,jpeg,png,gif,webp',
+            'file' => 'Debe ser un archivo'
         ];
     }
 

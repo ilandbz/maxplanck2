@@ -90,7 +90,7 @@ class MenuSeeder extends Seeder
         ])
         ;  
 
-        $menu15 = Menu::firstOrCreate(['nombre' => 'Datos Generales','slug' => 'redes',
+        $menu15 = Menu::firstOrCreate(['nombre' => 'Datos Generales','slug' => 'dato-general',
                                     'icono' => 'fas fa-cogs', 'padre_id' => null,'orden' => 7
         ])
         ;
@@ -105,8 +105,20 @@ class MenuSeeder extends Seeder
 
         $menu18 = Menu::firstOrCreate(['nombre' => 'Menu Roles','slug' => 'menu-roles',
         'icono' => 'fas fa-user-minus fa-fw', 'padre_id' => null,'orden' => 10
+        ]);
+
+        $menu19 = Menu::firstOrCreate(['nombre' => 'Cargos','slug' => 'cargos',
+        'icono' => 'fas fa-briefcase', 'padre_id' => null,'orden' => 11
+        ]);
+
+
+        $menu20 = Menu::firstOrCreate(['nombre' => 'Areas','slug' => 'areas',
+        'icono' => 'fas fa-user-friends', 'padre_id' => null,'orden' => 12
         ]);        
-        
+
+        $menu21 = Menu::firstOrCreate(['nombre' => 'Tipo Convocatoria','slug' => 'tipo-convocatoria',
+        'icono' => 'fas fa-tasks', 'padre_id' => null,'orden' => 12
+        ]);                
 
         $role1->menus()->sync([
             $menu1->id, 
@@ -126,7 +138,11 @@ class MenuSeeder extends Seeder
             $menu15->id,
             $menu16->id,
             $menu17->id,
-            $menu18->id,            
+            $menu18->id,
+            $menu19->id,
+            $menu20->id,
+            $menu21->id,
+
         ]);
     }
 }

@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 class Role extends Model
 {
     use HasFactory;
+    protected $fillable = ['nombre'];
 
 /**
  * The menus that belong to the Role

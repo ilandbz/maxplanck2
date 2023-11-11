@@ -14,8 +14,8 @@
     } = useMenu();
     const titleHeader = ref({
       titulo: "Menu",
-      subTitulo: "Inicio",
-      icon: "",
+      subTitulo: "",
+      icon: "fas fa-bars",
       vista: ""
     });
     const dato = ref({

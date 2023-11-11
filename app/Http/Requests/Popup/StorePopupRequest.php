@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\archivo;
+namespace App\Http\Requests\Popup;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateArchivoRequest extends FormRequest
+class StorePopupRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,8 +24,8 @@ class UpdateArchivoRequest extends FormRequest
     public function rules()
     {
         return [
-            'archivo'     => 'required|file|max:2000', 
-            'titulo'            => 'required|string',
+            'titulo'     => 'required|max:25|string',
+            'link'       => 'required|max:25|string|url',
         ];
     }
 
@@ -36,7 +36,8 @@ class UpdateArchivoRequest extends FormRequest
             'max' => 'Ingrese Máximo :max caracteres',
             'string' => 'Ingrese caracteres alfanuméricos',
             'number' => 'Ingrese solo numeros',
-            'unique' => 'El :nombre ya existe'
+            'unique' => 'El :nombre ya existe',
+            'url'   => 'Debe ser Valor URL'
         ];
     }
 

@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Directorio extends Model
 {
     use HasFactory;
+    protected $fillable=['titulo', 'dni', 'area_id', 'cargo_id', 'email', 'celular', 'foto', 'es_activo'];
+
+
 }

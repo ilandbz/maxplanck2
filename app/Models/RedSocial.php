@@ -9,4 +9,6 @@ class RedSocial extends Model
 {
     protected $table='redessociales';
     use HasFactory;
+    protected $fillable = ['titulo', 'url', 'icono', 'colorfondo'];
+
 }

@@ -1,0 +1,94 @@
+php artisan make:controller ArchivoController --api;
+php artisan make:controller SliderController --api; 
+php artisan make:controller ConvocatoriaController --api;
+php artisan make:controller DirectorioController --api;
+php artisan make:controller PopupController --api;
+php artisan make:controller GaleriaController --api;
+php artisan make:controller ComunicadoController --api;
+php artisan make:controller EntradaController --api;
+php artisan make:controller EnlacesController --api;
+php artisan make:controller RedesController --api;
+php artisan make:controller OrganizacionController --api;
+php artisan make:controller RoleController --api;
+php artisan make:controller UsuarioController --api;
+
+php artisan make:controller ArchivoController --api;
+php artisan make:controller RedesController --api;
+php artisan make:controller RoleController --api;
+
+mkdir app/Http/Requests/Slider;
+mkdir app/Http/Requests/Convocatoria;
+mkdir app/Http/Requests/Directorio;
+mkdir app/Http/Requests/Popup;
+mkdir app/Http/Requests/Galeria;
+mkdir app/Http/Requests/Comunicado;
+mkdir app/Http/Requests/Entrada;
+mkdir app/Http/Requests/Enlace;
+mkdir app/Http/Requests/RedSocial;
+mkdir app/Http/Requests/Organizacion;
+mkdir app/Http/Requests/Role;
+
+cp app/Http/Requests/menus/StoreMenuRequest.php app/Http/Requests/Slider/StoreSliderRequest.php
+cp app/Http/Requests/menus/StoreMenuRequest.php app/Http/Requests/Convocatoria/StoreConvocatoriaRequest.php
+cp app/Http/Requests/menus/StoreMenuRequest.php app/Http/Requests/Directorio/StoreDirectorioRequest.php
+cp app/Http/Requests/menus/StoreMenuRequest.php app/Http/Requests/Popup/StorePopupRequest.php
+cp app/Http/Requests/menus/StoreMenuRequest.php app/Http/Requests/Galeria/StoreGaleriaRequest.php
+cp app/Http/Requests/menus/StoreMenuRequest.php app/Http/Requests/Comunicado/StoreComunicadoRequest.php
+cp app/Http/Requests/menus/StoreMenuRequest.php app/Http/Requests/Entrada/StoreEntradaRequest.php
+cp app/Http/Requests/menus/StoreMenuRequest.php app/Http/Requests/Enlace/StoreEnlaceRequest.php
+cp app/Http/Requests/menus/StoreMenuRequest.php app/Http/Requests/RedSocial/StoreRedSocialRequest.php
+cp app/Http/Requests/menus/StoreMenuRequest.php app/Http/Requests/Organizacion/StoreOrganizacionRequest.php
+cp app/Http/Requests/menus/StoreMenuRequest.php app/Http/Requests/Role/StoreRoleRequest.php
+
+cp app/Http/Requests/menus/UpdateMenuRequest.php app/Http/Requests/Slider/UpdateSliderRequest.php
+cp app/Http/Requests/menus/UpdateMenuRequest.php app/Http/Requests/Convocatoria/UpdateConvocatoriaRequest.php
+cp app/Http/Requests/menus/UpdateMenuRequest.php app/Http/Requests/Directorio/UpdateDirectorioRequest.php
+cp app/Http/Requests/menus/UpdateMenuRequest.php app/Http/Requests/Popup/UpdatePopupRequest.php
+cp app/Http/Requests/menus/UpdateMenuRequest.php app/Http/Requests/Galeria/UpdateGaleriaRequest.php
+cp app/Http/Requests/menus/UpdateMenuRequest.php app/Http/Requests/Comunicado/UpdateComunicadoRequest.php
+cp app/Http/Requests/menus/UpdateMenuRequest.php app/Http/Requests/Entrada/UpdateEntradaRequest.php
+cp app/Http/Requests/menus/UpdateMenuRequest.php app/Http/Requests/Enlace/UpdateEnlaceRequest.php
+cp app/Http/Requests/menus/UpdateMenuRequest.php app/Http/Requests/RedSocial/UpdateRedSocialRequest.php
+cp app/Http/Requests/menus/UpdateMenuRequest.php app/Http/Requests/Organizacion/UpdateOrganizacionRequest.php
+cp app/Http/Requests/menus/UpdateMenuRequest.php app/Http/Requests/Role/UpdateRoleRequest.php
+
+
+
+cp -r resources/js/Composables/cargos.js
+
+
+cp resources/js/Composables/cargos.js resources/js/Composables/slider.js;
+cp resources/js/Composables/cargos.js resources/js/Composables/convocatoria.js;
+cp resources/js/Composables/cargos.js resources/js/Composables/directorio.js;
+cp resources/js/Composables/cargos.js resources/js/Composables/noticia.js;
+cp resources/js/Composables/cargos.js resources/js/Composables/popup.js;
+cp resources/js/Composables/cargos.js resources/js/Composables/galeria.js;
+cp resources/js/Composables/cargos.js resources/js/Composables/comunicado.js;
+cp resources/js/Composables/cargos.js resources/js/Composables/entrada.js;
+cp resources/js/Composables/cargos.js resources/js/Composables/enlaces.js;
+cp resources/js/Composables/cargos.js resources/js/Composables/redes.js;
+cp resources/js/Composables/cargos.js resources/js/Composables/dato-general.js;
+cp resources/js/Composables/cargos.js resources/js/Composables/roles.js;
+cp resources/js/Composables/cargos.js resources/js/Composables/menu-roles.js;
+cp resources/js/Composables/cargos.js resources/js/Composables/areas.js;
+cp resources/js/Composables/cargos.js resources/js/Composables/tipo-convocatoria.js;
+
+
+
+cp -r resources/js/Pages/cargos resources/js/Pages/slider;
+cp -r resources/js/Pages/cargos resources/js/Pages/convocatoria;
+cp -r resources/js/Pages/cargos resources/js/Pages/directorio;
+cp -r resources/js/Pages/cargos resources/js/Pages/noticia;
+cp -r resources/js/Pages/cargos resources/js/Pages/popup;
+cp -r resources/js/Pages/cargos resources/js/Pages/galeria;
+cp -r resources/js/Pages/cargos resources/js/Pages/comunicado;
+cp -r resources/js/Pages/cargos resources/js/Pages/entrada;
+cp -r resources/js/Pages/cargos resources/js/Pages/enlaces;
+cp -r resources/js/Pages/cargos resources/js/Pages/redes;
+cp -r resources/js/Pages/cargos resources/js/Pages/dato-general;
+cp -r resources/js/Pages/cargos resources/js/Pages/roles;
+cp -r resources/js/Pages/cargos resources/js/Pages/usuarios;
+cp -r resources/js/Pages/cargos resources/js/Pages/menu-roles;
+cp -r resources/js/Pages/cargos resources/js/Pages/areas;
+cp -r resources/js/Pages/cargos resources/js/Pages/tipo-convocatoria;
+

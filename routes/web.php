@@ -34,19 +34,8 @@ Route::group(['middleware' => ['auth:sanctum']],function(){
 });
 Route::get('/intranet/principal', [IntranetController::class, 'index'])->name('intranet');
 Route::get('/intranet/{path}',[IntranetController::class,'index'])->where('path','.*');
-Route::post('/intranet/login',[LoginController::class,'validarLogin']);
-Route::group(['prefix' => 'noticia', 'middleware' => ['auth:sanctum']], function () {
-    Route::get('mostrar', [NoticiaController::class, 'show']);
-    Route::post('actualizar', [NoticiaController::class, 'update']);
-    Route::post('actualizar-con-imagen', [NoticiaController::class, 'updateconimagen']);
-    Route::post('eliminar', [NoticiaController::class, 'destroy']);
-    Route::post('guardar', [NoticiaController::class, 'store']);
-    Route::get('listar', [NoticiaController::class, 'listar']);
-    Route::post('subir-imagen', [NoticiaController::class, 'subirImagen']);
-    Route::post('subir-imagen', [NoticiaController::class, 'subirImagen']);
-    Route::post('eliminar-imagen', [NoticiaController::class, 'eliminarImagen']);
-    Route::get('mostrar-imagenes', [NoticiaController::class, 'imagenes']);
-});
+Route::post('/intranet/login',[LoginController::class,'validarLogin'])->name('login');
+
 Route::get('/prueba', [HomeController::class,'prueba'])->name('prueba');
 Route::get('quienes-somos', [HomeController::class,'quienessomos'])->name('quienessomos');
 Route::get('mision-vision', [HomeController::class,'misionvision'])->name('misionvision');
@@ -63,3 +52,4 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 require __DIR__.'/routesEntradas.php';
 require __DIR__.'/detallesEntradas.php';
+require __DIR__.'/intranet.php';

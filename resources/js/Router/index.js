@@ -9,6 +9,7 @@ import Principal from '@/Pages/Principal.vue'
 import Login from '@/Pages/Auth/Login.vue'
 import Noticia from '@/Pages/noticias/Inicio.vue'
 import Menu from '@/Pages/menus/Inicio.vue'
+import Cargo from '@/Pages/cargos/Inicio.vue'
 const routes = [
     {
         path: '/intranet/principal', name:'Intranet', component: Principal ,
@@ -26,6 +27,12 @@ const routes = [
         path: '/intranet/menus', name:'Menus', component: Menu ,
         meta:{layout: LayoutDefault}
     },
+    {
+        path: '/intranet/cargos', name:'Cargos', component: Cargo ,
+        meta:{layout: LayoutDefault}
+    },
+
+    
 ]
 
 export default createRouter({
