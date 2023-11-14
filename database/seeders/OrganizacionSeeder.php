@@ -23,7 +23,6 @@ class OrganizacionSeeder extends Seeder
             'direccion' => ' Jr. Constitución N° 353,',
             'email' => 'mesadepartesvirtual@muniambo.gob.pe',
             'telefono' => '062-504455',
-            'telefono2' => '',
             'url_web'   => 'www.muniambo.gob.pe',
             'quienes_somos' => 'Gobernamos, conducimos y lideramos el desarrollo de la provincia de Ambo, gestionando y promoviendo el desarrollo sostenible e integral, así como el bienestar humano, mediante la concertación institucional y la participación de la sociedad civil organizada.',
             'vision' => 'Ambo, territorio sostenible, referente en la calidad de vida de su población, con desarrollo competitivo y bajo nivel de riesgo de desastre, cimentado en la atención efectiva al ciudadano.',

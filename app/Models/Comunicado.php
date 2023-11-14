@@ -9,5 +9,6 @@ class Comunicado extends Model
 {
     use HasFactory;
     protected $fillable=['titulo', 'nombreImagen', 'link'];
+    
 
 }

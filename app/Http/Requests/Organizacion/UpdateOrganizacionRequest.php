@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\menus;
+namespace App\Http\Requests\Organizacion;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateMenuRequest extends FormRequest
+class UpdateOrganizacionRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +24,19 @@ class UpdateMenuRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre'     => 'required|max:25|string|unique:cargos,nombre,'.$this->id,
-            'slug'       => 'required|max:25|string|unique:menus,slug,'.$this->id,
-            'icono'      => 'required|max:25'
+            'ruc' => 'required|numeric|digits:11',
+            'razon_social' => 'required|string',
+            'titulo' => 'required|string',
+            'slogan' => 'required|string',
+            'descripcion' => 'required|string',
+            'director' => 'required|string',
+            'direccion' => 'required|string',
+            'email' => 'required|email',
+            'telefono' => 'required|string',
+            'url_web' => 'required|string',
+            'quienes_somos' => 'required|string',
+            'vision' => 'required|string',
+            'mision' => 'required|string',
         ];
     }
 
@@ -34,10 +44,12 @@ class UpdateMenuRequest extends FormRequest
     {
         return [
             'required' => '* Dato Obligatorio',
-            'max' => 'Ingrese Máximo :max caracteres',
+            'max' => 'Ingrese Máximo tamaño :max caracteres',
+            'digits' => 'Solo se aceptan 11 digitos',
             'string' => 'Ingrese caracteres alfanuméricos',
-            'number' => 'Ingrese solo numeros',
-            'unique' => 'El :email ya existe'
+            'numeric' => 'Ingrese solo numeros',
+            'email'  => 'No es un formato email',
+
         ];
     }
 

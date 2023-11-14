@@ -8,6 +8,8 @@ use App\Http\Requests\Convocatoria\StoreConvocatoriaRequest;
 use App\Http\Requests\Convocatoria\UpdateConvocatoriaRequest;
 use App\Models\ArchivoConvocatoria;
 use App\Models\Convocatoria;
+use App\Models\EtapaConvocatoria;
+use App\Models\TipoConvocatoria;
 
 class ConvocatoriaController extends Controller
 {
@@ -66,7 +68,7 @@ class ConvocatoriaController extends Controller
     public function listar(Request $request){
         $buscar = mb_strtoupper($request->buscar);
         $paginacion = $request->paginacion;
-        return Convocatoria::where(function ($query) use ($buscar) {
+        return Convocatoria::with(['tipoconvocatoria:id,nombre', 'etapaconvocatoria:id,nombre'])->where(function ($query) use ($buscar) {
             $query->whereRaw('UPPER(titulo) LIKE ?', ['%' . strtoupper($buscar) . '%'])
                   ->orWhereRaw('UPPER(descripcion) LIKE ?', ['%' . strtoupper($buscar) . '%']);
         })
@@ -83,6 +85,23 @@ class ConvocatoriaController extends Controller
             'mensaje' => 'Archivo Registrado satisfactoriamente'
         ],200);
     }
+    public function archivosConvocatoria(Request $request){
+        $archivos = ArchivoConvocatoria::where('convocatoria_id', $request->id)->get();
+        return $archivos;
+    }
+    public function showArchivo(Request $request){
+        return ArchivoConvocatoria::where('id', $request->id)->first();
+    }
+    public function updateArchivo(Request $request){
+        $archivo = ArchivoConvocatoria::where('id', $request->id)->first();
+        $archivo->titulo = $request->titulo;
+        $archivo->link = $request->link;
+        $archivo->save();
+        return response()->json([
+            'ok' => 1,
+            'mensaje' => 'Se Guardo satisfactoriamente'
+        ],200);
+    }
     public function eliminarArchivo(Request $request){
         $archivoconvocatoria = ArchivoConvocatoria::where('id', $request->id)->first();
         $archivoconvocatoria->delete();
@@ -91,4 +110,14 @@ class ConvocatoriaController extends Controller
             'mensaje' => 'Archivo Convocatoria eliminado satisfactoriamente'
         ],200);
     }
+
+    public function tipoConvocatorias(){
+        $tipoconvocatorias = TipoConvocatoria::get();
+        return $tipoconvocatorias;
+    }
+    public function etapaConvocatorias(){
+        $tipoconvocatorias = EtapaConvocatoria::get();
+        return $tipoconvocatorias;
+    }
+
 }

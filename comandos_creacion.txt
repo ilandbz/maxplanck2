@@ -68,7 +68,6 @@ cp resources/js/Composables/cargos.js resources/js/Composables/entrada.js;
 cp resources/js/Composables/cargos.js resources/js/Composables/enlaces.js;
 cp resources/js/Composables/cargos.js resources/js/Composables/redes.js;
 cp resources/js/Composables/cargos.js resources/js/Composables/dato-general.js;
-cp resources/js/Composables/cargos.js resources/js/Composables/roles.js;
 cp resources/js/Composables/cargos.js resources/js/Composables/menu-roles.js;
 cp resources/js/Composables/cargos.js resources/js/Composables/areas.js;
 cp resources/js/Composables/cargos.js resources/js/Composables/tipo-convocatoria.js;

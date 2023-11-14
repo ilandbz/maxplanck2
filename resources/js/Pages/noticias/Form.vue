@@ -10,10 +10,12 @@ const props = defineProps({
 const { form, currentPage } = toRefs(props)
 const {
     errors, respuesta, agregarNoticia, actualizarNoticia,
-    subirImagen, actualizarNoticiaConImagen
+    actualizarNoticiaConImagen
 } = useNoticia();
 const  emit  =defineEmits(['onListar'])
+
 const crud = {
+    
     'nuevo': async() => {
         let formData = new FormData();
         formData.append('imagen', file.value);

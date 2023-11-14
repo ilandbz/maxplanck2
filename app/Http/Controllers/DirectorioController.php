@@ -53,6 +53,7 @@ class DirectorioController extends Controller
             'numeric' => 'Ingrese solo numeros',
             'integer' => 'Solo Numero Enteros',
             'email'  => 'No es un formato de correo Valido',
+            'email.required'    => 'El email es requerido'
         ];
         if ($request->hasFile('foto')) {
             $reglasArchivo = [
@@ -64,20 +65,15 @@ class DirectorioController extends Controller
                 'foto.file' => 'La foto debe ser de tipo file.',
                 'foto.max' => 'El tamaño máximo permitido es de 2000 kilobytes.',
             ];
-        
             $request->validate($reglasArchivo, $mensajesArchivo);
-        
             if (Storage::disk('fotos')->exists($directorio->foto)) {
                 Storage::disk('fotos')->delete($directorio->foto);
             }
-        
             $file = $request->file('foto');
             $nombre_archivo = $directorio->dni. '.' . $file->getClientOriginalExtension();
             Storage::disk('fotos')->put($nombre_archivo,File::get($file));
             $directorio->foto = $nombre_archivo;
-
         }
-
         $request->validate($reglasComunes, $mensajesComunes);
         $directorio->titulo = $request->titulo;
         $directorio->dni = $request->dni;
@@ -96,6 +92,9 @@ class DirectorioController extends Controller
     public function destroy(Request $request)
     {
         $directorio = Directorio::where('id', $request->id)->first();
+        if (Storage::disk('fotos')->exists($directorio->foto)) {
+            Storage::disk('fotos')->delete($directorio->foto);
+        }
         $directorio->delete();
         return response()->json([
             'ok' => 1,
@@ -109,7 +108,7 @@ class DirectorioController extends Controller
     public function listar(Request $request){
         $buscar = mb_strtoupper($request->buscar);
         $paginacion = $request->paginacion;
-        return Directorio::where(function ($query) use ($buscar) {
+        return Directorio::with(['area:id,nombre', 'cargo:id,nombre'])->where(function ($query) use ($buscar) {
             $query->whereRaw('UPPER(titulo) LIKE ?', ['%' . strtoupper($buscar) . '%'])
                   ->orWhereRaw('UPPER(dni) LIKE ?', ['%' . strtoupper($buscar) . '%'])
                   ->orWhereRaw('UPPER(celular) LIKE ?', ['%' . strtoupper($buscar) . '%'])

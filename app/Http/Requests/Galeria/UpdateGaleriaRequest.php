@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\menus;
+namespace App\Http\Requests\Galeria;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateMenuRequest extends FormRequest
+class UpdateGaleriaRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +24,8 @@ class UpdateMenuRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre'     => 'required|max:25|string|unique:cargos,nombre,'.$this->id,
-            'slug'       => 'required|max:25|string|unique:menus,slug,'.$this->id,
-            'icono'      => 'required|max:25'
+            'titulo'            => 'required|max:95|string',
+            'descripcion'       => 'required|max:95|string',
         ];
     }
 

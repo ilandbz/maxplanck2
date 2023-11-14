@@ -22,7 +22,9 @@ class DatabaseSeeder extends Seeder
             EnlaceSeeder::class,
             RoleSeeder::class,
             UserSeeder::class,
-            MenuSeeder::class
+            MenuSeeder::class,
+            EtapaConvocatoriaSeeder::class,
+            TipoConvocatoriaSeeder::class,
         ]);
 
     }

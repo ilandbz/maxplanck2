@@ -14,11 +14,11 @@ class ComunicadoController extends Controller
         $request->validated();
         $imagen= $request->file('imagen');
         $nombre_archivo = date('YmdHis') . '_' . uniqid() . '.' . $imagen->getClientOriginalExtension();
-        Storage::disk('comunicados')->put($nombre_archivo,File::get($imagen));
+        Storage::disk('comunicado')->put($nombre_archivo,File::get($imagen));
 
         $comunicado = Comunicado::create([
             'titulo'        => $request->titulo,
-            'nombreimagen'  => $request->nombre_archivo,
+            'nombreImagen'  => $nombre_archivo,
             'link'          => $request->link,
         ]);
 
@@ -34,7 +34,9 @@ class ComunicadoController extends Controller
     }
     public function update(Request $request)
     {
+
         $comunicado = Comunicado::findOrFail($request->id);
+        
         $reglasComunes = [
             'titulo' => 'required',
         ];
@@ -43,25 +45,25 @@ class ComunicadoController extends Controller
         ];
         if ($request->hasFile('imagen')) {
             $reglasArchivo = [
-                'archivo' => 'required|file|max:2000|mimes:pdf,doc,docx,ppt,pptx,xls,xlsx,jpg,jpeg,png,gif,webp',
+                'imagen' => 'required|max:2000|mimes:pdf,doc,docx,ppt,pptx,xls,xlsx,jpg,jpeg,png,gif,webp',
             ];
             $mensajesArchivo = [
                 'archivo.required' => 'La imagen es obligatorio.',
                 'archivo.mimes' => 'La imagen debe ser solo de tipo: jpg, jpeg, png, gif, webp.',
-                'archivo.file' => 'El archivo debe ser de tipo file.',
+                'imagen.image' => 'El archivo debe ser de tipo imagen.',
                 'archivo.max' => 'El tamaño máximo permitido es de 2000 kilobytes.',
             ];
         
             $request->validate($reglasArchivo, $mensajesArchivo);
         
-            if (Storage::disk('comunicados')->exists($comunicado->nombrearchivo)) {
-                Storage::disk('comunicados')->delete($comunicado->nombrearchivo);
+            if (Storage::disk('comunicado')->exists($comunicado->nombreImagen)) {
+                Storage::disk('comunicado')->delete($comunicado->nombreImagen);
             }
         
-            $file = $request->file('archivo');
+            $file = $request->file('imagen');
             $nombre_archivo = $comunicado->id. '.' . $file->getClientOriginalExtension();
-            Storage::disk('comunicados')->put($nombre_archivo,File::get($file));
-            $comunicado->nombrearchivo = $nombre_archivo;
+            Storage::disk('comunicado')->put($nombre_archivo,File::get($file));
+            $comunicado->nombreImagen = $nombre_archivo;
 
         }
 
@@ -78,6 +80,11 @@ class ComunicadoController extends Controller
     public function destroy(Request $request)
     {
         $comunicado = Comunicado::where('id', $request->id)->first();
+
+        if (Storage::disk('comunicado')->exists($comunicado->nombreImagen)) {
+            Storage::disk('comunicado')->delete($comunicado->nombreImagen);
+        }
+
         $comunicado->delete();
         return response()->json([
             'ok' => 1,

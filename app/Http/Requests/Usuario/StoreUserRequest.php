@@ -24,16 +24,10 @@ class StoreUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'username'              => 'required|unique:users,username,',
-            'role_id'               => 'required',
-            'establecimiento_id'    => 'required',
-            'nombres'               => 'required|string',
-            'apellido_paterno'      => 'required|string',
-            'apellido_materno'      => 'required|string',
-            'numero_dni'            => 'required|string',
-            'sexo'                  => 'required|string',
-            'celular'               => 'required|numeric|digits:9',
-            'email'                 => 'required|email',
+            'name'              => 'required|unique:users,name',
+            'role_id'           => 'required',
+            'password'          => 'required|min:6|max:255|regex:/^(?=.*[a-zA-Z])(?=.*\d).+$/',
+
         ];
     }
 
@@ -46,7 +40,10 @@ class StoreUserRequest extends FormRequest
             'string' => 'Ingrese caracteres alfanuméricos',
             'numeric' => 'Ingrese solo numeros',
             'username.unique'    => 'El valor ya existe en la base de datos',
-            'email'         => 'No es un email valido'
+            'password.required' => '* Dato Obligatorio',
+            'password.min' => 'La contraseña debe tener al menos :min caracteres.',
+            'password.max' => 'La contraseña no puede tener más de :max caracteres.',
+            'password.regex' => 'La contraseña debe contener al menos una letra y un número.',
 
         ];
     }

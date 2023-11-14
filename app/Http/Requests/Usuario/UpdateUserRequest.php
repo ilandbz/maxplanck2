@@ -24,17 +24,8 @@ class UpdateUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'username'              => 'required|unique:users,username,'.$this->id,
-            'role_id'               => 'required',
-            'establecimiento_id'    => 'required',
-            'nombres'               => 'required|string',
-            'apellido_paterno'      => 'required|string',
-            'apellido_materno'      => 'required|string',
-            'numero_dni'            => 'required|string',
-            'sexo'                  => 'required|string',
-            'celular'               => 'required|numeric|digits:9',
-            'email'                 => 'required|email',
-            'direccion'             => 'required',
+            'name'              => 'required|unique:users,name,'.$this->id,
+            'role_id'           => 'required',
         ];
     }
 

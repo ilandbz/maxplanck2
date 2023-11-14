@@ -24,9 +24,10 @@ class StoreRedSocialRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre'     => 'required|max:25|string|unique:menus,nombre',
-            'slug'       => 'required|max:25|string|unique:menus,slug',
-            'icono'      => 'required|max:25'
+            'titulo'        => 'required|max:25|string|unique:redessociales,titulo',
+            'url'           => 'required|max:25|string',
+            'icono'         => 'required|max:25|string',
+            'colorfondo'    => 'required|max:25|string',
         ];
     }
 

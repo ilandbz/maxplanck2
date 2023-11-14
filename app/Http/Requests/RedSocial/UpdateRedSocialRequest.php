@@ -24,9 +24,10 @@ class UpdateRedSocialRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre'     => 'required|max:25|string|unique:cargos,nombre,'.$this->id,
-            'slug'       => 'required|max:25|string|unique:menus,slug,'.$this->id,
-            'icono'      => 'required|max:25'
+            'titulo'        => 'required|max:25|string|unique:redessociales,titulo',
+            'url'           => 'required|max:190|string',
+            'icono'         => 'required|max:25|string',
+            'colorfondo'    => 'required|max:25|string',
         ];
     }
 

@@ -30,7 +30,6 @@ class UpdateSliderRequest extends FormRequest
             'nombrebutton2'     => 'required|max:25',
             'link1'             => 'required|max:60',
             'link2'             => 'required|max:60',
-            'nombreImagen'      => 'required|max:25'
         ];
     }
 
@@ -41,7 +40,7 @@ class UpdateSliderRequest extends FormRequest
             'max' => 'Ingrese Máximo :max caracteres',
             'string' => 'Ingrese caracteres alfanuméricos',
             'number' => 'Ingrese solo numeros',
-            'unique' => 'El :email ya existe'
+            'unique' => 'El titulo ya existe'
         ];
     }
 

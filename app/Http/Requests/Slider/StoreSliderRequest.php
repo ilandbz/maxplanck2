@@ -26,11 +26,7 @@ class StoreSliderRequest extends FormRequest
         return [
             'titulo'            => 'required|max:35|string|unique:sliders,titulo',
             'subtitulo'         => 'required|max:120',
-            'nombrebutton1'     => 'required|max:25',
-            'nombrebutton2'     => 'required|max:25',
-            'link1'             => 'required|max:60',
-            'link2'             => 'required|max:60',
-            'nombreImagen'      => 'required|max:25'
+            'imagen'            => 'required|image|mimes:jpg,jpeg,png,gif,webp|max:2000', 
         ];
 
 
@@ -43,7 +39,9 @@ class StoreSliderRequest extends FormRequest
             'max' => 'Ingrese Máximo :max caracteres',
             'string' => 'Ingrese caracteres alfanuméricos',
             'number' => 'Ingrese solo numeros',
-            'unique' => 'El :nombre ya existe'
+            'unique' => 'El :nombre ya existe',
+            'image'  => 'No se selecciono una imagen',
+            'mimes'  => 'Solo se aceptan jpg,jpeg,png,gif,webp'
         ];
     }
 

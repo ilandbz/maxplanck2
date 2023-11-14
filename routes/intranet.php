@@ -8,13 +8,17 @@ use App\Http\Controllers\ConvocatoriaController;
 use App\Http\Controllers\DirectorioController;
 use App\Http\Controllers\EnlaceController;
 use App\Http\Controllers\EntradaController;
+use App\Http\Controllers\GaleriaController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\MenuRoleController;
+use App\Http\Controllers\NoticiaController;
 use App\Http\Controllers\OrganizacionController;
 use App\Http\Controllers\PopupController;
 use App\Http\Controllers\RedesController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TipoConvocatoriaController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -65,6 +69,13 @@ Route::group(['prefix' => 'convocatoria', 'middleware' => 'auth'], function () {
     Route::post('eliminar', [ConvocatoriaController::class, 'destroy']);
     Route::post('guardar', [ConvocatoriaController::class, 'store']);
     Route::get('listar', [ConvocatoriaController::class, 'listar']);
+    Route::get('listar-tipo-convocatorias', [ConvocatoriaController::class, 'tipoConvocatorias']);
+    Route::get('listar-etapa-convocatorias', [ConvocatoriaController::class, 'etapaConvocatorias']);
+    Route::post('guardar-archivo', [ConvocatoriaController::class, 'storeArchivoConvocatoria']);
+    Route::post('actualizar-archivo', [ConvocatoriaController::class, 'updateArchivo']);
+    Route::get('mostrar-archivo', [ConvocatoriaController::class, 'showArchivo']);
+    Route::post('eliminar-archivo', [ConvocatoriaController::class, 'eliminarArchivo']);
+    Route::get('lista-archivos', [ConvocatoriaController::class, 'archivosConvocatoria']);
 });
 Route::group(['prefix' => 'directorio', 'middleware' => 'auth'], function () {
     Route::get('todos', [DirectorioController::class, 'todos']);
@@ -131,6 +142,9 @@ Route::group(['prefix' => 'popup', 'middleware' => 'auth'], function () {
     Route::post('eliminar', [PopupController::class, 'destroy']);
     Route::post('guardar', [PopupController::class, 'store']);
     Route::get('listar', [PopupController::class, 'listar']);
+    Route::post('subir-imagen', [PopupController::class, 'subirImagen']);
+    Route::post('eliminar-imagen', [PopupController::class, 'eliminarImagen']);
+    Route::get('mostrar-imagenes', [PopupController::class, 'imagenes']);
 });
 
 Route::group(['prefix' => 'slider', 'middleware' => 'auth'], function () {
@@ -153,4 +167,35 @@ Route::group(['prefix' => 'noticia', 'middleware' => ['auth:sanctum']], function
     Route::post('subir-imagen', [NoticiaController::class, 'subirImagen']);
     Route::post('eliminar-imagen', [NoticiaController::class, 'eliminarImagen']);
     Route::get('mostrar-imagenes', [NoticiaController::class, 'imagenes']);
+});
+
+
+Route::group(['prefix' => 'galeria', 'middleware' => 'auth'], function () {
+    Route::get('todos', [GaleriaController::class, 'todos']);
+    Route::get('mostrar', [GaleriaController::class, 'show']);
+    Route::post('actualizar', [GaleriaController::class, 'update']);
+    Route::post('eliminar', [GaleriaController::class, 'destroy']);
+    Route::post('guardar', [GaleriaController::class, 'store']);
+    Route::get('listar', [GaleriaController::class, 'listar']);
+    Route::post('subir-imagen', [GaleriaController::class, 'subirImagen']);
+    Route::post('eliminar-imagen', [GaleriaController::class, 'eliminarImagen']);
+    Route::get('mostrar-imagenes', [GaleriaController::class, 'imagenes']);
+});
+
+Route::group(['prefix' => 'usuario', 'middleware' => 'auth'], function () {
+    Route::get('listar-habilitados',[UserController::class,'habilitados']);
+    Route::get('listar-eliminados',[UserController::class,'eliminados']);
+    Route::get('listar-todos',[UserController::class,'todos']);
+    Route::get('mostrar', [UserController::class, 'show']);
+    Route::post('actualizar', [UserController::class, 'update']);
+    Route::post('eliminar', [UserController::class, 'destroy']);
+    Route::post('eliminar-permanente', [UserController::class, 'eliminarpermanente']);
+    Route::post('guardar', [UserController::class, 'store']);
+    Route::get('listar', [UserController::class, 'listar']);
+    Route::post('reset-password',[UserController::class,'resetclave']);
+});
+Route::group(['prefix' => 'menu-role', 'middleware' => 'auth'], function () {
+    Route::get('menu-roles',[MenuRoleController::class,'mostrarRoleMenus']);
+    Route::get('mostrar-menus',[MenuRoleController::class,'mostrarMenus']);
+    Route::post('menu-role-guardar',[MenuRoleController::class,'guardarRoleMenu']);
 });

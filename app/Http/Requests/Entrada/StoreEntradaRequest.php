@@ -24,9 +24,10 @@ class StoreEntradaRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre'     => 'required|max:25|string|unique:menus,nombre',
-            'slug'       => 'required|max:25|string|unique:menus,slug',
-            'icono'      => 'required|max:25'
+            'titulo'     => 'required|max:25|string|unique:entradas,titulo',
+            'slug'       => 'required|max:25|string|unique:entradas,slug',
+            'ruta'       => 'required|max:25',
+            'contenido'  => 'required|string',
         ];
     }
 
@@ -37,7 +38,7 @@ class StoreEntradaRequest extends FormRequest
             'max' => 'Ingrese Máximo :max caracteres',
             'string' => 'Ingrese caracteres alfanuméricos',
             'number' => 'Ingrese solo numeros',
-            'unique' => 'El :nombre ya existe'
+            'unique' => 'El :titulo ya existe'
         ];
     }
 

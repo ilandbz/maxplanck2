@@ -25,7 +25,7 @@ class StorePopupRequest extends FormRequest
     {
         return [
             'titulo'     => 'required|max:25|string',
-            'link'       => 'required|max:25|string|url',
+            'link'       => 'required|string|url',
         ];
     }
 

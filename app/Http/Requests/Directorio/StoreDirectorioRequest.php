@@ -30,7 +30,7 @@ class StoreDirectorioRequest extends FormRequest
             'cargo_id'      => 'required|integer',
             'email'         => 'required|email',
             'celular'       => 'required|numeric',
-            'foto'          => 'required|image|mimes:jpg,jpeg,png,gif,webp|file|max:2000', 
+            'foto'          => 'required|image|mimes:jpg,jpeg,png,gif,webp|max:2000', 
         ];
     }
 
@@ -42,7 +42,9 @@ class StoreDirectorioRequest extends FormRequest
             'string' => 'Ingrese caracteres alfanuméricos',
             'number' => 'Ingrese solo numeros',
             'unique' => 'El :nombre ya existe',
-            'email'  => 'No es un formato de correo Valido'
+            'email'  => 'No es un formato de correo Valido',
+            'image'  => 'Ingrese una foto',
+            'mimes'  => 'Ingrese solo extensiones jpg,jpeg,png,gif,webp'
         ];
     }
 

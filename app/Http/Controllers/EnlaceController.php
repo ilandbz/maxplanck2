@@ -14,9 +14,9 @@ class EnlaceController extends Controller
         $request->validated();
         $imagen= $request->file('imagen');
         $nombre_archivo = date('YmdHis') . '_' . uniqid() . '.' . $imagen->getClientOriginalExtension();
-        Storage::disk('enlaces')->put($nombre_archivo,File::get($imagen));
+        Storage::disk('enlace')->put($nombre_archivo,File::get($imagen));
         $enlace = Enlace::create([
-            'titulo'        => $request->titulo,
+            'title'        => $request->title,
             'nombreImagen'  => $nombre_archivo,
             'link'          => $request->link,
         ]);
@@ -35,40 +35,34 @@ class EnlaceController extends Controller
     {
         $enlace = Enlace::findOrFail($request->id);
         $reglasComunes = [
-            'titulo' => 'required',
+            'title' => 'required',
         ];
         $mensajesComunes = [
             'titulo.required' => 'El Titulo es obligatorio.',
         ];
         if ($request->hasFile('imagen')) {
             $reglasArchivo = [
-                'archivo' => 'required|file|max:2000|mimes:pdf,doc,docx,ppt,pptx,xls,xlsx,jpg,jpeg,png,gif,webp',
+                'imagen' => 'required|max:2000|mimes:pdf,doc,docx,ppt,pptx,xls,xlsx,jpg,jpeg,png,gif,webp',
             ];
             $mensajesArchivo = [
-                'archivo.required' => 'La imagen es obligatorio.',
-                'archivo.mimes' => 'La imagen debe ser solo de tipo: jpg, jpeg, png, gif, webp.',
-                'archivo.file' => 'El archivo debe ser de tipo file.',
-                'archivo.max' => 'El tamaño máximo permitido es de 2000 kilobytes.',
+                'imagen.required' => 'La imagen es obligatorio.',
+                'imagen.mimes' => 'La imagen debe ser solo de tipo: jpg, jpeg, png, gif, webp.',
+                'imagen.file' => 'El imagen debe ser de tipo file.',
+                'imagen.max' => 'El tamaño máximo permitido es de 2000 kilobytes.',
             ];
-        
             $request->validate($reglasArchivo, $mensajesArchivo);
-        
-            if (Storage::disk('enlaces')->exists($enlace->nombrearchivo)) {
-                Storage::disk('enlaces')->delete($enlace->nombrearchivo);
+            if (Storage::disk('enlace')->exists($enlace->nombreImagen)) {
+                Storage::disk('enlace')->delete($enlace->nombreImagen);
             }
-        
-            $file = $request->file('archivo');
+            $file = $request->file('imagen');
             $nombre_archivo = $enlace->id. '.' . $file->getClientOriginalExtension();
-            Storage::disk('enlaces')->put($nombre_archivo,File::get($file));
-            $enlace->nombrearchivo = $nombre_archivo;
-
+            Storage::disk('enlace')->put($nombre_archivo,File::get($file));
+            $enlace->nombreImagen = $nombre_archivo;
         }
-
         $request->validate($reglasComunes, $mensajesComunes);
-        $enlace->titulo = $request->titulo;
+        $enlace->title = $request->title;
         $enlace->link = $request->link;
         $enlace->save();
-        
         return response()->json([
             'ok' => 1,
             'mensaje' => 'Enlace modificado satisfactoriamente'
@@ -77,6 +71,9 @@ class EnlaceController extends Controller
     public function destroy(Request $request)
     {
         $enlace = Enlace::where('id', $request->id)->first();
+        if (Storage::disk('enlace')->exists($enlace->nombreImagen)) {
+            Storage::disk('enlace')->delete($enlace->nombreImagen);
+        }
         $enlace->delete();
         return response()->json([
             'ok' => 1,
@@ -91,7 +88,7 @@ class EnlaceController extends Controller
         $buscar = mb_strtoupper($request->buscar);
         $paginacion = $request->paginacion;
         return Enlace::where(function ($query) use ($buscar) {
-            $query->whereRaw('UPPER(titulo) LIKE ?', ['%' . strtoupper($buscar) . '%'])
+            $query->whereRaw('UPPER(title) LIKE ?', ['%' . strtoupper($buscar) . '%'])
                   ->orWhereRaw('UPPER(link) LIKE ?', ['%' . strtoupper($buscar) . '%']);
         })
         ->paginate($paginacion);

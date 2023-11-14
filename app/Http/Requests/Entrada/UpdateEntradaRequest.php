@@ -24,9 +24,10 @@ class UpdateEntradaRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre'     => 'required|max:25|string|unique:cargos,nombre,'.$this->id,
-            'slug'       => 'required|max:25|string|unique:menus,slug,'.$this->id,
-            'icono'      => 'required|max:25'
+            'titulo'     => 'required|max:25|string|unique:entradas,titulo,'.$this->id,
+            'slug'       => 'required|max:25|string|unique:entradas,slug,'.$this->id,
+            'ruta'       => 'required|max:25',
+            'contenido'  => 'required|string',
         ];
     }
 

@@ -26,21 +26,22 @@ class StoreArchivoRequest extends FormRequest
 
         return [
             'titulo'    => 'required|string',
-            'archivo'   => 'required|file|max:2000|mimes:pdf,doc,docx,ppt,pptx,xls,xlsx,jpg,jpeg,png,gif,webp',
+            'archivo'   => 'required|file|max:10000|mimes:pdf,doc,docx,ppt,pptx,xls,xlsx,jpg,jpeg,png,gif,webp',
         ];
     }
 
     public function messages()
     {
         return [
-            'required' => '* Dato Obligatorio',
+            'titulo.required' => '* Dato Obligatorio',
             'max' => 'Ingrese Máximo :max Bytes',
             'string' => 'Ingrese caracteres alfanuméricos',
             'number' => 'Ingrese solo numeros',
             'unique' => 'El :nombre ya existe',
             'image' => 'Debe ser de tipo Imagen',
             'mimes' => 'Solo se acepta tipo de archivos como pdf,doc,docx,ppt,pptx,xls,xlsx,jpg,jpeg,png,gif,webp',
-            'file' => 'Debe ser un archivo'
+            'file' => 'Debe ser un archivo',
+            'archivo.required' => 'Archivo Obligatorio',
         ];
     }
 

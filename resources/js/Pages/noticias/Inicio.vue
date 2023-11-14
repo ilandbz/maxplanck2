@@ -29,6 +29,7 @@
         estadoCrud:'',
         errors:[]
     });
+    
     const formimagen = ref({
         id:'',
         noticia_id:'',
