@@ -1,7 +1,5 @@
 @extends('layout')
-
 @section('body-content')
-
     @if (isset($pagina))
         @include('componentes.banner')
         @php

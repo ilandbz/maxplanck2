@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class SeccionesPrincipal extends Model
 {
     use HasFactory;
+    protected $fillable=['titulo', 'contenido', 'orden'];
 }

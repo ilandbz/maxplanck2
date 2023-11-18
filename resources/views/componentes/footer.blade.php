@@ -64,7 +64,7 @@
         <div class="footer-copyright">
             <div class="container">
                 <div class="copyright text-center">
-                    <p>&copy; 2023 <span> Cristian Wilmer </span> Made with <i class="fa fa-heart"></i> by <a href="#">ilantec</a></p>
+                    <p>&copy; 2023 <span> {{$organizacion->titulo}} </span> <i class="fas fa-thumbs-up"></i></p>
                 </div>
             </div>
         </div>

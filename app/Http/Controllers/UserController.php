@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\Usuario\StoreUserRequest;
+use App\Http\Requests\Usuario\UpdatePasswordRequest;
+use App\Http\Requests\Usuario\UpdateProfileRequest;
 use App\Http\Requests\Usuario\UpdateUserRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -33,12 +35,10 @@ class UserController extends Controller
             'mensaje' => 'Usuario Actualizado satisfactoriamente'
         ],200);
     }
-    public function actualizarperfil(Request $request){
-        $request->validated();
+    public function actualizarperfil(UpdateProfileRequest $request){
         $usuario = User::find(Auth::user()->id);
-        $usuario->username = $request->username;
+        $usuario->name = $request->name;
         $usuario->save();
-
         return response()->json([
             'ok' => 1,
             'mensaje' => 'Registro modificado satisfactoriamente'
@@ -118,5 +118,27 @@ class UserController extends Controller
             'ok' => 1,
             'mensaje' => 'Clave Reseteado con Exito'
         ],200);
+    }
+    public function cambiarclaveperfil(UpdatePasswordRequest $request){
+        //$request->validated();
+        $user = Auth::user();
+        if(Hash::check($request->current_password,$user->password)){
+            $user = User::find(Auth::user()->id);
+            $user->password = Hash::make($request->password);
+            $user->save();
+            return response()->json([
+                'ok' => 1,
+                'mensaje' => 'Clave Cambiado con Exito'
+            ],200);
+        }
+        else {
+            return response()->json([
+                'errors' => [
+                    'current_password' => [
+                        'Contraseña Incorrecta'
+                    ]
+                ]
+            ],422);
+        }
     }
 }

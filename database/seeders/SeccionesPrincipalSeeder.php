@@ -16,6 +16,42 @@ class SeccionesPrincipalSeeder extends Seeder
         SeccionesPrincipal::firstOrCreate([
             'titulo'   => 'Top Courses Start',
             'orden'     => 1,
+            'contenido'   => '
+                        <!--====== Features Start ======-->
+            <section class="features-area">
+                <div class="container">
+                    <div class="features-wrapper">
+                        <div class="row justify-content-end">
+                            <div class="col-lg-8">
+                                <h2 class="features-title">Provide <span>best <br> Educational</span> Environment</h2>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="col-lg-11">
+                                <div class="features-image">
+                                    <img src="edumate/assets/images/features.webp" width="1061" height="387" alt="features">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features-mask">
+                            <div class="features-mask-image bg_cover" style="background-image: url(edumate/assets/images/features-bg.webp);">
+                            </div>
+                            <div class="features-mask-content">
+                                <p>256 Courses</p>
+                                <p>Expert Teachers</p>
+                                <p>Online Education</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--====== Features Ends ======-->
+            '
+        ]);
+        
+        SeccionesPrincipal::firstOrCreate([
+            'titulo'   => 'Top Courses Start',
+            'orden'     => 2,
             'contenido'   => '<!--====== Top Courses Start ======-->
             <section class="top-courses-area">
                 <div class="container">
@@ -230,7 +266,7 @@ class SeccionesPrincipalSeeder extends Seeder
 
         SeccionesPrincipal::firstOrCreate([
             'titulo'        => 'Specialty Start',
-            'orden'     => 2,
+            'orden'     => 3,
             'contenido'     => '<!--====== Specialty Start ======-->
             <div class="specialty-area">
                 <div class="container">
@@ -279,7 +315,7 @@ class SeccionesPrincipalSeeder extends Seeder
         
         SeccionesPrincipal::firstOrCreate([
             'titulo'        => 'Campus Visit Start',
-            'orden'     => 3,
+            'orden'     => 4,
             'contenido'     => '    <!--====== Campus Visit Start ======-->
             <section class="campus-visit-area">
                 <div class="container">
@@ -311,7 +347,7 @@ class SeccionesPrincipalSeeder extends Seeder
 
         SeccionesPrincipal::firstOrCreate([
             'titulo'        => 'Event Start',
-            'orden'     => 4,
+            'orden'     => 5,
             'contenido'     => '    <!--====== Event Start ======-->
             <section class="event-area">
                 <div class="container">
@@ -461,7 +497,7 @@ class SeccionesPrincipalSeeder extends Seeder
 
         SeccionesPrincipal::firstOrCreate([
             'titulo'        => 'Testimonials Start',
-            'orden'     => 5,
+            'orden'     => 6,
             'contenido'     => '    <!--====== Testimonials Start ======-->
             <section class="testimonials-area">
                 <div class="container">
@@ -538,7 +574,7 @@ class SeccionesPrincipalSeeder extends Seeder
 
         SeccionesPrincipal::firstOrCreate([
             'titulo'        => 'Counter Start',
-            'orden'     => 6,
+            'orden'     => 7,
             'contenido'     => '    <!--====== Counter Start ======-->
             <div class="counter-area">
                 <div class="container">

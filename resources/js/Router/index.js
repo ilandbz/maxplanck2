@@ -8,6 +8,7 @@ import LayoutDefault from '@/Layouts/AppLayoutDefault.vue'
 import Principal from '@/Pages/Principal.vue'
 import Login from '@/Pages/Auth/Login.vue'
 import Noticia from '@/Pages/noticias/Inicio.vue'
+import Profile from '@/Pages/Profile/Inicio.vue'
 import Menu from '@/Pages/menus/Inicio.vue'
 import Cargo from '@/Pages/cargos/Inicio.vue'
 import Slider from '@/Pages/slider/Inicio.vue'
@@ -25,6 +26,7 @@ import Role from '@/Pages/roles/Inicio.vue'
 import Usuario from '@/Pages/usuarios/Inicio.vue'
 import MenuRole from '@/Pages/menu-roles/Inicio.vue'
 import Area from '@/Pages/areas/Inicio.vue'
+import Seccion from '@/Pages/secciones/Inicio.vue'
 import TipoConvocatoria from '@/Pages/tipo-convocatoria/Inicio.vue'
 const routes = [
     {
@@ -111,9 +113,14 @@ const routes = [
         path: '/intranet/tipo-convocatoria', name:'Tipo Convocatoria', component: TipoConvocatoria ,
         meta:{layout: LayoutDefault}
     },
-
-
-
+    {
+        path: '/intranet/perfil', name:'Perfil', component: Profile ,
+        meta:{layout: LayoutDefault}
+    },
+    {
+        path: '/intranet/secciones', name:'Secciones', component: Seccion ,
+        meta:{layout: LayoutDefault}
+    },
 ]
 
 export default createRouter({

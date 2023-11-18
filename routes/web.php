@@ -31,6 +31,8 @@ Route::get('/dashboard', function () {
 Route::group(['middleware' => ['auth:sanctum']],function(){
     Route::post('/logout',[LoginController::class,'logout']);
     Route::get('/intranet/usuario-session-data',[UserController::class,'mostrarDatoUsuario']);
+    Route::post('/actualizar-perfil',[UserController::class,'actualizarperfil']);
+    Route::post('/cambiar-clave',[UserController::class,'cambiarclaveperfil']);
 });
 Route::get('/intranet/principal', [IntranetController::class, 'index'])->name('intranet');
 Route::get('/intranet/{path}',[IntranetController::class,'index'])->where('path','.*');
@@ -48,6 +50,13 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
+
+
+
+
+
 
 require __DIR__.'/auth.php';
 require __DIR__.'/routesEntradas.php';

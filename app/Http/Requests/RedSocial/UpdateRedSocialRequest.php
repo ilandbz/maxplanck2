@@ -24,7 +24,7 @@ class UpdateRedSocialRequest extends FormRequest
     public function rules()
     {
         return [
-            'titulo'        => 'required|max:25|string|unique:redessociales,titulo',
+            'titulo'        => 'required|max:25|string|unique:redessociales,titulo,'.$this->id,
             'url'           => 'required|max:190|string',
             'icono'         => 'required|max:25|string',
             'colorfondo'    => 'required|max:25|string',
@@ -38,7 +38,7 @@ class UpdateRedSocialRequest extends FormRequest
             'max' => 'Ingrese Máximo :max caracteres',
             'string' => 'Ingrese caracteres alfanuméricos',
             'number' => 'Ingrese solo numeros',
-            'unique' => 'El :email ya existe'
+            'unique' => 'El :titulo ya existe'
         ];
     }
 

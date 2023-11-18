@@ -13,7 +13,7 @@
                                 <li><a href="#">{{ $noticia->created_at->locale('es')->isoFormat('D [de] MMMM [de] YYYY') }}</a></li>
                             </ul>
                             <h3 class="title">{{$noticia->titulo}}</h3>
-                            <p>{{$noticia->contenido}}</p>
+                            <p>{!! $noticia->contenido !!}</p>
                         </div>
                     </div>
                 </div>
@@ -41,3 +41,7 @@
     <!--====== Blog Details Ends ======-->
     @include('componentes.footer')
 @endsection
+<script>
+
+
+</script>

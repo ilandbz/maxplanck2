@@ -61,11 +61,13 @@
             form.value.imagen=carpetaNoticias+noticia.value.imagen.nombreimagen
         }
     }
-    const editar = (id) => {
+    const editar = async(id) => {
         limpiar();
-        obtenerDatos(id)
+        await obtenerDatos(id)
         form.value.estadoCrud = 'editar'
         document.getElementById("modalnoticiaLabel").innerHTML = 'Editar Noticia';
+        $('#summernote').html(form.value.contenido);
+        $('.note-editable').html(form.value.contenido);
         openModal('#modalnoticia')
     }
     const nuevo = () => {

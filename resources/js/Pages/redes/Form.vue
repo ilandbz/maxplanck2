@@ -66,20 +66,17 @@ const guardar = () => {
                     <div class="mb-3">
                         <label for="url" class="form-label">URL</label>
                         <input type="text" class="form-control" v-model="form.url" :class="{ 'is-invalid': form.errors.url }" placeholder="URL">
-                        <small class="text-danger" v-for="error in form.errors.url" :key="error">{{ error
-                                }}</small>
+                        <small class="text-danger" v-for="error in form.errors.url" :key="error">{{ error }}</small>
                     </div>
                     <div class="mb-3">
                         <label for="icono" class="form-label">Icono</label>
                         <input type="text" class="form-control" v-model="form.icono" :class="{ 'is-invalid': form.errors.icono }" placeholder="Icono">
-                        <small class="text-danger" v-for="error in form.errors.icono" :key="error">{{ error
-                                }}</small>
+                        <small class="text-danger" v-for="error in form.errors.icono" :key="error">{{ error }}</small>
                     </div>
                     <div class="mb-3">
                         <label for="colorfondo" class="form-label">Color de Fondo</label>
                         <input type="text" class="form-control" v-model="form.colorfondo" :class="{ 'is-invalid': form.errors.colorfondo }" placeholder="Color">
-                        <small class="text-danger" v-for="error in form.errors.colorfondo" :key="error">{{ error
-                                }}</small>
+                        <small class="text-danger" v-for="error in form.errors.colorfondo" :key="error">{{ error  }}</small>
                     </div>
                 </div>
                 <div class="modal-footer">

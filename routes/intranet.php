@@ -16,6 +16,7 @@ use App\Http\Controllers\OrganizacionController;
 use App\Http\Controllers\PopupController;
 use App\Http\Controllers\RedesController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\SeccionesPrincipalController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TipoConvocatoriaController;
 use App\Http\Controllers\UserController;
@@ -101,7 +102,14 @@ Route::group(['prefix' => 'entrada', 'middleware' => 'auth'], function () {
     Route::post('guardar', [EntradaController::class, 'store']);
     Route::get('listar', [EntradaController::class, 'listar']);
 });
-
+Route::group(['prefix' => 'seccion', 'middleware' => 'auth'], function () {
+    Route::get('todos', [SeccionesPrincipalController::class, 'todos']);
+    Route::get('mostrar', [SeccionesPrincipalController::class, 'show']);
+    Route::post('actualizar', [SeccionesPrincipalController::class, 'update']);
+    Route::post('eliminar', [SeccionesPrincipalController::class, 'destroy']);
+    Route::post('guardar', [SeccionesPrincipalController::class, 'store']);
+    Route::get('listar', [SeccionesPrincipalController::class, 'listar']);
+});
 Route::group(['prefix' => 'role', 'middleware' => 'auth'], function () {
     Route::get('todos', [RoleController::class, 'todos']);
     Route::get('mostrar', [RoleController::class, 'show']);

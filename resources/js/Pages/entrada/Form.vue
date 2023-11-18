@@ -53,7 +53,7 @@ const guardar = () => {
     <form @submit.prevent="guardar">
     <div class="modal fade" id="modalentrada" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="modalentradaLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="modalentradaLabel">Modal title</h1>
@@ -80,7 +80,7 @@ const guardar = () => {
                     </div>  
                     <div class="mb-3">
                         <label for="contenido" class="form-label">Contenido</label>
-                        <textarea class="form-control" v-model="form.contenido" :class="{ 'is-invalid': form.errors.contenido }" placeholder="Contenido"></textarea>
+                        <textarea class="form-control" v-model="form.contenido" :class="{ 'is-invalid': form.errors.contenido }" placeholder="Contenido" rows="6"></textarea>
                         <small class="text-danger" v-for="error in form.errors.contenido" :key="error">{{ error
                                 }}</small>
                     </div>   

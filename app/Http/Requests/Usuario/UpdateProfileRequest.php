@@ -24,18 +24,9 @@ class UpdateProfileRequest extends FormRequest
     public function rules()
     {
         return [
-            'user_id'               => 'required',
-            'username'              => 'required|unique:users,username,'.$this->user_id,
-            'nombres'               => 'required|string',
-            'apellido_paterno'      => 'required|string',
-            'apellido_materno'      => 'required|string',
-            'sexo'                  => 'required|string',
-            'fecha_nacimiento'      => 'required',
-            'estado_civil_id'       => 'required',
-            'celular'               => 'required',
-            'email'                 => 'required|email',
-            'tienehijos'            => 'required',
-            'profesion_id'          => 'required',
+            'id'               => 'required',
+            'name'         => 'required|unique:users,name,'.$this->user_id,
+            'role_id'          => 'required',
         ];
     }
 
