@@ -28,7 +28,28 @@
         titulo : '',
         ruta : '',
         slug : '',
-        contenido : '',
+        contenido: `
+        <section class="notice-area mb-4">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="section-title-2">
+                    <h2 class="title">TITULO</h2>
+                    <span class="line"></span>
+                    <p>Find your desired questioner here If you are going use a passage of Lorem Ipsum need equal belongs to those who fail in their duty of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy</p>
+                </div>
+                </div>
+            </div>
+            <div class="notice-content">
+                <div class="single-notice">
+                <span class="number">01.</span>
+                <h3 class="notice-title">There are so many schools in the U.S. How do I decide which schools to apply to</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ratione amet voluptatem dolores enim veniam ea quos ipsum eaque. Corrupti, iste voluptate tempore blanditiis beatae nostrum! Ex et, dolores dolore quisquam, delectus temporibus, sed accusamus doloremque quia nobis tempore ab quibusdam? Voluptatem totam est, rerum deserunt corporis fugiat asperiores consequuntur!</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        `,
         estadoCrud:'',
         errors:[]
 
@@ -38,7 +59,28 @@
         form.value.titulo='',
         form.value.ruta='',
         form.value.slug='',
-        form.value.contenido='',
+        form.value.contenido=`
+        <section class="notice-area mb-4">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="section-title-2">
+                    <h2 class="title">TITULO</h2>
+                    <span class="line"></span>
+                    <p>Find your desired questioner here If you are going use a passage of Lorem Ipsum need equal belongs to those who fail in their duty of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy</p>
+                </div>
+                </div>
+            </div>
+            <div class="notice-content">
+                <div class="single-notice">
+                <span class="number">01.</span>
+                <h3 class="notice-title">There are so many schools in the U.S. How do I decide which schools to apply to</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ratione amet voluptatem dolores enim veniam ea quos ipsum eaque. Corrupti, iste voluptate tempore blanditiis beatae nostrum! Ex et, dolores dolore quisquam, delectus temporibus, sed accusamus doloremque quia nobis tempore ab quibusdam? Voluptatem totam est, rerum deserunt corporis fugiat asperiores consequuntur!</p>
+                </div>
+            </div>
+            </div>
+        </section>`
+        ,
         form.value.estadoCrud = '',          
         form.value.errors = []
         errors.value = []
@@ -54,16 +96,20 @@
             form.value.contenido=entrada.value.contenido;
         }
     }
-    const editar = (id) => {
+    const editar = async(id) => {
         limpiar();
-        obtenerDatos(id)
+        await obtenerDatos(id)
         form.value.estadoCrud = 'editar'
+        $('#summernote').html(form.value.contenido);
+        $('.note-editable').html(form.value.contenido);
         document.getElementById("modalentradaLabel").innerHTML = 'Editar Entrada';
         openModal('#modalentrada')
     }
     const nuevo = () => {
         limpiar()
         form.value.estadoCrud = 'nuevo'
+        $('#summernote').html(form.value.contenido);
+        $('.note-editable').html(form.value.contenido);
         openModal('#modalentrada')
         document.getElementById("modalentradaLabel").innerHTML = 'Nueva Entrada';
         //titulo.textContent = 'Editar Datos Personales';

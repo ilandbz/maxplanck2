@@ -14,6 +14,7 @@ const {
 const  emit  =defineEmits(['onListar'])
 const crud = {
     'nuevo': async() => {
+        form.value.contenido= $('.note-editable').html();
         await agregarEntrada(form.value)
         form.value.errors = []
         if(errors.value)
@@ -30,6 +31,7 @@ const crud = {
         }
     },
     'editar': async() => {
+        form.value.contenido= $('.note-editable').html();
         await actualizarEntrada(form.value)
         form.value.errors = []
         if(errors.value)
@@ -80,7 +82,7 @@ const guardar = () => {
                     </div>  
                     <div class="mb-3">
                         <label for="contenido" class="form-label">Contenido</label>
-                        <textarea class="form-control" v-model="form.contenido" :class="{ 'is-invalid': form.errors.contenido }" placeholder="Contenido" rows="6"></textarea>
+                        <textarea id="summernote" v-model="form.contenido" class="form-control" :class="{ 'is-invalid': form.errors.contenido }" rows="10"></textarea>
                         <small class="text-danger" v-for="error in form.errors.contenido" :key="error">{{ error
                                 }}</small>
                     </div>   

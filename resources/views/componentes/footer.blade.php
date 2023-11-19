@@ -1,6 +1,6 @@
     <!--====== Footer Start ======-->
 
-    <section class="footer-area bg_cover" style="background-image: url(edumate/assets/images/counter-bg.webp);">
+    <section class="footer-area bg_cover" style="background-image: url(edumate/assets/images/muniambo.webp);">
         <div class="footer-widget">
             <div class="container">
                 <div class="row">
