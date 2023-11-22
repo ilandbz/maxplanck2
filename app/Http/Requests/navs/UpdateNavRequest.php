@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Slider;
+namespace App\Http\Requests\navs;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreSliderRequest extends FormRequest
+class UpdateNavRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,11 +24,11 @@ class StoreSliderRequest extends FormRequest
     public function rules()
     {
         return [
-            'titulo'            => 'required|max:35|string|unique:sliders,titulo',
-            'imagen'            => 'required|image|mimes:jpg,jpeg,png,gif,webp|max:2000', 
+            'nombre'     => 'required|max:25|string|unique:navs,nombre,'.$this->id,
+            'ruta'       => 'required|max:25|string|unique:navs,ruta,'.$this->id,
+            'slug'       => 'required|max:25|string|unique:navs,slug,'.$this->id,
+            'orden'      => 'required|number'
         ];
-
-
     }
 
     public function messages()
@@ -38,9 +38,7 @@ class StoreSliderRequest extends FormRequest
             'max' => 'Ingrese Máximo :max caracteres',
             'string' => 'Ingrese caracteres alfanuméricos',
             'number' => 'Ingrese solo numeros',
-            'unique' => 'El :nombre ya existe',
-            'image'  => 'No se selecciono una imagen',
-            'mimes'  => 'Solo se aceptan jpg,jpeg,png,gif,webp'
+            'unique' => 'El :email ya existe'
         ];
     }
 

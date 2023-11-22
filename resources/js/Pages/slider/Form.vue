@@ -13,6 +13,15 @@ const {
     carpetaSlider
 } = useSlider();
 const  emit  =defineEmits(['onListar'])
+
+const file = ref(null);
+const cambiarImagen = (e)=>{
+    file.value = e.target.files[0]
+    if (file.value) {
+        form.value.imagen=URL.createObjectURL(file.value);
+    }
+}
+
 const crud = {
     'nuevo': async() => {
         let formData = new FormData();
@@ -41,12 +50,13 @@ const crud = {
         formData.append('id', form.value.id);
         formData.append('imagen', file.value);
         formData.append('titulo', form.value.titulo);
-        formData.append('subtitulo', form.value.subtitulo);
-        formData.append('nombrebutton1', form.value.nombrebutton1);
-        formData.append('nombrebutton2', form.value.nombrebutton2);
-        formData.append('link1', form.value.link1);
-        formData.append('link2', form.value.link2);
+        formData.append('subtitulo', form.value.subtitulo ?? '');
+        formData.append('nombrebutton1', form.value.nombrebutton1 ?? '');
+        formData.append('nombrebutton2', form.value.nombrebutton2 ?? '');
+        formData.append('link1', form.value.link1 ?? '');
+        formData.append('link2', form.value.link2 ?? '');
         await actualizarSlider(formData)
+        
         form.value.errors = []
         if(errors.value)
         {
@@ -63,13 +73,7 @@ const crud = {
 const guardar = () => {
     crud[form.value.estadoCrud]()
 }
-const file = ref(null);
-const cambiarImagen = (e)=>{
-    file.value = e.target.files[0]
-    if (file) {
-        form.value.imagen=URL.createObjectURL(file.value);
-    }
-}
+
 onMounted(() => {
     listaSliders()
 })
@@ -100,17 +104,17 @@ onMounted(() => {
                                         }}</small>
                             </div>
                             <div class="mb-3">
-                                <label for="nombrebutton2" class="form-label">Button 1</label>
-                                <input type="text" class="form-control" v-model="form.nombrebutton2" :class="{ 'is-invalid': form.errors.nombrebutton2 }" placeholder="Nombre del Boton">
-                                <small class="text-danger" v-for="error in form.errors.nombrebutton2" :key="error">{{ error
+                                <label for="nombrebutton1" class="form-label">Button 1</label>
+                                <input type="text" class="form-control" v-model="form.nombrebutton1" :class="{ 'is-invalid': form.errors.nombrebutton1 }" placeholder="Nombre del Boton">
+                                <small class="text-danger" v-for="error in form.errors.nombrebutton1" :key="error">{{ error
                                         }}</small>
                             </div>
                         </div>
                         <div class="col">
                             <div class="mb-3">
-                                <label for="nombrebutton1" class="form-label">Button 2</label>
-                                <input type="text" class="form-control" v-model="form.nombrebutton1" :class="{ 'is-invalid': form.errors.nombrebutton1 }" placeholder="Nombre del Boton 2">
-                                <small class="text-danger" v-for="error in form.errors.nombrebutton1" :key="error">{{ error
+                                <label for="nombrebutton2" class="form-label">Button 2</label>
+                                <input type="text" class="form-control" v-model="form.nombrebutton2" :class="{ 'is-invalid': form.errors.nombrebutton2 }" placeholder="Nombre del Boton 2">
+                                <small class="text-danger" v-for="error in form.errors.nombrebutton2" :key="error">{{ error
                                         }}</small>
                             </div>
                             <div class="mb-3">

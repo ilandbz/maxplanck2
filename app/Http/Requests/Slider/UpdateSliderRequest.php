@@ -25,11 +25,6 @@ class UpdateSliderRequest extends FormRequest
     {
         return [
             'titulo'            => 'required|max:35|string|unique:sliders,titulo,'.$this->id,
-            'subtitulo'         => 'required|max:120',
-            'nombrebutton1'     => 'required|max:25',
-            'nombrebutton2'     => 'required|max:25',
-            'link1'             => 'required|max:60',
-            'link2'             => 'required|max:60',
         ];
     }
 

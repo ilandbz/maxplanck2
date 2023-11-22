@@ -44,6 +44,9 @@ Route::get('mision-vision', [HomeController::class,'misionvision'])->name('misio
 Route::get('ambo-historia', [HomeController::class,'historia'])->name('historia');
 Route::get('ambo-turismo', [HomeController::class,'turismo'])->name('turismo');
 Route::get('informacion-demografica', [HomeController::class,'informacionDemografica'])->name('informaciondemografica');
+Route::get('municipalidad-alcalde', [HomeController::class,'municipalidadAlcalde'])->name('municipalidad.alcalde');
+Route::get('municipalidad-consejomunicipal', [HomeController::class,'concejoMunicipal'])->name('municipalidad.concejomunicipal');
+Route::get('municipalidad-funcionarios', [HomeController::class,'functionariosMunicipales'])->name('municipalidad.funcionarios');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -25,6 +25,9 @@ class DatabaseSeeder extends Seeder
             MenuSeeder::class,
             EtapaConvocatoriaSeeder::class,
             TipoConvocatoriaSeeder::class,
+            CargoSeeder::class,
+            AreaSeeder::class,
+            DirectorioSeeder::class
         ]);
 
     }

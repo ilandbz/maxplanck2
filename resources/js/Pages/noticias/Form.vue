@@ -47,10 +47,10 @@ const crud = {
             let formData = new FormData();
             formData.append('id', form.value.id);
             formData.append('imagen', file.value);
-            formData.append('titulo', form.value.titulo);
-            formData.append('subtitulo', form.value.subtitulo);
-            formData.append('slug', form.value.slug);
-            formData.append('contenido', form.value.contenido); 
+            formData.append('titulo', form.value.titulo ?? '');
+            formData.append('subtitulo', form.value.subtitulo ?? '');
+            formData.append('slug', form.value.slug ?? '');
+            formData.append('contenido', form.value.contenido ?? ''); 
             await actualizarNoticiaConImagen(formData)
             form.value.errors = []
         }

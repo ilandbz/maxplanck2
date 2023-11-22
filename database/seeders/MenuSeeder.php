@@ -170,6 +170,13 @@ class MenuSeeder extends Seeder
                 'orden' => Menu::where('nombre', 'Configuraciones')->max('orden')+1,
             ],
             [
+                'nombre' => 'Navegacion',
+                'slug' => 'navegacion',
+                'icono' => 'fas fa-bars',
+                'padre_id' => Menu::where('nombre', 'Configuraciones')->value('id'),
+                'orden' => Menu::where('nombre', 'Configuraciones')->max('orden')+1,
+            ],            
+            [
                 'nombre' => 'Enlaces Externos',
                 'slug' => 'enlaces',
                 'icono' => 'fas fa-external-link-alt',

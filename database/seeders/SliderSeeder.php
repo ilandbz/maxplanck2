@@ -20,7 +20,7 @@ class SliderSeeder extends Seeder
             'nombrebutton2' => null,
             'link1' => 'our-courses-left-sidebar.html',
             'link2' => '#',
-            'nombreImagen' => 'slide1.jpg'
+            'nombreImagen' => 'slide1.webp'
         ]);
         Slider::firstOrCreate([
             'titulo' => 'Gestion 2023-2029',
@@ -29,7 +29,7 @@ class SliderSeeder extends Seeder
             'nombrebutton2' => null,
             'link1' => 'our-courses-left-sidebar.html',
             'link2' => null,
-            'nombreImagen' => 'slide2.jpg'
+            'nombreImagen' => 'slide2.webp'
         ]);
         Slider::firstOrCreate([
             'titulo' => null,
@@ -38,7 +38,16 @@ class SliderSeeder extends Seeder
             'nombrebutton2' => null,
             'link1' => 'our-courses-left-sidebar.html',
             'link2' => null,
-            'nombreImagen' => 'slide3.jpg'
+            'nombreImagen' => 'slide3.webp'
         ]);
+        Slider::firstOrCreate([
+            'titulo' => null,
+            'subtitulo' =>  null,
+            'nombrebutton1' => null,
+            'nombrebutton2' => null,
+            'link1' => 'our-courses-left-sidebar.html',
+            'link2' => null,
+            'nombreImagen' => 'slide4.webp'
+        ]);        
     }
 }
