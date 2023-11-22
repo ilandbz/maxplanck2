@@ -35,7 +35,7 @@
             <div class="container-fluid">
                 
                 <div class="header-top-wrapper d-flex flex-wrap justify-content-sm-between">
-                    <h4 class="text-white">{{$fechaActual->formatLocalized('%A %d %B %Y')}}</h4>
+                    <h4 class="text-white">{{$fechaActual}}</h4>
                     <div class="header-top-left mt-10">
                         <ul class="header-meta">
                             <li class="center"><h2 class="text-white"><img src="imagenes/logo_header.jpg" class="img-fluid round thumbnail" width="120px" alt="">&nbsp;&nbsp;&nbsp;Ambo "Tierra Bella y Generosa"</h2></li>
