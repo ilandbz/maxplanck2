@@ -23,9 +23,10 @@ class AppServiceProvider extends ServiceProvider
         Schema::defaultStringLength(191);
 
         // Configura la zona horaria de la aplicación
-        config(['app.timezone' => 'America/Lima']);
+        config(['app.timezone' => 'America/Bogota']);
 
         // Establece la localización de Carbon para fechas y horas
         Carbon::setLocale('es');
+        Carbon::setToStringFormat('l jS \\of F Y h:i:s A');
     }
 }
