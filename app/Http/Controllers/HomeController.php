@@ -26,18 +26,17 @@ class HomeController extends Controller
         Carbon::setLocale('es');
     }
     public function __invoke(){
-        Carbon::setLocale('es');
         $data['fechaActual'] = Carbon::now(); 
         $fechaActual = Carbon::now();
         return $fechaActual->formatLocalized('%A %d %B %Y');
-        $data['sliders']=Slider::where('es_activo', 1)->get();
-        $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
-        $data['organizacion'] = Organizacion::first();
-        $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
-        $data['enlaces'] = Enlace::get();
-        $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
-        $data['noticias']=Noticia::with('imagen')->latest()->limit(3)->get();
-        return view('app', $data);
+        // $data['sliders']=Slider::where('es_activo', 1)->get();
+        // $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
+        // $data['organizacion'] = Organizacion::first();
+        // $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
+        // $data['enlaces'] = Enlace::get();
+        // $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
+        // $data['noticias']=Noticia::with('imagen')->latest()->limit(3)->get();
+        // return view('app', $data);
     }
     public function historia(){
         $data['fechaActual'] = Carbon::now(); 
