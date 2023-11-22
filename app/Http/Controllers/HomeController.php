@@ -28,8 +28,8 @@ class HomeController extends Controller
     }
     public function __invoke(){
         $data['fechaActual'] = Carbon::now(); 
-        $fechaActual = Carbon::now('D');
-        return $fechaActual->formatLocalized('%A %d %B %Y');
+        $fechaActual = Carbon::now();
+        return $fechaActual;
         // $data['sliders']=Slider::where('es_activo', 1)->get();
         // $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         // $data['organizacion'] = Organizacion::first();
