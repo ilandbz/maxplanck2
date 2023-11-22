@@ -27,21 +27,20 @@ class HomeController extends Controller
         date_default_timezone_set('America/Lima');
     }
     public function __invoke(){
-        $data['fechaActual'] = Carbon::now(); 
         $fechaActual = Carbon::now();
-        $fechaFormateada = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
-        return $fechaFormateada;
-        // $data['sliders']=Slider::where('es_activo', 1)->get();
-        // $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
-        // $data['organizacion'] = Organizacion::first();
-        // $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
-        // $data['enlaces'] = Enlace::get();
-        // $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
-        // $data['noticias']=Noticia::with('imagen')->latest()->limit(3)->get();
-        // return view('app', $data);
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
+        $data['sliders']=Slider::where('es_activo', 1)->get();
+        $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
+        $data['organizacion'] = Organizacion::first();
+        $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
+        $data['enlaces'] = Enlace::get();
+        $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
+        $data['noticias']=Noticia::with('imagen')->latest()->limit(3)->get();
+        return view('app', $data);
     }
     public function historia(){
-        $data['fechaActual'] = Carbon::now(); 
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
@@ -53,7 +52,8 @@ class HomeController extends Controller
         return view('paginas.historia', $data);   
     }
     public function turismo(){
-        $data['fechaActual'] = Carbon::now(); 
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
@@ -66,7 +66,8 @@ class HomeController extends Controller
     } 
 
     public function informacionDemografica(){
-        $data['fechaActual'] = Carbon::now(); 
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
         $data['titulo']='INFORMACION DEMOGRAFICA';
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
@@ -77,7 +78,8 @@ class HomeController extends Controller
         return view('paginas.informacion-demografica', $data);
     }
     public function quienessomos(){
-        $data['fechaActual'] = Carbon::now(); 
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
@@ -89,7 +91,8 @@ class HomeController extends Controller
         return view('paginas.quienessomos', $data);    
     }
     public function misionvision(){
-        $data['fechaActual'] = Carbon::now(); 
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
@@ -102,7 +105,8 @@ class HomeController extends Controller
     }
 
     public function nosotros(){
-        $data['fechaActual'] = Carbon::now(); 
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
@@ -114,7 +118,8 @@ class HomeController extends Controller
     }
 
     public function municipalidadAlcalde(){
-        $data['fechaActual'] = Carbon::now(); 
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
         $data['alcalde']=Directorio::with('cargo:id,nombre')->where('cargo_id', Cargo::where('nombre', 'Alcalde')->value('id'))->first();
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
@@ -126,7 +131,8 @@ class HomeController extends Controller
     }
     
     public function concejoMunicipal(){
-        $data['fechaActual'] = Carbon::now(); 
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
@@ -138,7 +144,8 @@ class HomeController extends Controller
     }
     
     public function functionariosMunicipales(){
-        $data['fechaActual'] = Carbon::now(); 
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
@@ -153,7 +160,8 @@ class HomeController extends Controller
         return view('paginas.funcionariosmunicipales', $data);    
     }
     public function prueba(){
-        $data['fechaActual'] = Carbon::now(); 
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
