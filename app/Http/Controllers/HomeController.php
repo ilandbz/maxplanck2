@@ -23,8 +23,8 @@ class HomeController extends Controller
     {
         // setlocale(LC_TIME, 'es_ES.utf8');
         // //App::setLocale('es');
-        // Carbon::setLocale('es');
-        // date_default_timezone_set('America/Lima');
+        Carbon::setLocale('es');
+        date_default_timezone_set('America/Lima');
     }
     public function __invoke(){
         $data['fechaActual'] = Carbon::now(); 
