@@ -22,10 +22,13 @@ class HomeController extends Controller
     public function __construct()
     {
         setlocale(LC_TIME, 'es_ES.utf8');
-        App::setLocale('es');
+        //App::setLocale('es');
+        Carbon::setLocale('es');
     }
     public function __invoke(){
+        Carbon::setLocale('es');
         $data['fechaActual'] = Carbon::now(); 
+
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
