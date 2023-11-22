@@ -22,13 +22,16 @@ export const useUsuarioStore = defineStore("usuario", {
                     (respuesta) => respuesta.data
                 );
             } catch (error) {
-                if (error.response && error.response.status === 401) {
-                    console.error('Error 401: No autorizado. El usuario no está autenticado.');
                     localStorage.removeItem('userSession')
                     window.location.href="/intranet/login"
-                } else {
-                    console.error('Error en la solicitud:', error.message);
-                }
+                
+                // if (error.response && error.response.status === 401) {
+                //     console.error('Error 401: No autorizado. El usuario no está autenticado.');
+                //     localStorage.removeItem('userSession')
+                //     window.location.href="/intranet/login"
+                // } else {
+                //     console.error('Error en la solicitud:', error.message);
+                // }
             }
             if(this.usuario)
             {

@@ -18,11 +18,11 @@ class SliderController extends Controller
         Storage::disk('slider')->put($nombre_archivo,File::get($imagen));
         $slider = Slider::create([
             'titulo'            => $request->titulo,
-            'subtitulo'         => $request->subtitulo,
-            'nombrebutton1'     => $request->nombrebutton1,
-            'nombrebutton2'     => $request->nombrebutton2,
-            'link1'             => $request->link1,
-            'link2'             => $request->link2,
+            'subtitulo'         => $request->subtitulo ?? null,
+            'nombrebutton1'     => $request->nombrebutton1 ?? null,
+            'nombrebutton2'     => $request->nombrebutton2 ?? null,
+            'link1'             => $request->link1 ?? null,
+            'link2'             => $request->link2?? null,
             'nombreImagen'      => $nombre_archivo
         ]);
         return response()->json([
@@ -37,6 +37,7 @@ class SliderController extends Controller
     }
     public function update(UpdateSliderRequest $request)
     {
+        $request->validated();
         $slider = Slider::findOrFail($request->id);
         if ($request->hasFile('imagen')) {
             $reglasArchivo = [

@@ -20,5 +20,10 @@ class UserSeeder extends Seeder
             'password'      => Hash::make('818949'),
             'role_id'       => Role::where('nombre', 'Super Usuario')->value('id')
         ]);
+        User::firstOrCreate([
+            'name'          => 'Cynthia',
+            'password'      => Hash::make('123456'),
+            'role_id'       => Role::where('nombre', 'Super Usuario')->value('id')
+        ]);        
     }
 }

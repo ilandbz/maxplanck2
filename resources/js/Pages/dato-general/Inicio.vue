@@ -82,23 +82,23 @@
 
     const Guardar = async() => {
         let formData = new FormData();
-        formData.append('id', form.value.id);
-        formData.append('ruc', form.value.ruc);
-        formData.append('razon_social', form.value.razon_social);
-        formData.append('titulo', form.value.titulo);
-        formData.append('slogan', form.value.slogan);
-        formData.append('descripcion', form.value.descripcion);
-        formData.append('director', form.value.director);
-        formData.append('direccion', form.value.direccion);
-        formData.append('email', form.value.email);
-        formData.append('telefono', form.value.telefono);
-        formData.append('telefono2', form.value.telefono2);
-        formData.append('url_web', form.value.url_web);
-        formData.append('quienes_somos', form.value.quienes_somos);
-        formData.append('vision', form.value.vision);
-        formData.append('mision', form.value.mision);
-        formData.append('logo', logo.value);
-        formData.append('icono', icono.value);
+        formData.append('id', form.value.id ?? '');
+        formData.append('ruc', form.value.ruc ?? '');
+        formData.append('razon_social', form.value.razon_social ?? '');
+        formData.append('titulo', form.value.titulo ?? '');
+        formData.append('slogan', form.value.slogan ?? '');
+        formData.append('descripcion', form.value.descripcion ?? '');
+        formData.append('director', form.value.director ?? '');
+        formData.append('direccion', form.value.direccion ?? '');
+        formData.append('email', form.value.email ?? '');
+        formData.append('telefono', form.value.telefono ?? '');
+        formData.append('telefono2', form.value.telefono2 ?? '');
+        formData.append('url_web', form.value.url_web ?? '');
+        formData.append('quienes_somos', form.value.quienes_somos ?? '');
+        formData.append('vision', form.value.vision ?? '');
+        formData.append('mision', form.value.mision ?? '');
+        formData.append('logo', logo.value ?? '');
+        formData.append('icono', icono.value ?? '');
         await actualizarOrganizacion(formData)
         form.value.errors = []
         if(errors.value)

@@ -772,7 +772,7 @@ input[type="submit"] {
   font-family: Exo;
   font-weight: 400;
   font-size: 13px;
-  color: #8d8d8d;
+  color: white;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
@@ -916,7 +916,7 @@ input[type="submit"] {
 .navigation .nav-menus-wrapper .nav-menu li a {
   font-weight: 600;
   font-size: 16px;
-  padding: 43px 0;
+  padding: 23px 0;
   color: #00A6FD;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;

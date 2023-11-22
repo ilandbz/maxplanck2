@@ -17,8 +17,8 @@ const crud = {
         let formData = new FormData();
         formData.append('id', form.value.id);
         formData.append('archivo', file.value);
-        formData.append('titulo', form.value.titulo);
-        formData.append('descripcion', form.value.descripcion);
+        formData.append('titulo', form.value.titulo ?? '');
+        formData.append('descripcion', form.value.descripcion ?? '');
         await agregarArchivo(formData)
         form.value.errors = []
         if(errors.value)

@@ -32,11 +32,13 @@
     <!--====== Header Start ======-->
     <header class="header-area">
         <div class="header-top">
-            <div class="container">
+            <div class="container-fluid">
+                
                 <div class="header-top-wrapper d-flex flex-wrap justify-content-sm-between">
+                    <h4 class="text-white">{{$fechaActual->formatLocalized('%A %d %B %Y')}}</h4>
                     <div class="header-top-left mt-10">
                         <ul class="header-meta">
-                            <li class="center"><h2 class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ambo "Tierra Bella y Generosa"</h2></li>
+                            <li class="center"><h2 class="text-white"><img src="imagenes/logo_header.jpg" class="img-fluid round thumbnail" width="120px" alt="">&nbsp;&nbsp;&nbsp;Ambo "Tierra Bella y Generosa"</h2></li>
                         </ul>
                     </div>
                     <div class="header-top-right mt-1">
@@ -53,9 +55,9 @@
             <div id="navigation" class="navigation navigation-landscape">
                 <div class="container position-relative">
                     <div class="row align-items-center">
-                        <div class="col-md-2">
+                        <div class="col-md-2 p-2">
                             <div class="header-logo">
-                                <a href="/"><img src="{{asset('storage/imagenes/'.$organizacion->logo);}}" width="120" height="" alt="Logo"></a>
+                                <a href="/"><img src="{{asset('storage/imagenes/'.$organizacion->logo);}}" width="80" height="" alt="Logo"></a>
                             </div>
                         </div>
                         <div class="col-md-10 position-static">

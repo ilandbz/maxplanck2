@@ -11,6 +11,7 @@ use App\Http\Controllers\EntradaController;
 use App\Http\Controllers\GaleriaController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\MenuRoleController;
+use App\Http\Controllers\NavController;
 use App\Http\Controllers\NoticiaController;
 use App\Http\Controllers\OrganizacionController;
 use App\Http\Controllers\PopupController;
@@ -30,6 +31,14 @@ Route::group(['prefix' => 'menu', 'middleware' => 'auth'], function () {
     Route::post('eliminar', [MenuController::class, 'destroy']);
     Route::post('guardar', [MenuController::class, 'store']);
     Route::get('listar', [MenuController::class, 'listar']);
+});
+Route::group(['prefix' => 'nav', 'middleware' => 'auth'], function () {
+    Route::get('todos', [NavController::class, 'todos']);
+    Route::get('mostrar', [NavController::class, 'show']);
+    Route::post('actualizar', [NavController::class, 'update']);
+    Route::post('eliminar', [NavController::class, 'destroy']);
+    Route::post('guardar', [NavController::class, 'store']);
+    Route::get('listar', [NavController::class, 'listar']);
 });
 Route::group(['prefix' => 'archivo', 'middleware' => 'auth'], function () {
     Route::get('todos', [ArchivoController::class, 'todos']);

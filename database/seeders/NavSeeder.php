@@ -126,16 +126,14 @@ class NavSeeder extends Seeder
             ]);
 
             Nav::firstOrCreate([
-                'nombre' => 'Gerencia Municipal',
-                'url'   => '/municipalidad/gerencia',
-                'ruta'   => 'municipalidad.gerencia',
-                'slug' => 'municipalidad-gerencia',
+                'nombre' => 'Funcionario Municipales',
+                'url'   => '/municipalidad/funcionarios',
+                'ruta'   => 'municipalidad.funcionarios',
+                'slug' => 'municipalidad-funcionarios',
                 'icono' => '',
                 'padre_id' => Nav::where('nombre', 'Municipalidad')->value('id'),
                 'orden' => 3
             ]);
-
-
             Nav::firstOrCreate([
                 'nombre' => 'Servicios',
                 'url'   => '/municipalidad/servicios',
@@ -186,7 +184,7 @@ class NavSeeder extends Seeder
                     'orden' => 4,
                 ]);
 
-        Nav::firstOrCreate(['nombre' => 'Participación Ciudadana', 'url' => '/participacion/ciudadana', 'ruta' => 'participacion.ciudadana','slug' => 'participacion-ciudadana','icono' => '','padre_id' => null,'orden' => 5]);
+        Nav::firstOrCreate(['nombre' => 'Ciudadania', 'url' => '/participacion/ciudadana', 'ruta' => 'participacion.ciudadana','slug' => 'participacion-ciudadana','icono' => '','padre_id' => null,'orden' => 5]);
 
             Nav::firstOrCreate([
                 'nombre' => 'Audiencias Públicas',
@@ -194,7 +192,7 @@ class NavSeeder extends Seeder
                 'ruta'   => 'participacionciudadana.audienciapublica',
                 'slug' => 'participacionciudadana-audienciapublica',
                 'icono' => '',
-                'padre_id' => Nav::where('nombre', 'Participación Ciudadana')->value('id'),
+                'padre_id' => Nav::where('nombre', 'Ciudadania')->value('id'),
                 'orden' => 1
             ]);
 
@@ -204,7 +202,7 @@ class NavSeeder extends Seeder
                 'ruta'   => 'participacionciudadana.consultaciudadana',
                 'slug' => 'participacionciudadana-consultaciudadana',
                 'icono' => '',
-                'padre_id' => Nav::where('nombre', 'Participación Ciudadana')->value('id'),
+                'padre_id' => Nav::where('nombre', 'Ciudadania')->value('id'),
                 'orden' => 2
             ]);
 
@@ -214,12 +212,12 @@ class NavSeeder extends Seeder
                 'ruta'   => 'participacionciudadana.voluntariado',
                 'slug' => 'participacionciudadana-voluntariado',
                 'icono' => '',
-                'padre_id' => Nav::where('nombre', 'Participación Ciudadana')->value('id'),
+                'padre_id' => Nav::where('nombre', 'Ciudadania')->value('id'),
                 'orden' => 3
             ]);
 
         Nav::firstOrCreate([
-            'nombre' => 'Servicios Municipales',
+            'nombre' => 'Municipales',
             'url'   => 'serviciosmunicipales',
             'ruta'   => 'serviciosmunicipales',
             'slug' => 'servicios-municipales',
@@ -234,7 +232,7 @@ class NavSeeder extends Seeder
                 'ruta'   => 'noticiaseventos.noticias',
                 'slug' => 'noticiaseventos-noticias',
                 'icono' => '',
-                'padre_id' => Nav::where('nombre', 'Servicios Municipales')->value('id'),
+                'padre_id' => Nav::where('nombre', 'Municipales')->value('id'),
                 'orden' => 1
             ]);
 
@@ -244,7 +242,7 @@ class NavSeeder extends Seeder
                 'ruta'   => 'noticiaseventos.comunicados',
                 'slug' => 'noticiaseventos-comunicados',
                 'icono' => '',
-                'padre_id' => Nav::where('nombre', 'Servicios Municipales')->value('id'),
+                'padre_id' => Nav::where('nombre', 'Municipales')->value('id'),
                 'orden' => 2
             ]);
 
@@ -254,12 +252,12 @@ class NavSeeder extends Seeder
                 'ruta'   => 'noticiaseventos.galeria',
                 'slug' => 'noticiaseventos-galeria',
                 'icono' => '',
-                'padre_id' => Nav::where('nombre', 'Servicios Municipales')->value('id'),
+                'padre_id' => Nav::where('nombre', 'Municipales')->value('id'),
                 'orden' => 3
             ]);
 
         Nav::firstOrCreate([
-            'nombre' => 'Documentos Oficiales',
+            'nombre' => 'Oficial',
             'url'   => 'documentosoficiales',
             'ruta'   => 'documentosoficiales',
             'slug' => 'documentos-oficiales',
@@ -274,7 +272,7 @@ class NavSeeder extends Seeder
                 'ruta'   => 'documentosoficiales.resolucion',
                 'slug' => 'documentosoficiales-resolucion',
                 'icono' => null,
-                'padre_id' => Nav::where('nombre', 'Documentos Oficiales')->value('id'),
+                'padre_id' => Nav::where('nombre', 'Oficial')->value('id'),
                 'orden' => 1
             ]);
 
@@ -284,7 +282,7 @@ class NavSeeder extends Seeder
                 'ruta'   => 'documentosoficiales.directiva',
                 'slug' => 'documentosoficiales-directiva',
                 'icono' => null,
-                'padre_id' => Nav::where('nombre', 'Documentos Oficiales')->value('id'),
+                'padre_id' => Nav::where('nombre', 'Oficial')->value('id'),
                 'orden' => 2
             ]);
 
@@ -294,7 +292,7 @@ class NavSeeder extends Seeder
                 'ruta'   => 'documentosoficiales.oficio',
                 'slug' => 'documentosoficiales-oficio',
                 'icono' => null,
-                'padre_id' => Nav::where('nombre', 'Documentos Oficiales')->value('id'),
+                'padre_id' => Nav::where('nombre', 'Oficial')->value('id'),
                 'orden' => 3
             ]);
 
