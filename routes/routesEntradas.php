@@ -18,3 +18,4 @@ foreach($listaentradas as $pagina){
         return view('app', $data);
     })->name($pagina->ruta);
 }
+
