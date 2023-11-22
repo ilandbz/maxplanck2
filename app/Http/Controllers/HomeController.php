@@ -28,7 +28,7 @@ class HomeController extends Controller
     public function __invoke(){
         $data['fechaActual'] = Carbon::now(); 
         $fechaActual = Carbon::now();
-        return $fechaActual->formatLocalized('%A %d %B %Y');
+        return $fechaActual->diffForHumans();
         // $data['sliders']=Slider::where('es_activo', 1)->get();
         // $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         // $data['organizacion'] = Organizacion::first();
