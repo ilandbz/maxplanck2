@@ -21,15 +21,16 @@ class HomeController extends Controller
 {
     public function __construct()
     {
-        // setlocale(LC_TIME, 'es_ES.utf8');
-        // //App::setLocale('es');
+        setlocale(LC_TIME, 'es_ES.utf8');
+        App::setLocale('es');
         Carbon::setLocale('es');
         date_default_timezone_set('America/Lima');
     }
     public function __invoke(){
         $data['fechaActual'] = Carbon::now(); 
         $fechaActual = Carbon::now();
-        return $fechaActual;
+        $fechaFormateada = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
+        return $fechaFormateada;
         // $data['sliders']=Slider::where('es_activo', 1)->get();
         // $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         // $data['organizacion'] = Organizacion::first();
