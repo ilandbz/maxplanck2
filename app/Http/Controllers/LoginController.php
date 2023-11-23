@@ -33,9 +33,12 @@ class LoginController extends Controller
                     ;
 
                     $success['token'] = $user->createToken('token-api')->plainTextToken;
+
+
                     $success['user'] = $usuario->id;
 
-                    $success = JWT::encode($success,env('VITE_SECRET_KEY'),'HS256');
+                    $success = JWT::encode($success,'SDFGJ34569dgversysd346EWR345WESFVGDRYEAFDSED','HS256');
+                    // $success = JWT::encode($success,env('VITE_SECRET_KEY'),'HS256');
 
                     return response()->json($success,200);
 
