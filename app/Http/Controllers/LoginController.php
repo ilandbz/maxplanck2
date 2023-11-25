@@ -36,8 +36,8 @@ class LoginController extends Controller
 
 
                     $success['user'] = $usuario->id;
-
-                    $success = JWT::encode($success,'SDFGJ34569dgversysd346EWR345WESFVGDRYEAFDSED','HS256');
+                    $secret_key = config('app.jwt_secret_key');
+                    $success = JWT::encode($success,$secret_key,'HS256');
                     // $success = JWT::encode($success,env('VITE_SECRET_KEY'),'HS256');
 
                     return response()->json($success,200);

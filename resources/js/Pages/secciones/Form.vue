@@ -2,6 +2,7 @@
 import { toRefs, onMounted } from 'vue';
 import useSeccion from '@/Composables/seccion.js';
 import useHelper from '@/Helpers';  
+import '../../../../public/edumate/assets/css/estilo.css';
 const { hideModal, Toast, slugify } = useHelper();
 const props = defineProps({
     form: Object,
@@ -29,6 +30,7 @@ const crud = {
         }
     },
     'editar': async() => {
+        // $('#summernote').html(form.value.contenido);
         form.value.contenido= $('.note-editable').html();
         await actualizarSeccion(form.value)
         form.value.errors = []
@@ -53,7 +55,7 @@ const guardar = () => {
     <form @submit.prevent="guardar">
     <div class="modal fade" id="modalseccion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="modalseccionLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="modalseccionLabel">Modal title</h1>
