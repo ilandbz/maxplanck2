@@ -33,9 +33,8 @@
     <header class="header-area">
         <div class="header-top">
             <div class="container-fluid">
-                
                 <div class="header-top-wrapper d-flex flex-wrap justify-content-sm-between">
-                    <h4 class="text-white">{{$fechaActual}}</h4>
+                    <h4 class="text-white mt-4">{{$fechaActual}}</h4>
                     <div class="header-top-left mt-10">
                         <ul class="header-meta">
                             <li class="center"><h2 class="text-white"><img src="imagenes/logo_header.jpg" class="img-fluid round thumbnail" width="120px" alt="">&nbsp;&nbsp;&nbsp;Ambo "Tierra Bella y Generosa"</h2></li>
@@ -44,7 +43,6 @@
                     <div class="header-top-right mt-1">
                         <div class="header-link">
                             <a class="notice" href="{{route('intranet')}}">Intranet</a>
-                            <a data-animation="fadeInUp" data-delay="1s" class="main-btn p-2 bg-white" target="_blank" href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=12005"><img src="{{asset('storage/imagenes/portaltransparencia.png');}}" width="90px" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -53,27 +51,35 @@
         {{-- <x-navigation :organizacion="$organizacion" :menus="$menus"></x-navigation> --}}
         <div>
             <div id="navigation" class="navigation navigation-landscape">
-                <div class="container position-relative">
+                <div class="container-fluid position-relative">
                     <div class="row align-items-center">
-                        <div class="col-md-2 p-2">
-                            <div class="header-logo">
+                        <div class="col-md-2">
+                            <div class="header-logo p-2 pl-4">
                                 <a href="/"><img src="{{asset('storage/imagenes/'.$organizacion->logo);}}" width="80" height="" alt="Logo"></a>
                             </div>
                         </div>
-                        <div class="col-md-10 position-static">
-                            <div class="nav-toggle d-lg-none" data-toggle="collapse" data-target="#navbarSupportedContent"></div>
-                            <nav class="nav-menus-wrapper">
-                                <ul class="nav-menu">
-                                    @foreach($menus as $menuItem)
-                                        <li>
-                                            <a href="{{ count($menuItem->children) ? '#' : $menuItem->slug }}" class="@if(str_starts_with(Route::currentRouteName(), $menuItem->ruta)) active @endif">{{ $menuItem->nombre }}</a>
-                                            @if(count($menuItem->children))
-                                                @include('nav', ['menuItems' => $menuItem->children, 'class' => 'nav-dropdown nav-submenu'])
-                                            @endif
-                                        </li>
-                                    @endforeach
-                                </ul>
-                            </nav>
+                        <div class="col-md-8 position-static">
+                            <div class="container">
+                                <div class="nav-toggle d-lg-none" data-toggle="collapse" data-target="#navbarSupportedContent"></div>
+                                <nav class="nav-menus-wrapper">
+                                    <ul class="nav-menu">
+                                        @foreach($menus as $menuItem)
+                                            <li>
+                                                <a href="{{ count($menuItem->children) ? '#' : $menuItem->slug }}" class="@if(str_starts_with(Route::currentRouteName(), $menuItem->ruta)) active @endif">{{ $menuItem->nombre }}</a>
+                                                @if(count($menuItem->children))
+                                                    @include('nav', ['menuItems' => $menuItem->children, 'class' => 'nav-dropdown nav-submenu'])
+                                                @endif
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </nav>                                
+                            </div>
+
+                        </div>
+                        <div class="col-md-2">
+                            <a data-animation="fadeInUp" data-delay="1s" class="p-0" target="_blank" href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=12005">
+                                <img class="rounded" src="{{asset('storage/imagenes/transparencia.png');}}" width="160px" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
