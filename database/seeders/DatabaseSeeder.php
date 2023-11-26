@@ -27,7 +27,9 @@ class DatabaseSeeder extends Seeder
             TipoConvocatoriaSeeder::class,
             CargoSeeder::class,
             AreaSeeder::class,
-            DirectorioSeeder::class
+            DirectorioSeeder::class,
+            PopupSeeder::class,
+            ComunicadoSeeder::class
         ]);
 
     }

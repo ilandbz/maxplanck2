@@ -99,13 +99,6 @@ return [
             'visibility' => 'public',
             'throw' => false,
         ],
-        'comunicado' => [
-            'driver' => 'local',
-            'root' => storage_path('app/public/comunicado'),
-            'url' => env('APP_URL').'/storage',
-            'visibility' => 'public',
-            'throw' => false,
-        ], 
         'enlace' => [
             'driver' => 'local',
             'root' => storage_path('app/public/enlacesexternos'),

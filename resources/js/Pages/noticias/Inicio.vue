@@ -65,6 +65,7 @@
         limpiar();
         await obtenerDatos(id)
         form.value.estadoCrud = 'editar'
+        $('.note-editable').html(form.value.contenido);
         document.getElementById("modalnoticiaLabel").innerHTML = 'Editar Noticia';
         $('#summernote').html(form.value.contenido);
         $('.note-editable').html(form.value.contenido);
@@ -73,6 +74,7 @@
     const nuevo = () => {
         limpiar()
         form.value.estadoCrud = 'nuevo'
+        $('.note-editable').html(form.value.contenido);
         openModal('#modalnoticia')
         document.getElementById("modalnoticiaLabel").innerHTML = 'Nueva Noticia';
     }

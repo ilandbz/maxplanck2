@@ -134,55 +134,55 @@ class NavSeeder extends Seeder
                 'padre_id' => Nav::where('nombre', 'Municipalidad')->value('id'),
                 'orden' => 3
             ]);
-            Nav::firstOrCreate([
-                'nombre' => 'Servicios',
-                'url'   => '/municipalidad/servicios',
-                'ruta'   => 'municipalidad.servicios',
-                'slug' => 'municipalidad-servicios',
-                'icono' => '',
-                'padre_id' => Nav::where('nombre', 'Municipalidad')->value('id'),
-                'orden' => 3,
-            ]);
+            // Nav::firstOrCreate([
+            //     'nombre' => 'Servicios',
+            //     'url'   => '/municipalidad/servicios',
+            //     'ruta'   => 'municipalidad.servicios',
+            //     'slug' => 'municipalidad-servicios',
+            //     'icono' => '',
+            //     'padre_id' => Nav::where('nombre', 'Municipalidad')->value('id'),
+            //     'orden' => 3,
+            // ]);
     
-                Nav::firstOrCreate([
-                    'nombre' => 'Tramite Administrativo',
-                    'url'   => '/municipalidad/servicios/tramiteadministrativo',
-                    'ruta'   => 'municipalidad.servicios.tramiteadministrativo',
-                    'slug' => 'municipalidad-servicios-tramiteadministrativo',
-                    'icono' => '',
-                    'padre_id' => Nav::where('nombre', 'Servicios')->value('id'),
-                    'orden' => 1,
-                ]);
+            //     Nav::firstOrCreate([
+            //         'nombre' => 'Tramite Administrativo',
+            //         'url'   => '/municipalidad/servicios/tramiteadministrativo',
+            //         'ruta'   => 'municipalidad.servicios.tramiteadministrativo',
+            //         'slug' => 'municipalidad-servicios-tramiteadministrativo',
+            //         'icono' => '',
+            //         'padre_id' => Nav::where('nombre', 'Servicios')->value('id'),
+            //         'orden' => 1,
+            //     ]);
     
-                Nav::firstOrCreate([
-                    'nombre' => 'Licencias',
-                    'url'   => '/municipalidad/servicios/licencias',
-                    'ruta'   => 'municipalidad.servicios.licencias',
-                    'slug' => 'municipalidad-servicios-licencias',
-                    'icono' => '',
-                    'padre_id' => Nav::where('nombre', 'Servicios')->value('id'),
-                    'orden' => 2,
-                ]);
+            //     Nav::firstOrCreate([
+            //         'nombre' => 'Licencias',
+            //         'url'   => '/municipalidad/servicios/licencias',
+            //         'ruta'   => 'municipalidad.servicios.licencias',
+            //         'slug' => 'municipalidad-servicios-licencias',
+            //         'icono' => '',
+            //         'padre_id' => Nav::where('nombre', 'Servicios')->value('id'),
+            //         'orden' => 2,
+            //     ]);
     
-                Nav::firstOrCreate([
-                    'nombre' => 'Servicio de Transporte',
-                    'url'   => '/municipalidad/servicios/transporte',
-                    'ruta'   => 'municipalidad.servicios.transporte',
-                    'slug' => 'municipalidad-servicios-transporte',
-                    'icono' => '',
-                    'padre_id' => Nav::where('nombre', 'Servicios')->value('id'),
-                    'orden' => 3,
-                ]);
+            //     Nav::firstOrCreate([
+            //         'nombre' => 'Servicio de Transporte',
+            //         'url'   => '/municipalidad/servicios/transporte',
+            //         'ruta'   => 'municipalidad.servicios.transporte',
+            //         'slug' => 'municipalidad-servicios-transporte',
+            //         'icono' => '',
+            //         'padre_id' => Nav::where('nombre', 'Servicios')->value('id'),
+            //         'orden' => 3,
+            //     ]);
             
-                Nav::firstOrCreate([
-                    'nombre' => 'Servicio Social',
-                    'url'   => '/municipalidad/servicios/social',
-                    'ruta'   => 'municipalidad.servicios.social',
-                    'slug' => 'municipalidad-servicios-social',
-                    'icono' => '',
-                    'padre_id' => Nav::where('nombre', 'Servicios')->value('id'),
-                    'orden' => 4,
-                ]);
+            //     Nav::firstOrCreate([
+            //         'nombre' => 'Servicio Social',
+            //         'url'   => '/municipalidad/servicios/social',
+            //         'ruta'   => 'municipalidad.servicios.social',
+            //         'slug' => 'municipalidad-servicios-social',
+            //         'icono' => '',
+            //         'padre_id' => Nav::where('nombre', 'Servicios')->value('id'),
+            //         'orden' => 4,
+            //     ]);
 
         Nav::firstOrCreate(['nombre' => 'Ciudadania', 'url' => '/participacion/ciudadana', 'ruta' => 'participacion.ciudadana','slug' => 'participacion-ciudadana','icono' => '','padre_id' => null,'orden' => 5]);
 

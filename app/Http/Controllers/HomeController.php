@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cargo;
+use App\Models\Comunicado;
 use App\Models\Directorio;
 use App\Models\Enlace;
 use App\Models\Organizacion;
 use App\Models\Menu;
 use App\Models\Nav;
 use App\Models\Noticia;
+use App\Models\Popup;
 use App\Models\RedSocial;
 use App\Models\SeccionesPrincipal;
 use App\Models\Slider;
@@ -36,6 +38,8 @@ class HomeController extends Controller
         $data['enlaces'] = Enlace::get();
         $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
         $data['noticias']=Noticia::with('imagen')->latest()->limit(3)->get();
+        $data['comunicados']=Comunicado::latest()->limit(8)->get();
+        $data['popup'] = Popup::where('es_activo', 1)->latest()->first();
         return view('app', $data);
     }
     public function historia(){

@@ -25,7 +25,7 @@ class StoreNoticiaRequest extends FormRequest
     {
 
         return [
-            'imagen' => 'required|image|mimes:jpg,jpeg,png,gif,webp|file|max:2000', 
+            'imagen' => 'required|image|mimes:jpg,jpeg,png,gif,webp|max:2000', 
             'titulo'     => 'required|string',
             'subtitulo'  => 'required|string',
             'slug'       => 'required|string|unique:noticias,slug',
@@ -40,7 +40,9 @@ class StoreNoticiaRequest extends FormRequest
             'max' => 'Ingrese Máximo :max caracteres',
             'string' => 'Ingrese caracteres alfanuméricos',
             'number' => 'Ingrese solo numeros',
-            'unique' => 'El :nombre ya existe'
+            'unique' => 'El :nombre ya existe',
+            'image'  => 'No tiene el formato de imagen',
+            'mimes' => 'La imagen debe ser solo de tipo: jpg, jpeg, png, gif, webp.',
         ];
     }
 

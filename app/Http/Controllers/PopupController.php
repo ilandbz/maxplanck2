@@ -19,8 +19,6 @@ class PopupController extends Controller
         $popup = Popup::create([
             'titulo'        => $request->titulo,
             'link'           => $request->link,
-            'icono'         => $request->icono,
-            'colorfondo'    => $request->colorfondo,
         ]);
 
 

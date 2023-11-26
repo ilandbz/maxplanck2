@@ -14,7 +14,7 @@ class SeccionesPrincipalSeeder extends Seeder
     public function run(): void
     {
         SeccionesPrincipal::firstOrCreate([
-            'titulo'   => 'Features Start',
+            'titulo'   => 'Video',
             'orden'     => 1,
             'contenido'   => '
             <section class="blog-area">
@@ -29,16 +29,16 @@ class SeccionesPrincipalSeeder extends Seeder
         ]);
         
         SeccionesPrincipal::firstOrCreate([
-            'titulo'   => 'Top Courses Start',
+            'titulo'   => 'Servicios',
             'orden'     => 2,
-            'contenido'   => '<!--====== Top Courses Start ======-->
+            'contenido'   => '<!--====== Servicios ======-->
             <section class="top-courses-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="section-title mt-40">
-                                <h2 class="title">Here is our <br> Top Courses</h2>
-                                <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need</p>
+                                <h2 class="title">Servicios</h2>
+                                <p>Servicios Generados por Agencias</p>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ class SeccionesPrincipalSeeder extends Seeder
                             <div class="col-lg-3 col-sm-6 courses-col">
                                 <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
                                     <a href="#" class="category">#Science</a>
-                                    <h4 class="courses-title"><a href="courses-details.html">Computer Science & Engineering</a></h4>
+                                    <h4 class="courses-title"><a href="courses-details.html">Administracion y Finanzas</a></h4>
                                     <div class="duration-fee">
                                         <p class="duration">Duration: <span> 4 year</span></p>
                                         <p class="fee">Fee: <span> $540</span></p>
@@ -71,7 +71,7 @@ class SeccionesPrincipalSeeder extends Seeder
                             <div class="col-lg-3 col-sm-6 courses-col">
                                 <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.4s">
                                     <a href="#" class="category">#Science</a>
-                                    <h4 class="courses-title"><a href="courses-details.html">Applied <br> Mathematics</a></h4>
+                                    <h4 class="courses-title"><a href="courses-details.html">Desarrollo Ambiental</a></h4>
                                     <div class="duration-fee">
                                         <p class="duration">Duration: <span> 4 year</span></p>
                                         <p class="fee">Fee: <span> $540</span></p>
@@ -95,7 +95,7 @@ class SeccionesPrincipalSeeder extends Seeder
                             <div class="col-lg-3 col-sm-6 courses-col">
                                 <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.6s">
                                     <a href="#" class="category">#Business</a>
-                                    <h4 class="courses-title"><a href="courses-details.html">Bachelor of Business Administration</a></h4>
+                                    <h4 class="courses-title"><a href="courses-details.html">Participacion Vecinal</a></h4>
                                     <div class="duration-fee">
                                         <p class="duration">Duration: <span> 4 year</span></p>
                                         <p class="fee">Fee: <span> $540</span></p>
@@ -119,7 +119,7 @@ class SeccionesPrincipalSeeder extends Seeder
                             <div class="col-lg-3 col-sm-6 courses-col">
                                 <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.8s">
                                     <a href="#" class="category">#Marketing</a>
-                                    <h4 class="courses-title"><a href="courses-details.html">Social & Digital <br> Marketing</a></h4>
+                                    <h4 class="courses-title"><a href="courses-details.html">Fiscalizacion y Control</a></h4>
                                     <div class="duration-fee">
                                         <p class="duration">Duration: <span> 4 year</span></p>
                                         <p class="fee">Fee: <span> $540</span></p>
@@ -143,7 +143,7 @@ class SeccionesPrincipalSeeder extends Seeder
                             <div class="col-lg-3 col-sm-6 courses-col">
                                 <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1s">
                                     <a href="#" class="category">#Business</a>
-                                    <h4 class="courses-title"><a href="courses-details.html">Bachelor of Business Administration</a></h4>
+                                    <h4 class="courses-title"><a href="courses-details.html">Cultura Miraflores</a></h4>
                                     <div class="duration-fee">
                                         <p class="duration">Duration: <span> 4 year</span></p>
                                         <p class="fee">Fee: <span> $540</span></p>
@@ -167,7 +167,7 @@ class SeccionesPrincipalSeeder extends Seeder
                             <div class="col-lg-3 col-sm-6 courses-col">
                                 <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.2s">
                                     <a href="#" class="category">#Marketing</a>
-                                    <h4 class="courses-title"><a href="courses-details.html">Social & Digital <br> Marketing</a></h4>
+                                    <h4 class="courses-title"><a href="courses-details.html">Desarrollo Humano</a></h4>
                                     <div class="duration-fee">
                                         <p class="duration">Duration: <span> 4 year</span></p>
                                         <p class="fee">Fee: <span> $540</span></p>
@@ -244,9 +244,9 @@ class SeccionesPrincipalSeeder extends Seeder
         ]);
 
         SeccionesPrincipal::firstOrCreate([
-            'titulo'        => 'Specialty Start',
+            'titulo'        => 'enlaces_principales',
             'orden'     => 3,
-            'contenido'     => '<!--====== Specialty Start ======-->
+            'contenido'     => '<!--====== enlaces_principales ======-->
             <div class="specialty-area">
                 <div class="container">
                     <div class="row no-gutters wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
@@ -257,7 +257,7 @@ class SeccionesPrincipalSeeder extends Seeder
                                         <img src="edumate/assets/images/icon/icon-1.webp" width="70" height="70" alt="icon">
                                     </div>
                                     <div class="box-content">
-                                        <p>Skill Based Scholarships</p>
+                                        <p>Mesa de Partes Virtual</p>
                                     </div>
                                 </div>
                             </div>
@@ -269,7 +269,7 @@ class SeccionesPrincipalSeeder extends Seeder
                                         <img src="edumate/assets/images/icon/icon-2.webp" width="70" height="70" alt="icon">
                                     </div>
                                     <div class="box-content">
-                                        <p>Download Prospectus</p>
+                                        <p>Libro de Reclamaciones</p>
                                     </div>
                                 </div>
                             </div>
@@ -281,7 +281,7 @@ class SeccionesPrincipalSeeder extends Seeder
                                         <img src="edumate/assets/images/icon/icon-3.webp" width="70" height="70" alt="icon">
                                     </div>
                                     <div class="box-content">
-                                        <p>After Course Certification</p>
+                                        <p>Seguimiento de Tramites</p>
                                     </div>
                                 </div>
                             </div>
@@ -293,9 +293,9 @@ class SeccionesPrincipalSeeder extends Seeder
         ]);
         
         SeccionesPrincipal::firstOrCreate([
-            'titulo'        => 'Campus Visit Start',
+            'titulo'        => 'Plataforma de Multimedi',
             'orden'     => 4,
-            'contenido'     => '    <!--====== Campus Visit Start ======-->
+            'contenido'     => '    <!--====== Plataforma de Multimedi ======-->
             <section class="campus-visit-area">
                 <div class="container">
                     <div class="campus-visit-wrapper">
@@ -311,11 +311,11 @@ class SeccionesPrincipalSeeder extends Seeder
                         </div>
                         <div class="campus-content-col">
                             <div class="campus-content">
-                                <h2 class="campus-title">Visit our Campus with image gallery</h2>
+                                <h2 class="campus-title">Visita Nuestra Galeria Multimedia</h2>
                                 <span class="line"></span>
                                 <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need</p>
-                                <h3 class="video-title">or watch video</h3>
-                                <a class="play video-popup" href="https://www.youtube.com/watch?v=0qHWub21h5c"><i class="fas fa-play"></i> <span>Play now</span></a>
+                                <h3 class="video-title">O Reproduce Nuestros Videos</h3>
+                                <a class="play video-popup" href="https://www.youtube.com/channel/UCVmWraKZdpxlQJ97dSGryyQ"><i class="fas fa-play"></i> <span>Play now</span></a>
                             </div>
                         </div>
                     </div>
@@ -324,155 +324,6 @@ class SeccionesPrincipalSeeder extends Seeder
             <!--====== Campus Visit Ends ======-->'
         ]);
 
-        SeccionesPrincipal::firstOrCreate([
-            'titulo'        => 'Event Start',
-            'orden'     => 5,
-            'contenido'     => '    <!--====== Event Start ======-->
-            <section class="event-area">
-                <div class="container">
-                    <div class="event-title-tab-menu">
-                        <div class="event-title mt-40">
-                            <h2 class="title">Up Coming <br> Events</h2>
-                        </div>
-        
-                        <div class="event-tab-menu mt-40">
-                            <ul class="nav">
-                                <li><a class="active" data-bs-toggle="tab" href="#courses">Courses</a></li>
-                                <li><a data-bs-toggle="tab" href="#admission">Admission</a></li>
-                                <li><a data-bs-toggle="tab" href="#training">Training</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="tab-content event-tab-items wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="tab-pane fade show active" id="courses">
-                            <div class="row">
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single-event text-center mt-30">
-                                        <span class="time">10.35 am to 1.00 pm</span>
-                                        <span class="date">25 May, 2020</span>
-                                        <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                                        <p class="place">Place: Central Hall, New York</p>
-                                        <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single-event text-center mt-30">
-                                        <span class="time">10.35 am to 1.00 pm</span>
-                                        <span class="date">25 May, 2020</span>
-                                        <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                                        <p class="place">Place: Central Hall, New York</p>
-                                        <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single-event text-center mt-30">
-                                        <span class="time">10.35 am to 1.00 pm</span>
-                                        <span class="date">25 May, 2020</span>
-                                        <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                                        <p class="place">Place: Central Hall, New York</p>
-                                        <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single-event text-center mt-30">
-                                        <span class="time">10.35 am to 1.00 pm</span>
-                                        <span class="date">25 May, 2020</span>
-                                        <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                                        <p class="place">Place: Central Hall, New York</p>
-                                        <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="admission">
-                            <div class="row">
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single-event text-center mt-30">
-                                        <span class="time">10.35 am to 1.00 pm</span>
-                                        <span class="date">25 May, 2020</span>
-                                        <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                                        <p class="place">Place: Central Hall, New York</p>
-                                        <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single-event text-center mt-30">
-                                        <span class="time">10.35 am to 1.00 pm</span>
-                                        <span class="date">25 May, 2020</span>
-                                        <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                                        <p class="place">Place: Central Hall, New York</p>
-                                        <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single-event text-center mt-30">
-                                        <span class="time">10.35 am to 1.00 pm</span>
-                                        <span class="date">25 May, 2020</span>
-                                        <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                                        <p class="place">Place: Central Hall, New York</p>
-                                        <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single-event text-center mt-30">
-                                        <span class="time">10.35 am to 1.00 pm</span>
-                                        <span class="date">25 May, 2020</span>
-                                        <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                                        <p class="place">Place: Central Hall, New York</p>
-                                        <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="training">
-                            <div class="row">
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single-event text-center mt-30">
-                                        <span class="time">10.35 am to 1.00 pm</span>
-                                        <span class="date">25 May, 2020</span>
-                                        <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                                        <p class="place">Place: Central Hall, New York</p>
-                                        <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single-event text-center mt-30">
-                                        <span class="time">10.35 am to 1.00 pm</span>
-                                        <span class="date">25 May, 2020</span>
-                                        <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                                        <p class="place">Place: Central Hall, New York</p>
-                                        <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single-event text-center mt-30">
-                                        <span class="time">10.35 am to 1.00 pm</span>
-                                        <span class="date">25 May, 2020</span>
-                                        <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                                        <p class="place">Place: Central Hall, New York</p>
-                                        <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6">
-                                    <div class="single-event text-center mt-30">
-                                        <span class="time">10.35 am to 1.00 pm</span>
-                                        <span class="date">25 May, 2020</span>
-                                        <h4 class="event-title"><a href="event-details.html">Micro Biological Workshop</a></h4>
-                                        <p class="place">Place: Central Hall, New York</p>
-                                        <a href="#" class="more">Read more <i class="far fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="view-btn text-center">
-                            <a href="#" class="view-more">View More <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--====== Event Ends ======-->'
-        ]);
 
         SeccionesPrincipal::firstOrCreate([
             'titulo'        => 'Testimonials Start',

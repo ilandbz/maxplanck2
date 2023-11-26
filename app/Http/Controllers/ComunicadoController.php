@@ -14,7 +14,7 @@ class ComunicadoController extends Controller
         $request->validated();
         $imagen= $request->file('imagen');
         $nombre_archivo = date('YmdHis') . '_' . uniqid() . '.' . $imagen->getClientOriginalExtension();
-        Storage::disk('comunicado')->put($nombre_archivo,File::get($imagen));
+        Storage::disk('comunicados')->put($nombre_archivo,File::get($imagen));
 
         $comunicado = Comunicado::create([
             'titulo'        => $request->titulo,
@@ -56,13 +56,13 @@ class ComunicadoController extends Controller
         
             $request->validate($reglasArchivo, $mensajesArchivo);
         
-            if (Storage::disk('comunicado')->exists($comunicado->nombreImagen)) {
-                Storage::disk('comunicado')->delete($comunicado->nombreImagen);
+            if (Storage::disk('comunicados')->exists($comunicado->nombreImagen)) {
+                Storage::disk('comunicados')->delete($comunicado->nombreImagen);
             }
         
             $file = $request->file('imagen');
             $nombre_archivo = $comunicado->id. '.' . $file->getClientOriginalExtension();
-            Storage::disk('comunicado')->put($nombre_archivo,File::get($file));
+            Storage::disk('comunicados')->put($nombre_archivo,File::get($file));
             $comunicado->nombreImagen = $nombre_archivo;
 
         }
@@ -81,8 +81,8 @@ class ComunicadoController extends Controller
     {
         $comunicado = Comunicado::where('id', $request->id)->first();
 
-        if (Storage::disk('comunicado')->exists($comunicado->nombreImagen)) {
-            Storage::disk('comunicado')->delete($comunicado->nombreImagen);
+        if (Storage::disk('comunicados')->exists($comunicado->nombreImagen)) {
+            Storage::disk('comunicados')->delete($comunicado->nombreImagen);
         }
 
         $comunicado->delete();
