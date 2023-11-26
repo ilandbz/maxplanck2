@@ -19,7 +19,7 @@ const  emit  =defineEmits(['onListar'])
 const crud = {
     
     'nuevo': async() => {
-        form.value.contenido= $('#summernote').val();
+        form.value.contenido= $('.note-editable').html();
         let formData = new FormData();
         formData.append('imagen', file.value);
         formData.append('titulo', form.value.titulo);
@@ -40,7 +40,7 @@ const crud = {
         }
     },
     'editar': async() => {
-        form.value.contenido= $('#summernote').val();
+        form.value.contenido= $('.note-editable').html();
         if(file.value === null){
             await actualizarNoticia(form.value)
         }else{

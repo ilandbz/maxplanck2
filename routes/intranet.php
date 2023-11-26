@@ -72,6 +72,7 @@ Route::group(['prefix' => 'comunicado', 'middleware' => 'auth'], function () {
     Route::post('guardar', [ComunicadoController::class, 'store']);
     Route::get('listar', [ComunicadoController::class, 'listar']);
 });
+
 Route::group(['prefix' => 'convocatoria', 'middleware' => 'auth'], function () {
     Route::get('todos', [ConvocatoriaController::class, 'todos']);
     Route::get('mostrar', [ConvocatoriaController::class, 'show']);

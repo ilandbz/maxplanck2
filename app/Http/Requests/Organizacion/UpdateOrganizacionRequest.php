@@ -32,7 +32,7 @@ class UpdateOrganizacionRequest extends FormRequest
             'director' => 'required|string',
             'direccion' => 'required|string',
             'email' => 'required|email',
-            'telefono' => 'required|string',
+            'telefono' => 'string',
             'url_web' => 'required|string',
             'quienes_somos' => 'required|string',
             'vision' => 'required|string',

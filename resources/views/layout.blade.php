@@ -122,6 +122,12 @@
 
     <!--====== Main Activation  js ======-->
     <script src="edumate/assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('#modalPopup').modal('show');
+        })
+    
+    </script>
     @routes
     {{-- @vite(['resources/js/app.js']) --}}
 </body>

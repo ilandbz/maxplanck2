@@ -26,7 +26,6 @@ class StoreComunicadoRequest extends FormRequest
         return [
             'titulo'     => 'required|max:25|string',
             'imagen'     => 'required|image|mimes:jpg,jpeg,png,gif,webp|file|max:2000', 
-            'link'       => 'required|max:130|url'
         ];
     }
 
