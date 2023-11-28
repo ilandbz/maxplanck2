@@ -15,7 +15,6 @@ class LoginController extends Controller
     public function validarLogin(LoginRequest $request)
     {
         $secret_key = config('app.jwt_secret_key');
-        return response()->json($secret_key,422);
         $request->validated();
 
         $credenciales = ['name' => $request->name, 'password' => $request->password, 'es_activo' => 1];
