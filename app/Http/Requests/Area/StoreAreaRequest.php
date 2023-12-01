@@ -24,7 +24,7 @@ class StoreAreaRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre'     => 'required|max:25|string|unique:areas,nombre',
+            'nombre'     => 'required|max:95|string|unique:areas,nombre',
         ];
     }
 
