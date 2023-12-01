@@ -25,7 +25,7 @@ class StoreDirectorioRequest extends FormRequest
     {
         return [
             'titulo'        => 'required|max:90|string',
-            'dni'           => 'required|number|digits:8|string',
+            'dni'           => 'required|numeric|digits:8|string',
             'area_id'       => 'required|integer',
             'cargo_id'      => 'required|integer',
             'foto'          => 'required|image|mimes:jpg,jpeg,png,gif,webp|max:2000', 
@@ -38,7 +38,7 @@ class StoreDirectorioRequest extends FormRequest
             'required' => '* Dato Obligatorio',
             'max' => 'Ingrese Máximo :max caracteres',
             'string' => 'Ingrese caracteres alfanuméricos',
-            'number' => 'Ingrese solo numeros',
+            'numeric' => 'Ingrese solo numeros',
             'unique' => 'El :nombre ya existe',
             'email'  => 'No es un formato de correo Valido',
             'image'  => 'Ingrese una foto',
