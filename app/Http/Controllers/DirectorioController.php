@@ -42,7 +42,7 @@ class DirectorioController extends Controller
         $directorio = Directorio::findOrFail($request->id);
         $reglasComunes = [
             'titulo'        => 'required',
-            'dni'           => 'required',
+            'dni'           => 'required|number',
             'area_id'       => 'required|integer',
             'cargo_id'      => 'required|integer',
         ];

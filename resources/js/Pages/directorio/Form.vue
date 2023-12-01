@@ -24,7 +24,7 @@ const crud = {
     'nuevo': async() => {
         let formData = new FormData();
         formData.append('titulo', form.value.titulo);
-        formData.append('dni', form.value.titulo);
+        formData.append('dni', form.value.dni);
         formData.append('area_id', form.value.area_id);
         formData.append('cargo_id', form.value.cargo_id);
         formData.append('email', form.value.email); 
@@ -50,11 +50,11 @@ const crud = {
         let formData = new FormData();
         formData.append('id', form.value.id);
         formData.append('titulo', form.value.titulo);
-        formData.append('dni', form.value.titulo);
+        formData.append('dni', form.value.dni);
         formData.append('area_id', form.value.area_id);
         formData.append('cargo_id', form.value.cargo_id);
-        formData.append('email', form.value.email); 
-        formData.append('celular', form.value.celular); 
+        formData.append('email', form.value.email ?? ''); 
+        formData.append('celular', form.value.celular ?? ''); 
         formData.append('foto', file.value);
         formData.append('link', form.value.link); 
         await actualizarDirectorio(formData)
