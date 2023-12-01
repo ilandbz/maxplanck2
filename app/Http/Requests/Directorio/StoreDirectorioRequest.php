@@ -25,7 +25,7 @@ class StoreDirectorioRequest extends FormRequest
     {
         return [
             'titulo'        => 'required|max:90|string',
-            'dni'           => 'required|numeric|digits:8|string',
+            'dni'           => 'required|numeric|digits:8',
             'area_id'       => 'required|integer',
             'cargo_id'      => 'required|integer',
             'foto'          => 'required|image|mimes:jpg,jpeg,png,gif,webp|max:2000', 
