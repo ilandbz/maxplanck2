@@ -163,6 +163,7 @@ Route::group(['prefix' => 'popup', 'middleware' => 'auth'], function () {
     Route::post('subir-imagen', [PopupController::class, 'subirImagen']);
     Route::post('eliminar-imagen', [PopupController::class, 'eliminarImagen']);
     Route::get('mostrar-imagenes', [PopupController::class, 'imagenes']);
+    Route::get('cambiar-estado', [PopupController::class, 'cambiarEstado']);
 });
 
 Route::group(['prefix' => 'slider', 'middleware' => 'auth'], function () {

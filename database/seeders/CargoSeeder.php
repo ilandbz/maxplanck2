@@ -17,6 +17,9 @@ class CargoSeeder extends Seeder
             'nombre'    => 'Alcalde'
         ]);
         Cargo::firstOrCreate([
+            'nombre'    => 'Gerente Municipal'
+        ]);         
+        Cargo::firstOrCreate([
             'nombre'    => 'Gerente'
         ]); 
         Cargo::firstOrCreate([
@@ -24,6 +27,7 @@ class CargoSeeder extends Seeder
         ]);
         Cargo::firstOrCreate([
             'nombre'    => 'Regidor'
-        ]);         
+        ]);
+
     }
 }

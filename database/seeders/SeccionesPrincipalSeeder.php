@@ -46,73 +46,41 @@ class SeccionesPrincipalSeeder extends Seeder
                         <div class="row">
                             <div class="col-lg-3 col-sm-6 courses-col">
                                 <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
-                                    <a href="#" class="category">#Science</a>
-                                    <h4 class="courses-title"><a href="courses-details.html">Administracion y Finanzas</a></h4>
+                                    <h4 class="courses-title"><a href="gestion-ambiental">GESTION AMBIENTAL</a></h4>
                                     <div class="duration-fee">
-                                        <p class="duration">Duration: <span> 4 year</span></p>
-                                        <p class="fee">Fee: <span> $540</span></p>
+
                                     </div>
                                     <div class="rating">
-                                        <span>Rating: </span>
-                                        <ul class="star">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
+ 
                                     </div>
                                     <div class="courses-link">
-                                        <a class="apply" href="#">Online Apply</a>
-                                        <a class="more" href="courses-details.html">Read more <i class="fas fa-chevron-right"></i></a>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6 courses-col">
                                 <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.4s">
-                                    <a href="#" class="category">#Science</a>
-                                    <h4 class="courses-title"><a href="courses-details.html">Desarrollo Ambiental</a></h4>
+                                    <h4 class="courses-title"><a href="gestion-social">GESTION SOCIAL</a></h4>
                                     <div class="duration-fee">
-                                        <p class="duration">Duration: <span> 4 year</span></p>
-                                        <p class="fee">Fee: <span> $540</span></p>
+
                                     </div>
                                     <div class="rating">
-                                        <span>Rating: </span>
-                                        <ul class="star">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
+
                                     </div>
                                     <div class="courses-link">
-                                        <a class="apply" href="#">Online Apply</a>
-                                        <a class="more" href="courses-details.html">Read more <i class="fas fa-chevron-right"></i></a>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6 courses-col">
                                 <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.6s">
-                                    <a href="#" class="category">#Business</a>
-                                    <h4 class="courses-title"><a href="courses-details.html">Participacion Vecinal</a></h4>
+                                    <h4 class="courses-title"><a href="courses-details.html">GESTION ECONOMICO</a></h4>
                                     <div class="duration-fee">
-                                        <p class="duration">Duration: <span> 4 year</span></p>
-                                        <p class="fee">Fee: <span> $540</span></p>
                                     </div>
                                     <div class="rating">
-                                        <span>Rating: </span>
-                                        <ul class="star">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
+
                                     </div>
                                     <div class="courses-link">
-                                        <a class="apply" href="#">Online Apply</a>
-                                        <a class="more" href="courses-details.html">Read more <i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>

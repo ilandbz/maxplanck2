@@ -25,6 +25,7 @@ class DirectorioController extends Controller
             'email'     => $request->email,
             'celular'   => $request->celular,
             'foto'      => $nombre_archivo,
+            'directorio'=> $request->link,
         ]);
         return response()->json([
             'ok' => 1,
@@ -81,7 +82,7 @@ class DirectorioController extends Controller
         $directorio->cargo_id = $request->cargo_id;
         $directorio->email = $request->email;
         $directorio->celular = $request->celular;
-        
+        $directorio->link = $request->link;
         $directorio->save();
         
         return response()->json([

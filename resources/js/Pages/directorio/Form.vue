@@ -30,6 +30,7 @@ const crud = {
         formData.append('email', form.value.email); 
         formData.append('celular', form.value.celular); 
         formData.append('foto', file.value);
+        formData.append('link', form.value.link); 
         await agregarDirectorio(formData)
         form.value.errors = []
         if(errors.value)
@@ -55,6 +56,7 @@ const crud = {
         formData.append('email', form.value.email); 
         formData.append('celular', form.value.celular); 
         formData.append('foto', file.value);
+        formData.append('link', form.value.link); 
         await actualizarDirectorio(formData)
         form.value.errors = []
         if(errors.value)
@@ -137,7 +139,12 @@ onMounted(() => {
                                 <small class="text-danger" v-for="error in form.errors.email" :key="error">{{ error
                                         }}</small>
                             </div>
-
+                            <div class="mb-3">
+                                <label for="link" class="form-label">Link</label>
+                                <input type="text" class="form-control" v-model="form.link" :class="{ 'is-invalid': form.errors.link }" placeholder="Link">
+                                <small class="text-danger" v-for="error in form.errors.link" :key="error">{{ error
+                                        }}</small>
+                            </div>
                         </div>
                         <div class="col">
                             <div class="mb-3">

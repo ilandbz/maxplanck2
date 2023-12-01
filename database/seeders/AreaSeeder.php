@@ -17,13 +17,28 @@ class AreaSeeder extends Seeder
             'nombre'    => 'Alcaldia'
         ]);
         Area::firstOrCreate([
-            'nombre'    => 'GERENCIA MUNICIPAL'
+            'nombre'    => 'Municipalidad'
         ]);
         Area::firstOrCreate([
             'nombre'    => 'PROCURADURIA'
         ]);
         Area::firstOrCreate([
             'nombre'    => 'Consejo Municipal'
-        ]);        
+        ]);
+        Area::firstOrCreate([
+            'nombre'    => 'Oficina de Atencion al Ciudadano y Gestion Documentaria'
+        ]);
+        Area::firstOrCreate([
+            'nombre'    => 'DESARROLLO ECONÓMICO Y ADMINISTRACIÓN TRIBUTARIA'
+        ]);
+        Area::firstOrCreate([
+            'nombre'    => 'OFICINA GENERAL DE ADMINISTRACION'
+        ]);
+        Area::firstOrCreate([
+            'nombre'    => 'OFICINA GENERAL DE PLANEAMIENTO Y PRESUPUESTO'
+        ]);
+        Area::firstOrCreate([
+            'nombre'    => 'DESARROLLO SOCIAL'
+        ]);             
     }
 }

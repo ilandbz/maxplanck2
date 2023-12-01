@@ -83,15 +83,15 @@ class NavSeeder extends Seeder
                 'orden' => 4,
             ]);
 
-            Nav::firstOrCreate([
-                'nombre' => 'Directorio',
-                'url'   => '/nosotros/directorio',
-                'ruta'   => 'nosotros.directorio',
-                'slug' => 'nosotros-directorio',
-                'icono' => '',
-                'padre_id' => Nav::where('nombre', 'Nosotros')->value('id'),
-                'orden' => 5,
-            ]);
+            // Nav::firstOrCreate([
+            //     'nombre' => 'Directorio',
+            //     'url'   => '/nosotros/directorio',
+            //     'ruta'   => 'nosotros.directorio',
+            //     'slug' => 'nosotros-directorio',
+            //     'icono' => '',
+            //     'padre_id' => Nav::where('nombre', 'Nosotros')->value('id'),
+            //     'orden' => 5,
+            // ]);
 
             Nav::firstOrCreate([
                 'nombre' => 'Organigrama',
@@ -126,7 +126,7 @@ class NavSeeder extends Seeder
             ]);
 
             Nav::firstOrCreate([
-                'nombre' => 'Funcionario Municipales',
+                'nombre' => 'Funcionarios Municipales',
                 'url'   => '/municipalidad/funcionarios',
                 'ruta'   => 'municipalidad.funcionarios',
                 'slug' => 'municipalidad-funcionarios',
