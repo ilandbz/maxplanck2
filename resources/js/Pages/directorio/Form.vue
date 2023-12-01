@@ -27,10 +27,10 @@ const crud = {
         formData.append('dni', form.value.dni);
         formData.append('area_id', form.value.area_id);
         formData.append('cargo_id', form.value.cargo_id);
-        formData.append('email', form.value.email); 
-        formData.append('celular', form.value.celular); 
+        formData.append('email', form.value.email ?? ''); 
+        formData.append('celular', form.value.celular ?? ''); 
         formData.append('foto', file.value);
-        formData.append('link', form.value.link); 
+        formData.append('link', form.value.link ?? ''); 
         await agregarDirectorio(formData)
         form.value.errors = []
         if(errors.value)
@@ -56,7 +56,7 @@ const crud = {
         formData.append('email', form.value.email ?? ''); 
         formData.append('celular', form.value.celular ?? ''); 
         formData.append('foto', file.value);
-        formData.append('link', form.value.link); 
+        formData.append('link', form.value.link ?? ''); 
         await actualizarDirectorio(formData)
         form.value.errors = []
         if(errors.value)
