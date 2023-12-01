@@ -22,30 +22,29 @@ const {
 const  emit  =defineEmits(['onListar'])
 const crud = {
     'nuevo': async() => {
-    console.log(form.value.dni)
-        // let formData = new FormData();
-        // formData.append('titulo', form.value.titulo);
-        // formData.append('dni', form.value.dni);
-        // formData.append('area_id', form.value.area_id);
-        // formData.append('cargo_id', form.value.cargo_id);
-        // formData.append('email', form.value.email); 
-        // formData.append('celular', form.value.celular); 
-        // formData.append('foto', file.value);
-        // formData.append('link', form.value.link); 
-        // await agregarDirectorio(formData)
-        // form.value.errors = []
-        // if(errors.value)
-        // {
-        //     form.value.errors = errors.value
-        // }
-        // if(respuesta.value.ok==1){
-        //     form.value.errors = []
-        //     hideModal('#modaldirectorio')
-        //     Toast.fire({icon:'success', title:respuesta.value.mensaje})
-        //     emit('onListar', currentPage.value)
+        let formData = new FormData();
+        formData.append('titulo', form.value.titulo);
+        formData.append('dni', form.value.dni);
+        formData.append('area_id', form.value.area_id);
+        formData.append('cargo_id', form.value.cargo_id);
+        formData.append('email', form.value.email); 
+        formData.append('celular', form.value.celular); 
+        formData.append('foto', file.value);
+        formData.append('link', form.value.link); 
+        await agregarDirectorio(formData)
+        form.value.errors = []
+        if(errors.value)
+        {
+            form.value.errors = errors.value
+        }
+        if(respuesta.value.ok==1){
+            form.value.errors = []
+            hideModal('#modaldirectorio')
+            Toast.fire({icon:'success', title:respuesta.value.mensaje})
+            emit('onListar', currentPage.value)
 
             
-        // }
+        }
     },
     'editar': async() => {
         let formData = new FormData();

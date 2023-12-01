@@ -42,7 +42,8 @@ class StoreDirectorioRequest extends FormRequest
             'unique' => 'El :nombre ya existe',
             'email'  => 'No es un formato de correo Valido',
             'image'  => 'Ingrese una foto',
-            'mimes'  => 'Ingrese solo extensiones jpg,jpeg,png,gif,webp'
+            'mimes'  => 'Ingrese solo extensiones jpg,jpeg,png,gif,webp',
+            'digits' => 'maximo 8 numeros'
         ];
     }
 
