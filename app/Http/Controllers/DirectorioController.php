@@ -45,8 +45,6 @@ class DirectorioController extends Controller
             'dni'           => 'required',
             'area_id'       => 'required|integer',
             'cargo_id'      => 'required|integer',
-            'email'         => 'required|email',
-            'celular'       => 'required|numeric',
         ];
         $mensajesComunes = [
             'required' => 'El Titulo es obligatorio.',
