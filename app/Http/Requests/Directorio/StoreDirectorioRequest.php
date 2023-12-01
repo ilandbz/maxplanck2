@@ -28,8 +28,6 @@ class StoreDirectorioRequest extends FormRequest
             'dni'           => 'required|max:8|string',
             'area_id'       => 'required|integer',
             'cargo_id'      => 'required|integer',
-            'email'         => 'required|email',
-            'celular'       => 'required|numeric',
             'foto'          => 'required|image|mimes:jpg,jpeg,png,gif,webp|max:2000', 
         ];
     }
