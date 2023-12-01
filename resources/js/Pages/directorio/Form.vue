@@ -22,6 +22,7 @@ const {
 const  emit  =defineEmits(['onListar'])
 const crud = {
     'nuevo': async() => {
+    console.log(form.value.dni)
         let formData = new FormData();
         formData.append('titulo', form.value.titulo);
         formData.append('dni', form.value.dni);
