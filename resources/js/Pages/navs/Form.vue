@@ -65,8 +65,7 @@ onMounted(() => {
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text" class="form-control" v-model="form.nombre" :class="{ 'is-invalid': form.errors.nombre }" placeholder="Nombre" @keyup="form.slug=slugify(form.nombre)">
-                        <small class="text-danger" v-for="error in form.errors.nombre" :key="error">{{ error
-                                }}</small>
+                        <small class="text-danger" v-for="error in form.errors.nombre" :key="error">{{ error }}</small>
                     </div>
                     <div class="mb-3">
                         <label for="slug" class="form-label">Slug</label>
@@ -101,8 +100,7 @@ onMounted(() => {
                     <div class="mb-3" v-if="form.orden!=''">
                         <label for="orden" class="form-label">Orden</label>
                         <input type="number" class="form-control" v-model="form.orden" :class="{ 'is-invalid': form.errors.orden }" placeholder="Orden">
-                        <small class="text-danger" v-for="error in form.errors.orden" :key="error">{{ error
-                                }}</small>
+                        <small class="text-danger" v-for="error in form.errors.orden" :key="error">{{ error }}</small>
                     </div>  
                 </div>
                 <div class="modal-footer">
