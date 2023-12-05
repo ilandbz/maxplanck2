@@ -27,7 +27,7 @@ class UpdateNavRequest extends FormRequest
             'nombre'     => 'required|max:25|string|unique:navs,nombre,'.$this->id,
             'ruta'       => 'required|max:25|string|unique:navs,ruta,'.$this->id,
             'slug'       => 'required|max:25|string|unique:navs,slug,'.$this->id,
-            'orden'      => 'required|number'
+            'orden'      => 'required|numeric'
         ];
     }
 
@@ -37,7 +37,7 @@ class UpdateNavRequest extends FormRequest
             'required' => '* Dato Obligatorio',
             'max' => 'Ingrese Máximo :max caracteres',
             'string' => 'Ingrese caracteres alfanuméricos',
-            'number' => 'Ingrese solo numeros',
+            'numeric' => 'Ingrese solo numeros',
             'unique' => 'El :email ya existe'
         ];
     }

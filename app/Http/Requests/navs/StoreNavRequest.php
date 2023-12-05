@@ -27,7 +27,7 @@ class StoreNavRequest extends FormRequest
             'nombre'     => 'required|max:25|string|unique:navs,nombre',
             'ruta'       => 'required|max:25|string|unique:navs,ruta',
             'slug'       => 'required|max:25|string|unique:navs,slug',
-            'orden'      => 'required|number'
+            'orden'      => 'required|numeric'
         ];
     }
 
@@ -37,7 +37,7 @@ class StoreNavRequest extends FormRequest
             'required' => '* Dato Obligatorio',
             'max' => 'Ingrese Máximo :max caracteres',
             'string' => 'Ingrese caracteres alfanuméricos',
-            'number' => 'Ingrese solo numeros',
+            'numeric' => 'Ingrese solo numeros',
             'unique' => 'El :nombre ya existe'
         ];
     }
