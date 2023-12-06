@@ -39,19 +39,19 @@ class EntradaSeeder extends Seeder
             </div>
         </section>'
         ]);
-        Entrada::firstOrCreate([
-            'slug' => 'gestion-ambiental',
-            'ruta' => 'gestion.ambiental',
-            'titulo'   => 'Gestion Ambiental',
-            'contenido'   => '<section class="notice-area mb-4">
-            <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                <div class="section-title-2">
-                    <h2 class="title">Gestion</h2><br></p></div></div></div><div class="notice-content">
-            </div>
-            </div>
-        </section>'
-        ]);
+        // Entrada::firstOrCreate([
+        //     'slug' => 'gestion-ambiental',
+        //     'ruta' => 'gestion.ambiental',
+        //     'titulo'   => 'Gestion Ambiental',
+        //     'contenido'   => '<section class="notice-area mb-4">
+        //     <div class="container">
+        //     <div class="row">
+        //         <div class="col-lg-12">
+        //         <div class="section-title-2">
+        //             <h2 class="title">Gestion</h2><br></p></div></div></div><div class="notice-content">
+        //     </div>
+        //     </div>
+        // </section>'
+        // ]);
     }
 }

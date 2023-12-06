@@ -30,7 +30,6 @@
                     @endforeach
                 </div>
             </div>
-
             <div class="view-btn text-center">
                 <a href="comunicados" class="view-more">Ver Mas <i class="fas fa-chevron-right"></i></a>
             </div>
@@ -75,11 +74,6 @@
     </div>
 </section>
 <!--====== Blog Ends ======-->    
-
-
-
-
-
 
 <section class="section_enlaces_externos">
     <div class="container">

@@ -33,180 +33,190 @@ class SeccionesPrincipalSeeder extends Seeder
             'orden'     => 2,
             'contenido'   => '<!--====== Servicios ======-->
             <section class="top-courses-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="section-title mt-40">
-                                <h2 class="title">Servicios</h2>
-                                <p>Servicios Generados por Agencias</p>
-                            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="section-title mt-40">
+                            <h2 class="title">Servicios</h2>
                         </div>
                     </div>
-                    <div class="courses-wrapper">
-                        <div class="row">
-                            <div class="col-lg-3 col-sm-6 courses-col">
-                                <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
-                                    <h4 class="courses-title"><a href="gestion-ambiental">GESTION AMBIENTAL</a></h4>
-                                    <div class="duration-fee">
-
-                                    </div>
-                                    <div class="rating">
- 
+                </div>
+                <div class="courses-wrapper fadeInUpBig">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 courses-col">
+                            <div class="single-courses-2 mt-30">
+                                <div class="courses-image">
+                                    <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <h4 class="courses-title"><a href="gestion-ambiental">Gerencia Municipal</a></h4>
+                                    <div class="duration-rating">
+                                        <div class="duration-fee">
+                                            <p class="duration">Gerencia Municipal</p>
+                                            <p class="fee">Gerencia Municipal</p>
+                                        </div>
                                     </div>
                                     <div class="courses-link">
-
+                                        <a class="more" href="gestion-ambiental">Ver Mas <i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 courses-col">
-                                <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.4s">
-                                    <h4 class="courses-title"><a href="gestion-social">GESTION SOCIAL</a></h4>
-                                    <div class="duration-fee">
-
-                                    </div>
-                                    <div class="rating">
-
+                        </div>
+                        <div class="col-lg-3 col-sm-6 courses-col">
+                            <div class="single-courses-2 mt-30">
+                                <div class="courses-image">
+                                    <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA DE LA OFICINA DE ATENCIÓN AL CIUDADANO</a></h4>
+                                    <div class="duration-rating">
+                                        <div class="duration-fee">
+                                            <p class="duration">Gerencia de Oficina</p>
+                                            <p class="fee">de Atencion al Ciudadano</p>
+                                        </div>
                                     </div>
                                     <div class="courses-link">
-
+                                        <a class="more" href="gestion-ambiental">Ver Mas <i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 courses-col">
-                                <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.6s">
-                                    <h4 class="courses-title"><a href="courses-details.html">GESTION ECONOMICO</a></h4>
-                                    <div class="duration-fee">
-                                    </div>
-                                    <div class="rating">
-
+                        </div>
+                        <div class="col-lg-3 col-sm-6 courses-col">
+                            <div class="single-courses-2 mt-30">
+                                <div class="courses-image">
+                                    <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA DE LA OFICINA GENERAL DE ADMINISTRACIÓN</a></h4>
+                                    <div class="duration-rating">
+                                        <div class="duration-fee">
+                                            <p class="duration">Gerencia de Oficina</p>
+                                            <p class="fee">General de Administracion</p>
+                                        </div>
                                     </div>
                                     <div class="courses-link">
+                                        <a class="more" href="gestion-ambiental">Ver Mas <i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 courses-col">
-                                <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.8s">
-                                    <a href="#" class="category">#Marketing</a>
-                                    <h4 class="courses-title"><a href="courses-details.html">Fiscalizacion y Control</a></h4>
-                                    <div class="duration-fee">
-                                        <p class="duration">Duration: <span> 4 year</span></p>
-                                        <p class="fee">Fee: <span> $540</span></p>
-                                    </div>
-                                    <div class="rating">
-                                        <span>Rating: </span>
-                                        <ul class="star">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 courses-col">
+                            <div class="single-courses-2 mt-30">
+                                <div class="courses-image">
+                                    <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA DE LA OFICINA GENERAL DE PLANEAMIENTO Y PRESUPUESTO</a></h4>
+                                    <div class="duration-rating">
+                                        <div class="duration-fee">
+                                            <p class="duration">GERENCIA DE LA OFICINA GENERAL</p>
+                                            <p class="fee">DE PLANEAMIENTO Y PRESUPUESTO</p>
+                                        </div>
                                     </div>
                                     <div class="courses-link">
-                                        <a class="apply" href="#">Online Apply</a>
-                                        <a class="more" href="courses-details.html">Read more <i class="fas fa-chevron-right"></i></a>
+                                        <a class="more" href="gestion-ambiental">Ver Mas <i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 courses-col">
-                                <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1s">
-                                    <a href="#" class="category">#Business</a>
-                                    <h4 class="courses-title"><a href="courses-details.html">Cultura Miraflores</a></h4>
-                                    <div class="duration-fee">
-                                        <p class="duration">Duration: <span> 4 year</span></p>
-                                        <p class="fee">Fee: <span> $540</span></p>
-                                    </div>
-                                    <div class="rating">
-                                        <span>Rating: </span>
-                                        <ul class="star">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 courses-col">
+                            <div class="single-courses-2 mt-30">
+                                <div class="courses-image">
+                                    <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA TERRITORIAL E INFRAESTRUCTURA</a></h4>
+                                    <div class="duration-rating">
+                                        <div class="duration-fee">
+                                            <p class="duration">GERENCIA TERRITORIAL</p>
+                                            <p class="fee">INFRAESTRUCTURA</p>
+                                        </div>
                                     </div>
                                     <div class="courses-link">
-                                        <a class="apply" href="#">Online Apply</a>
-                                        <a class="more" href="courses-details.html">Read more <i class="fas fa-chevron-right"></i></a>
+                                        <a class="more" href="gestion-ambiental">Ver Mas <i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 courses-col">
-                                <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.2s">
-                                    <a href="#" class="category">#Marketing</a>
-                                    <h4 class="courses-title"><a href="courses-details.html">Desarrollo Humano</a></h4>
-                                    <div class="duration-fee">
-                                        <p class="duration">Duration: <span> 4 year</span></p>
-                                        <p class="fee">Fee: <span> $540</span></p>
-                                    </div>
-                                    <div class="rating">
-                                        <span>Rating: </span>
-                                        <ul class="star">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 courses-col">
+                            <div class="single-courses-2 mt-30">
+                                <div class="courses-image">
+                                    <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA DE LA OFICINA GENERAL DE ASESORÍA LEGAL</a></h4>
+                                    <div class="duration-rating">
+                                        <div class="duration-fee">
+                                            <p class="duration">GERENCIA DE LA OFICINA</p>
+                                            <p class="fee">GENERAL DE ASESORÍA LEGAL</p>
+                                        </div>
                                     </div>
                                     <div class="courses-link">
-                                        <a class="apply" href="#">Online Apply</a>
-                                        <a class="more" href="courses-details.html">Read more <i class="fas fa-chevron-right"></i></a>
+                                        <a class="more" href="gestion-ambiental">Ver Mas <i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 courses-col">
-                                <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.4s">
-                                    <a href="#" class="category">#Science</a>
-                                    <h4 class="courses-title"><a href="courses-details.html">Applied <br> Mathematics</a></h4>
-                                    <div class="duration-fee">
-                                        <p class="duration">Duration: <span> 4 year</span></p>
-                                        <p class="fee">Fee: <span> $540</span></p>
-                                    </div>
-                                    <div class="rating">
-                                        <span>Rating: </span>
-                                        <ul class="star">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
+                        </div>                                                                   
+                        <div class="col-lg-3 col-sm-6 courses-col">
+                            <div class="single-courses-2 mt-30">
+                                <div class="courses-image">
+                                    <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <h4 class="courses-title"><a href="gestion-ambiental">Gerencia de Gestion Ambiental y Recursos Naturales</a></h4>
+                                    <div class="duration-rating">
+                                        <div class="duration-fee">
+                                            <p class="duration">Gestion Ambiental</p>
+                                            <p class="fee">Recursos Naturales</p>
+                                        </div>
                                     </div>
                                     <div class="courses-link">
-                                        <a class="apply" href="#">Online Apply</a>
-                                        <a class="more" href="courses-details.html">Read more <i class="fas fa-chevron-right"></i></a>
+                                        <a class="more" href="gestion-ambiental">Ver Mas <i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 courses-col">
-                                <div class="single-courses mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.6s">
-                                    <a href="#" class="category">#Science</a>
-                                    <h4 class="courses-title"><a href="courses-details.html">Computer Science & Engineering</a></h4>
-                                    <div class="duration-fee">
-                                        <p class="duration">Duration: <span> 4 year</span></p>
-                                        <p class="fee">Fee: <span> $540</span></p>
-                                    </div>
-                                    <div class="rating">
-                                        <span>Rating: </span>
-                                        <ul class="star">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
+                        </div>                
+                        <div class="col-lg-3 col-sm-6 courses-col">
+                            <div class="single-courses-2 mt-30">
+                                <div class="courses-image">
+                                    <a href="desarrollo-social"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <h4 class="courses-title"><a href="desarrollo-social">Gerencia de Desarrollo Social</a></h4>
+                                    <div class="duration-rating">
+                                        <div class="duration-fee">
+                                            <p class="duration">Gerencia</span></p>
+                                            <p class="fee">Desarrollo Social</p>
+                                        </div>
                                     </div>
                                     <div class="courses-link">
-                                        <a class="apply" href="#">Online Apply</a>
-                                        <a class="more" href="courses-details.html">Read more <i class="fas fa-chevron-right"></i></a>
+                                        <a class="more" href="desarrollo-social">Ver Mas <i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 courses-col">
+                            <div class="single-courses-2 mt-30">
+                                <div class="courses-image">
+                                    <a href="desarrollo-economico"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                                </div>
+                                <div class="courses-content">
+                                    <h4 class="courses-title"><a href="desarrollo-economico">Gerencia de Desarrollo Economico y Administracion Tributario</a></h4>
+                                    <div class="duration-rating">
+                                        <div class="duration-fee">
+                                            <p class="duration">Desarrollo Economico</p>
+                                            <p class="fee">Administracion Tributario</p>
+                                        </div>
+                                    </div>
+                                    <div class="courses-link">
+                                        <a class="more" href="desarrollo-economico">Ver Mas <i class="fas fa-chevron-right"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </section>
             <!--====== Top Courses Ends ======-->'
         ]);

@@ -146,7 +146,7 @@ class HomeController extends Controller
         $data['titulo']='CONCEJO MUNICIPAL';
         return view('paginas.concejomunipal', $data);    
     }
-    
+
     public function functionariosMunicipales(){
         $fechaActual = Carbon::now();
         $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
@@ -154,7 +154,6 @@ class HomeController extends Controller
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
         $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
-
         $cargosExcluidos = Cargo::whereIn('nombre', ['Alcalde', 'Regidor'])->pluck('id');
         $data['funcionarios'] = Directorio::with('cargo:id,nombre')
             ->whereNotIn('cargo_id', $cargosExcluidos)
@@ -176,8 +175,6 @@ class HomeController extends Controller
         $data['paginaprueba']='paginas.prueba';
         return view('app', $data);
     }
-
-
     public function noticia(Request $request){
         $data['titulo']='NOTICIAS';
         $data['sliders']=Slider::where('es_activo', 1)->get();
@@ -189,8 +186,43 @@ class HomeController extends Controller
         $data['noticia'] = Noticia::with('imagenes')->where('slug', $request->s)->first();
         return view('paginas.noticia', $data);
     }
-
-
+    public function gestionAmbiental(){
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
+        $data['titulo']='GESTION AMBIENTAL';
+        $data['sliders']=Slider::where('es_activo', 1)->get();
+        $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
+        $data['organizacion'] = Organizacion::first();
+        $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
+        $data['enlaces'] = Enlace::get();
+        $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
+        return view('paginas.gestion-ambiental', $data);       
+    }
+    public function desarrolloSocial(){
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
+        $data['titulo']='DESARROLLO SOCIAL';
+        $data['sliders']=Slider::where('es_activo', 1)->get();
+        $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
+        $data['organizacion'] = Organizacion::first();
+        $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
+        $data['enlaces'] = Enlace::get();
+        $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
+        return view('paginas.desarrollo-social', $data);          
+    }
+    public function desarrolloEconomico(){
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
+        $data['titulo']='DESARROLLO ECONOMICO';
+        $data['sliders']=Slider::where('es_activo', 1)->get();
+        $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
+        $data['organizacion'] = Organizacion::first();
+        $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
+        $data['enlaces'] = Enlace::get();
+        $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
+        return view('paginas.desarrollo-economico', $data);       
+    }
+    
 
 
 }
