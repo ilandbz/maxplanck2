@@ -22,12 +22,12 @@
                             </ul>
                         </div>
                         <div class="teacher-image">
-                            <a href="teacher-details.html">
+                            <a href="">
                                 <img src="{{asset('storage/fotos/'.$item->foto);}}" width="266" height="359" alt="teacher">
                             </a>
                         </div>
                         <div class="teacher-content">
-                            <h4 class="name"><a href="teacher-details.html">{{$item->titulo}}</a></h4>
+                            <h4 class="name"><a href="">{{$item->titulo}}</a></h4>
                             <span class="designation">{{$item->cargo->nombre}}</span>
                         </div>
                     </div>

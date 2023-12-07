@@ -100,6 +100,10 @@
     </div>
 </section>
 
+
+
+
+
 @if ($popup)
     <!-- Modal -->
     <div class="modal fade" id="modalPopup" tabindex="-1" aria-labelledby="modalPopupLabel" aria-hidden="true">

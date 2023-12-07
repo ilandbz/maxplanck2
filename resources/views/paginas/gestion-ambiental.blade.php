@@ -19,10 +19,13 @@
                     <img src="imagenes/sg.jpg" class="img-fluid img-thumbnail" alt="">
                 </div>                 
               </div>
-            </div>
-
-
-            
+              <div class="col">
+                <h5 class="text-center mb-4">SUBGRENCIA DE AREA TECNICA MUNICIPAL Y SUB GERENCIA DE AGUA Y SANEAMIENTO</h5>
+                <div class="row justify-content-center mb-4">
+                    <img src="imagenes/ss.jpg" class="img-fluid img-thumbnail" alt="">
+                </div>                 
+              </div>              
+            </div>           
             <div class="row">
               <div class="col-md-6">
                 <h4>RECOLECCIÓN DE RESIDUOS SOLIDOS</h4>

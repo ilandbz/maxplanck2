@@ -226,9 +226,10 @@ class SeccionesPrincipalSeeder extends Seeder
             'orden'     => 3,
             'contenido'     => '<!--====== enlaces_principales ======-->
             <div class="specialty-area">
-                <div class="container">
-                    <div class="row no-gutters wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="col-sm-4">
+            <div class="container">
+                <div class="row no-gutters wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="col-sm-4">
+                        <a href="https://facilita.gob.pe/t/1258" target="_blank">
                             <div class="single-specialty mt-30">
                                 <div class="specialty-box">
                                     <div class="box-icon">
@@ -238,35 +239,40 @@ class SeccionesPrincipalSeeder extends Seeder
                                         <p>Mesa de Partes Virtual</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="single-specialty active mt-30">
-                                <div class="specialty-box">
-                                    <div class="box-icon">
-                                        <img src="edumate/assets/images/icon/icon-2.webp" width="70" height="70" alt="icon">
-                                    </div>
-                                    <div class="box-content">
-                                        <p>Libro de Reclamaciones</p>
-                                    </div>
+                            </div>                    
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="" target="_blank">
+                        <div class="single-specialty active mt-30">
+                            <div class="specialty-box">
+                                <div class="box-icon">
+                                    <img src="edumate/assets/images/icon/icon-2.webp" width="70" height="70" alt="icon">
+                                </div>
+                                <div class="box-content">
+                                    <p>Libro de Reclamaciones</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="single-specialty mt-30">
-                                <div class="specialty-box">
-                                    <div class="box-icon">
-                                        <img src="edumate/assets/images/icon/icon-3.webp" width="70" height="70" alt="icon">
-                                    </div>
-                                    <div class="box-content">
-                                        <p>Seguimiento de Tramites</p>
-                                    </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="https://facilita.gob.pe/seguimiento" target="_blank">
+                        <div class="single-specialty mt-30">
+                            <div class="specialty-box">
+                                <div class="box-icon">
+                                    <img src="edumate/assets/images/icon/icon-3.webp" width="70" height="70" alt="icon">
+                                </div>
+                                <div class="box-content">
+                                    <p>Seguimiento de Tramites</p>
                                 </div>
                             </div>
                         </div>
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
             <!--====== Specialty Ends ======-->'
         ]);
         

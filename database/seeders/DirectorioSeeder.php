@@ -15,7 +15,17 @@ class DirectorioSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        
+        Directorio::firstorCreate([
+            'titulo'       => 'CAYO LEONIDAS SANTIAGO CAMPOS',
+            'dni'          => '22672701',
+            'area_id'      => Area::where('nombre', 'Municipalidad')->value('id'),
+            'cargo_id'     => Cargo::where('nombre', 'Alcalde')->value('id'),
+            'email'        => '',
+            'link'         => 'https://www.gob.pe/institucion/muniambo/funcionarios/95042-cayo-leonidas-santiago-campos',
+            'celular'      => '',
+            'foto'         => '22672701.jpg'
+        ]);        
         Directorio::firstorCreate([
             'titulo'       => 'GROVER LUCIO VASQUES SALAZAR',
             'dni'          => '22749778',
