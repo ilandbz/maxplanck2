@@ -257,44 +257,15 @@ class NavSeeder extends Seeder
             ]);
 
         Nav::firstOrCreate([
-            'nombre' => 'Oficial',
-            'url'   => 'documentosoficiales',
-            'ruta'   => 'documentosoficiales',
-            'slug' => 'documentos-oficiales',
+            'nombre' => 'Contáctanos',
+            'url'   => 'contactenos',
+            'ruta'   => 'contactenos',
+            'slug' => 'contactenos',
             'icono' => null,
             'padre_id' => null,
             'orden' => 7
         ]);
 
-            Nav::firstOrCreate([
-                'nombre' => 'Resolucion',
-                'url'   => '/documentosoficiales/resolucion',
-                'ruta'   => 'documentosoficiales.resolucion',
-                'slug' => 'documentosoficiales-resolucion',
-                'icono' => null,
-                'padre_id' => Nav::where('nombre', 'Oficial')->value('id'),
-                'orden' => 1
-            ]);
-
-            Nav::firstOrCreate([
-                'nombre' => 'Directiva',
-                'url'   => '/documentosoficiales/directiva',
-                'ruta'   => 'documentosoficiales.directiva',
-                'slug' => 'documentosoficiales-directiva',
-                'icono' => null,
-                'padre_id' => Nav::where('nombre', 'Oficial')->value('id'),
-                'orden' => 2
-            ]);
-
-            Nav::firstOrCreate([
-                'nombre' => 'Oficio',
-                'url'   => '/documentosoficiales/oficio',
-                'ruta'   => 'documentosoficiales.oficio',
-                'slug' => 'documentosoficiales-oficio',
-                'icono' => null,
-                'padre_id' => Nav::where('nombre', 'Oficial')->value('id'),
-                'orden' => 3
-            ]);
 
 
     }

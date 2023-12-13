@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
-                        <div class="footer-link mt-45">
+                        <div class="footer-link mt-2">
                             <h4 class="footer-title">Informacion Destacada</h4>
                             <ul class="link-list">
                                 <li><a href="quienes-somos">Quienes Somos</a></li>
@@ -17,7 +17,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="footer-link mt-45">
+                        <div class="footer-link mt-2">
                             <h4 class="footer-title">Redes Sociales</h4>
                             <ul class="link-list">
                                 @foreach ($redessociales as $red)
@@ -27,13 +27,13 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="footer-link mt-45">
+                        <div class="footer-link mt-2">
                             <h4 class="footer-title">Libro de Reclamaciones</h4>
                             <a href="">
                                 <img src="{{asset('storage/imagenes/reclamaciones.jpg');}}" alt="">
                             </a>
                         </div>
-                        <div class="footer-link mt-45">
+                        <div class="footer-link mt-2">
                             <h4 class="footer-title">PORTAL WEB</h4>
                             <a href="https://www.gob.pe/muniambo" target="_blank">
                                 <img src="{{asset('storage/imagenes/portalweb.jpeg');}}" alt="">
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="footer-link mt-45">
+                        <div class="footer-link mt-2">
                             <h4 class="footer-title">Contactenos</h4>
                             <ul class="link-list">
                                 <li>

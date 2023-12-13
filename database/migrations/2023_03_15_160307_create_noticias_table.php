@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('noticias', function (Blueprint $table) {
             $table->id();
-            $table->string('titulo');
-            $table->string('subtitulo')->nullable();
+            $table->text('titulo');
+            $table->text('subtitulo')->nullable();
             $table->string('slug')->unique();
             $table->text('contenido');
+            $table->date('fecha_publicacion');
             $table->foreignId('user_id')->nullable()->constrained('users')->onDelete('set null')->onUpdate('cascade');
             $table->timestamps();
         });

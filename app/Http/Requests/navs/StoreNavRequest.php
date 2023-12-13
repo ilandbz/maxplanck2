@@ -27,7 +27,7 @@ class StoreNavRequest extends FormRequest
             'nombre'     => 'required|max:25|string|unique:navs,nombre',
             'ruta'       => 'required|max:25|string|unique:navs,ruta',
             'slug'       => 'required|max:25|string|unique:navs,slug',
-            'orden'      => 'required|numeric'
+            //'orden'      => 'required|numeric'
         ];
     }
 

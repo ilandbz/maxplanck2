@@ -41,6 +41,7 @@ Route::post('/intranet/login',[LoginController::class,'validarLogin'])->name('lo
 Route::get('/prueba', [HomeController::class,'prueba'])->name('prueba');
 Route::get('quienes-somos', [HomeController::class,'quienessomos'])->name('quienessomos');
 Route::get('mision-vision', [HomeController::class,'misionvision'])->name('misionvision');
+Route::get('contactenos', [HomeController::class,'contactenos'])->name('contactenos');
 Route::get('ambo-historia', [HomeController::class,'historia'])->name('historia');
 Route::get('ambo-turismo', [HomeController::class,'turismo'])->name('turismo');
 Route::get('gestion-ambiental', [HomeController::class, 'gestionAmbiental'])->name('gestion.ambiental');

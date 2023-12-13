@@ -31,18 +31,20 @@
 <body>
     <!--====== Header Start ======-->
     <header class="header-area">
-        <div class="header-top">
+        <div class="footer-area bg_cover" style="background-image: url(edumate/assets/images/muniambo.webp);">
             <div class="container-fluid">
-                <div class="header-top-wrapper d-flex flex-wrap justify-content-sm-between">
-                    <h4 class="text-white mt-4">{{$fechaActual}}</h4>
-                    <div class="header-top-left mt-10">
-                        <ul class="header-meta">
-                            <li class="center"><h2 class="text-white"><img src="imagenes/logo_header.jpg" class="img-fluid round thumbnail" width="120px" alt="">&nbsp;&nbsp;&nbsp;Ambo "Tierra Bella y Generosa"</h2></li>
-                        </ul>
+                <div class="row">
+                    <div class="col-md-3 text-left"><h6 class="text-white mt-4">{{$fechaActual}}</h6></div>
+                    <div class="col-md-6 text-center">
+                        <h3 class="text-white"><img src="imagenes/logo_header.jpg" class="img-fluid round thumbnail" width="120px" alt="">&nbsp;&nbsp;&nbsp;Ambo "Tierra Bella y Generosa"</h3>
                     </div>
-                    <div class="header-top-right mt-1">
-                        <div class="header-link">
-                            <a class="notice" href="{{route('intranet')}}">Intranet</a>
+                    <div class="col-md-3 header-top-wrapper justify-content-end">
+                        <div class="header-top-right mt-1 header-top-wrapper">
+                            <div class="text-white mr-10" style="text-decoration: none; text-align: right;">
+                                <h6 class="text-white mt-4 text-right">
+                                    <a class="intranet-btn" style="text-decoration: none;" href="{{route('intranet')}}">Intranet</a>
+                                </h6>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -58,7 +60,7 @@
                                 <a href="/"><img src="{{asset('storage/imagenes/'.$organizacion->logo);}}" width="80" height="" alt="Logo"></a>
                             </div>
                         </div>
-                        <div class="col-md-8 position-static">
+                        <div class="col-md-6 position-static">
                             <div class="container">
                                 <div class="nav-toggle d-lg-none" data-toggle="collapse" data-target="#navbarSupportedContent"></div>
                                 <nav class="nav-menus-wrapper">
@@ -74,12 +76,21 @@
                                     </ul>
                                 </nav>                                
                             </div>
-
+                        </div>
+                        <div class="col-lg-2 position-static">
+                            <div class="header-search">
+                                <form action="#">
+                                    <input type="text" placeholder="Buscar">
+                                    <button><i class="fas fa-search"></i></button>
+                                </form>
+                            </div>
                         </div>
                         <div class="col-md-2">
-                            <a data-animation="fadeInUp" data-delay="1s" class="p-0" target="_blank" href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=12005">
-                                <img class="rounded" src="{{asset('storage/imagenes/transparencia.png');}}" width="160px" alt="">
+                            <div style="text-align: right;">
+                            <a class="mr-4 p-0 text-right" data-animation="fadeInUp" data-delay="1s" target="_blank" href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=12005">
+                                <img class="rounded right" src="{{asset('storage/imagenes/transparencia.png');}}" width="160px" alt="">
                             </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -127,6 +138,24 @@
           $('#modalPopup').modal('show');
         })
     
+
+        let items = document.querySelectorAll('.carousel .carousel-item')
+
+        items.forEach((el) => {
+            const minPerSlide = 3
+            let next = el.nextElementSibling
+            for (var i=1; i<minPerSlide; i++) {
+                if (!next) {
+            // wrap carousel by using first child
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+        }
+        })
+
+
     </script>
     @routes
     {{-- @vite(['resources/js/app.js']) --}}

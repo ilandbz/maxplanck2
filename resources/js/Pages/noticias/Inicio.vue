@@ -27,6 +27,7 @@
         imagen_id:'',
         imagen: carpetaNoticias+'default.webp',
         estadoCrud:'',
+        fecha_publicacion: '',
         errors:[]
     });
     
@@ -255,6 +256,7 @@
                                         <th>Subtitulo</th>
                                         <th>Slug</th>
                                         <th>Contenido</th>
+                                        <th>Fecha Pub.</th>
                                         <th>Acciones</th>
                                     </tr>
                                 </thead>
@@ -284,6 +286,7 @@
                                                 {{ noticia.contenido }}
                                             </template>
                                         </td>
+                                        <td>{{ noticia.fecha_publicacion }}</td>
                                         <td>
                                             <button class="btn btn-warning btn-sm" title="Editar" @click.prevent="editar(noticia.id)">
                                                 <i class="fas fa-edit"></i>

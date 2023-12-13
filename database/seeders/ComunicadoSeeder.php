@@ -14,8 +14,28 @@ class ComunicadoSeeder extends Seeder
     public function run(): void
     {
         Comunicado::firstorCreate([
-            'titulo'        => 'Comunicado 1',
-            'nombreImagen'  => '20231112211550_655186d661048.png'
+            'titulo'        => '',
+            'nombreImagen'  => 'comunicado.jpg'
         ]);
+        Comunicado::firstorCreate([
+            'titulo'        => '',
+            'nombreImagen'  => 'camion.jpg'
+        ]);
+        Comunicado::firstorCreate([
+            'titulo'        => '',
+            'nombreImagen'  => 'policia.jpg'
+        ]);
+        Comunicado::firstorCreate([
+            'titulo'        => '',
+            'nombreImagen'  => 'reciclaton.jpg'
+        ]);
+        Comunicado::firstorCreate([
+            'titulo'        => '',
+            'nombreImagen'  => 'actuemosya.jpg'
+        ]);
+        Comunicado::firstorCreate([
+            'titulo'        => '',
+            'nombreImagen'  => 'comunicado1.jpg'
+        ]);               
     }
 }

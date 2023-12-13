@@ -133,7 +133,19 @@ class HomeController extends Controller
         $data['titulo']='ALCALDE';
         return view('paginas.municipalidadalcalde', $data);    
     }
-    
+    public function contactenos(){
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
+        $data['alcalde']=Directorio::with('cargo:id,nombre')->where('cargo_id', Cargo::where('nombre', 'Alcalde')->value('id'))->first();
+        $data['sliders']=Slider::where('es_activo', 1)->get();
+        $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
+        $data['organizacion'] = Organizacion::first();
+        $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
+        $data['redessociales'] = RedSocial::get();
+        $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
+        $data['titulo']='Contáctenos';
+        return view('paginas.contactenos', $data);            
+    }
     public function concejoMunicipal(){
         $fechaActual = Carbon::now();
         $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
@@ -176,7 +188,9 @@ class HomeController extends Controller
         return view('app', $data);
     }
     public function noticia(Request $request){
+        $fechaActual = Carbon::now();
         $data['titulo']='NOTICIAS';
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();

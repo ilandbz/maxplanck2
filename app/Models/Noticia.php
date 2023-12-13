@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 class Noticia extends Model
 {
     use HasFactory;
-    protected $fillable=['titulo', 'subtitulo', 'slug', 'contenido', 'user_id'];
+    protected $fillable=['titulo', 'subtitulo', 'slug', 'contenido', 'user_id', 'fecha_publicacion'];
     /**
      * Get the imagen associated with the Noticia
      *

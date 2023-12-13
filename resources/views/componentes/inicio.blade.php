@@ -4,30 +4,45 @@
         echo $item->contenido;
     @endphp
 @endforeach
-<!--====== Noticias ======-->
+
 <section class="event-area">
     <div class="container">
-        <div class="event-title-tab-menu">
-            <div class="event-title mt-40">
-                <h2 class="title">Comunicados</h2>
-            </div>
-            <div class="event-tab-menu mt-40">
-            </div>
-        </div>
+        <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">COMUNICADOS</h1><br>
         <div class="tab-content event-tab-items wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="tab-pane fade show active" id="courses">
-                <div class="row">
-                    @foreach ($comunicados as $comunicado)
-                        <div class="col-lg-4">
-                            <div class="single-event text-center mt-30">
-                                <h4 class="event-title"><a href="event-details.html">{{$comunicado->titulo}}</a></h4>
-                                <img src="{{asset('storage/comunicados/'.$comunicado->nombreImagen)}}" class="img-fluid" alt="">
-                                @if ($comunicado->link)
-                                    <a href="{{$comunicado->link}}" class="more">Leer Mas <i class="far fa-chevron-right"></i></a>                                  
-                                @endif
+                <div class="row mx-auto my-auto justify-content-center">
+                    <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            @php
+                                $active = true;
+                            @endphp
+                            @foreach ($comunicados as $comunicado)
+                            <div class="carousel-item {{$active == true ? 'active' : ''}}">
+                                <div class="col-lg-4">
+                                    <div class="single-event text-center mt-30">
+                                        @if($comunicado->titulo != '')
+                                            <h4 class="event-title"><a href="event-details.html">{{ $comunicado->titulo }}</a></h4>
+                                        @endif
+                                        <img src="{{asset('storage/comunicados/'.$comunicado->nombreImagen)}}" class="img-fluid" style="height: 450px" alt="">
+                                        @if ($comunicado->link)
+                                            <a href="{{$comunicado->link}}" class="more">Leer Mas <i class="far fa-chevron-right"></i></a>                                  
+                                        @endif
+                                    </div>
+                                </div>    
                             </div>
-                        </div>                        
-                    @endforeach
+
+                            @php
+                                $active = false;
+                            @endphp   
+                            @endforeach
+                        </div>
+                        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="view-btn text-center">
@@ -39,16 +54,7 @@
 
 <section class="blog-area">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-5 col-md-9">
-                <div class="section-title-2 text-center">
-                    <h2 class="title">Noticias</h2>
-                    <span class="line"></span>
-                    <p>Noticias Relevantes</p>
-                    <a href="noticias" class="view-more">Ver Mas <i class="fas fa-chevron-right"></i></a>
-                </div>
-            </div>
-        </div>
+        <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">NOTICIAS</h1><br>
         <div class="blog-wrapper">
             <div class="row-wrapper blog-active">
                 @foreach ($noticias as $registro)
@@ -61,7 +67,9 @@
                         </div>
                         <div class="blog-content">
                             <ul class="meta">
-                                <li><a href="noticia?s={{$registro->slug}}">{{$registro->subtitulo}}</a></li>
+                                <li><a href="#">25 May, 2020</a></li>
+                                <li><a href="#">By: Alex</a></li>
+                                <li><a href="#">12 Comments</a></li>
                             </ul>
                             <h4 class="blog-title"><a href="noticia?s={{$registro->slug}}">{{$registro->titulo}}</a></h4>
                             <a href="noticia?s={{$registro->slug}}" class="more">Leer Mas <i class="fas fa-chevron-right"></i></a>
@@ -73,18 +81,10 @@
         </div>
     </div>
 </section>
-<!--====== Blog Ends ======-->    
 
 <section class="section_enlaces_externos">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-5 col-md-9">
-                <div class="section-title-2 text-center">
-                    <h3 class="title">ENLACES EXTERNOS</h3>
-                    <br>
-                </div>
-            </div>
-        </div>
+        <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">ENLACES EXTERNOS</h1><br>
         <div class="row">
             <div class="col-md-12 animation" data-animation="fadeInUp">
                 <div class="cl_logo_slider carousel_slider owl-carousel owl-theme" data-margin="15" data-loop="true" data-autoplay="true" data-dots="false"

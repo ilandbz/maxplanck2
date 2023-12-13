@@ -30,6 +30,7 @@ class StoreNoticiaRequest extends FormRequest
             'subtitulo'  => 'required|string',
             'slug'       => 'required|string|unique:noticias,slug',
             'contenido'  => 'required|string',
+            'fecha_publicacion' => 'date'
         ];
     }
 
