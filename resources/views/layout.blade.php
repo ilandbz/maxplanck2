@@ -133,27 +133,11 @@
 
     <!--====== Main Activation  js ======-->
     <script src="edumate/assets/js/main.js"></script>
-
+    @yield('script')
+    
     <script>
         $(document).ready(function(){
           $('#modalPopup').modal('show');
-
-
-            // $("#enlaceAlcalde").click(function(e) {
-            //     e.preventDefault();
-            //     // // Obtener los datos del enlace
-            //     var titulo = $(this).data("titulo");
-            //     console.log(titulo)
-            //     // var email = $(this).data("email");
-
-            //     // // Actualizar el contenido del modal con los datos
-            //     // $("#modalTitulo").text(titulo);
-            //     // $("#modalDescripcion").text(descripcion);
-
-            //     // // Mostrar el modal
-            //     $("#exampleModal").modal("show");
-            // });
-
 
         })
     
