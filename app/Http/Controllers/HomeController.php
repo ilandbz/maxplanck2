@@ -124,7 +124,7 @@ class HomeController extends Controller
     public function municipalidadAlcalde(){
         $fechaActual = Carbon::now();
         $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
-        $data['alcalde']=Directorio::with('cargo:id,nombre')->where('cargo_id', Cargo::where('nombre', 'Alcalde')->value('id'))->first();
+        $data['alcalde']=Directorio::with(['cargo:id,nombre','area:id,nombre'])->where('cargo_id', Cargo::where('nombre', 'ALCALDE PROVINCIAL DE AMBO')->value('id'))->first();
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
@@ -167,7 +167,7 @@ class HomeController extends Controller
         $data['organizacion'] = Organizacion::first();
         $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
         $cargosExcluidos = Cargo::whereIn('nombre', ['Alcalde', 'Regidor'])->pluck('id');
-        $data['funcionarios'] = Directorio::with('cargo:id,nombre')
+        $data['funcionarios'] = Directorio::with(['cargo:id,nombre', 'area:id,nombre'])
             ->whereNotIn('cargo_id', $cargosExcluidos)
             ->get();
         $data['redessociales'] = RedSocial::get();

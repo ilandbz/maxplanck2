@@ -1,42 +1,42 @@
 @extends('layout')
 @section('body-content')
     @include('componentes.banner')
-
-<section class="about-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 mx-auto">
-                    <div class="single-teacher mb-20 text-center">
+    <section class="teacher-details mb-20">
+        <div class="container">
+            <div class="row teachers-row justify-content-center">
+                <div class="col-lg-5 col-md-6 col-sm-8 teachers-col">
+                    <div class="single-teacher-details mt-50 text-center">
                         <div class="teacher-social">
                             <ul class="social">
                                 <li><a href="{{$alcalde->link}}" target="_blank"><i class="fas fa-link"></i></a></li>
                             </ul>
                         </div>
                         <div class="teacher-image">
-                            <a href="{{$alcalde->link}}" target="_blank">
-                                <img src="{{asset('storage/fotos/'.$alcalde->foto);}}" width="266" height="359" alt="teacher">
+                                <a href="teacher-details.html">
+                                <img src="{{asset('storage/fotos/'.$alcalde->foto);}}" width="373" height="503" alt="teacher">
                             </a>
                         </div>
-                        <div class="teacher-content">
-                            <h4 class="name"><a href="{{$alcalde->link}}">{{$alcalde->titulo}}</a></h4>
-                            <span class="designation">{{$alcalde->cargo->nombre}}</span>
-                            <ul >
-                                <li class="list-group-item"><strong>DNI:</strong> {{$alcalde->dni}}</li>
-                                <li class="list-group-item"><strong>Celular:</strong> {{$alcalde->celular}}</li>
-                                <li class="list-group-item"><strong>Email:</strong> {{$alcalde->email}}</li>
-                                <li class="list-group-item"><strong>Cargo:</strong> {{$alcalde->cargo->nombre}}</li>
-                            </ul>                            
-                        </div>
                     </div>
-
-
+                </div>
+                <div class="col-lg-5 teachers-col">
+                    <div class="teacher-details-content mt-45">
+                        <h4 class="teacher-name">{{$alcalde->titulo}}</h4>
+                        <span class="designation">{{$alcalde->cargo->nombre}}</span><br>
+                        <span class="department">{{$alcalde->area->nombre}}</span>
+                        <ul class="teacher-contact">
+                            <li style="text-align: justify"><strong>FUNCIONES: </strong>{{$alcalde->funciones}}</li>
+                            <li><strong>DNI:</strong> <a href="#">{{$alcalde->dni}}</a></li>
+                            <li><strong>Email:</strong> <a href="#">{{$alcalde->email}}</a></li>
+                            <li><strong>Telefono:</strong> <a href="#">{{$alcalde->celular}}</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<!--====== About Ends ======-->
-
-
-
+    </section>
 @include('componentes.footer')
+@endsection
+
+@section('script')
+
 @endsection

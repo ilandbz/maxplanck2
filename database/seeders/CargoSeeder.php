@@ -14,19 +14,22 @@ class CargoSeeder extends Seeder
     public function run(): void
     {
         Cargo::firstOrCreate([
-            'nombre'    => 'Alcalde'
+            'nombre'    => 'ALCALDE PROVINCIAL DE AMBO'
         ]);
         Cargo::firstOrCreate([
-            'nombre'    => 'Gerente Municipal'
+            'nombre'    => 'GERENTE MUNICIPAL'
         ]);         
         Cargo::firstOrCreate([
-            'nombre'    => 'Gerente'
+            'nombre'    => 'GERENTE'
         ]); 
         Cargo::firstOrCreate([
             'nombre'    => 'PROCURADOR PÚBLICO MUNICIPAL'
         ]);
         Cargo::firstOrCreate([
-            'nombre'    => 'Regidor'
+            'nombre'    => 'REGIDOR'
+        ]);
+        Cargo::firstOrCreate([
+            'nombre'    => 'TENIE3NTE ALCALDE'
         ]);
 
     }

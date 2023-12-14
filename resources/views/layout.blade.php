@@ -157,6 +157,7 @@
 
 
     </script>
+    @yield('script')
     @routes
     {{-- @vite(['resources/js/app.js']) --}}
 </body>

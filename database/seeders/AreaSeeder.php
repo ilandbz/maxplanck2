@@ -14,19 +14,19 @@ class AreaSeeder extends Seeder
     public function run(): void
     {
         Area::firstOrCreate([
-            'nombre'    => 'Alcaldia'
+            'nombre'    => 'ALCALDIA'
         ]);
         Area::firstOrCreate([
-            'nombre'    => 'Municipalidad'
+            'nombre'    => 'MUNICIPALIDAD'
         ]);
         Area::firstOrCreate([
             'nombre'    => 'PROCURADURIA'
         ]);
         Area::firstOrCreate([
-            'nombre'    => 'Consejo Municipal'
+            'nombre'    => 'CONCEJO MUNICIPAL'
         ]);
         Area::firstOrCreate([
-            'nombre'    => 'Oficina de Atencion al Ciudadano y Gestion Documentaria'
+            'nombre'    => 'OFICINA DE ATENCION AL CIUDADANO Y GESTION DOCUMENTARIA'
         ]);
         Area::firstOrCreate([
             'nombre'    => 'DESARROLLO ECONÓMICO Y ADMINISTRACIÓN TRIBUTARIA'
@@ -38,7 +38,16 @@ class AreaSeeder extends Seeder
             'nombre'    => 'OFICINA GENERAL DE PLANEAMIENTO Y PRESUPUESTO'
         ]);
         Area::firstOrCreate([
-            'nombre'    => 'DESARROLLO SOCIAL'
-        ]);             
+            'nombre'    => 'GERENCIA DE DESARROLLO SOCIAL'
+        ]);
+        Area::firstOrCreate([
+            'nombre'    => 'GERENCIA DE DESARROLLO TERRITORIAL E INFRAESTRUCTURA'
+        ]);
+        Area::firstOrCreate([
+            'nombre'    => 'OFICINA GENERAL DE ASESORIA JURIDICA'
+        ]);
+        Area::firstOrCreate([
+            'nombre'    => 'GERENCIA DE GESTION AMBIENTAL Y RECURSOS NATURALES'
+        ]);
     }
 }
