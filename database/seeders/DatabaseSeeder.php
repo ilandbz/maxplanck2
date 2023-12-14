@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\ImagenNoticia;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -29,7 +31,9 @@ class DatabaseSeeder extends Seeder
             AreaSeeder::class,
             DirectorioSeeder::class,
             PopupSeeder::class,
-            ComunicadoSeeder::class
+            ComunicadoSeeder::class,
+            NoticiaSeeder::class,
+            ImagenNoticiaSeeder::class
         ]);
 
     }
