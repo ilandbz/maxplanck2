@@ -236,6 +236,10 @@ class HomeController extends Controller
         $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
         return view('paginas.desarrollo-economico', $data);       
     }
+    public function obtenerDetDirectorio(Request $request){
+        $directorio = Directorio::where('id', $request->id)->first();
+        return $directorio;
+    }
     
 
 

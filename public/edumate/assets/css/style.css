@@ -4818,7 +4818,7 @@ input[type="submit"] {
 }
 
 .blog-area {
-  padding-top: 60px;
+  padding-top: 10px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .blog-area {
@@ -4929,7 +4929,7 @@ input[type="submit"] {
   }
 }
 .blog-wrapper {
-  padding-top: 35px;
+  padding-top: 10px;
   position: relative;
 }
 .blog-wrapper .more-post {

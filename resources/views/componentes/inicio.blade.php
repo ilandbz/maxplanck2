@@ -4,7 +4,6 @@
         echo $item->contenido;
     @endphp
 @endforeach
-
 <section class="event-area">
     <div class="container">
         <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">COMUNICADOS</h1><br>
@@ -51,7 +50,6 @@
         </div>
     </div>
 </section>
-
 <section class="blog-area">
     <div class="container">
         <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">NOTICIAS</h1><br>
@@ -66,10 +64,13 @@
                             </a>
                         </div>
                         <div class="blog-content">
+                            <?php
+// Supongamos que $registro es un objeto con una propiedad 'fecha_publicacion'
+$fechaPublicacion = Carbon\Carbon::parse($registro->fecha_publicacion);
+$fechaFormateada = $fechaPublicacion->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
+?>
                             <ul class="meta">
-                                <li><a href="#">25 May, 2020</a></li>
-                                <li><a href="#">By: Alex</a></li>
-                                <li><a href="#">12 Comments</a></li>
+                                <li><a href="#">{{$fechaFormateada}}</a></li>
                             </ul>
                             <h4 class="blog-title"><a href="noticia?s={{$registro->slug}}">{{$registro->titulo}}</a></h4>
                             <a href="noticia?s={{$registro->slug}}" class="more">Leer Mas <i class="fas fa-chevron-right"></i></a>
@@ -81,7 +82,6 @@
         </div>
     </div>
 </section>
-
 <section class="section_enlaces_externos">
     <div class="container">
         <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">ENLACES EXTERNOS</h1><br>
@@ -99,11 +99,6 @@
         </div>
     </div>
 </section>
-
-
-
-
-
 @if ($popup)
     <!-- Modal -->
     <div class="modal fade" id="modalPopup" tabindex="-1" aria-labelledby="modalPopupLabel" aria-hidden="true">
@@ -154,3 +149,5 @@
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.629145476826!2d-76.20727122406618!3d-10.129411109172679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a7ee3c3391333b%3A0x9999056b8e25c935!2sMunicipalidad%20Provincial%20de%20Ambo!5e0!3m2!1ses-419!2spe!4v1689300311725!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 @include('componentes.footer')
+
+

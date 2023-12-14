@@ -26,6 +26,7 @@ const crud = {
         formData.append('subtitulo', form.value.subtitulo);
         formData.append('slug', form.value.slug);
         formData.append('contenido', form.value.contenido);
+        formData.append('fecha_publicacion', form.value.fecha_publicacion);
         await agregarNoticia(formData)
         form.value.errors = []
         if(errors.value)
@@ -51,6 +52,7 @@ const crud = {
             formData.append('subtitulo', form.value.subtitulo ?? '');
             formData.append('slug', form.value.slug ?? '');
             formData.append('contenido', form.value.contenido ?? ''); 
+            formData.append('fecha_publicacion', form.value.fecha_publicacion);
             await actualizarNoticiaConImagen(formData)
             form.value.errors = []
         }
@@ -110,7 +112,10 @@ const guardar = () => {
                                         }}</small>
                             </div>  
                             <div class="mb-3">
-
+                                <label for="fecha_publicacion" class="form-label">Fecha de Publicacion </label>
+                                <input type="text" class="form-control" v-model="form.fecha_publicacion" :class="{ 'is-invalid': form.errors.fecha_publicacion }">
+                                <small class="text-danger" v-for="error in form.errors.fecha_publicacion" :key="error">{{ error
+                                        }}</small>                                
                             </div>
                         </div>
                         <div class="col-md-6">

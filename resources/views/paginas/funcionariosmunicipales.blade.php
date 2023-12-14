@@ -25,7 +25,13 @@
                             <img src="{{asset('storage/fotos/'.$item->foto);}}" width="266" height="359" alt="teacher">
                         </div>
                         <div class="teacher-content">
-                            <h4 class="name"><a href="#" id="enlaceAlcalde" data-bs-toggle="modal" data-bs-target="#exampleModal">{{$item->titulo}}</a></h4>
+                            <h4 class="name"><a href="" id="enlaceAlcalde" data-bs-toggle="modal"
+                                data-titulo="{{$item->titulo}}" 
+                                data-foto="{{$item->foto}}"
+                                data-dni="{{$item->dni}}"
+                                data-email="{{$item->email}}"
+                                data-celular="{{$item->celular}}"
+                                >{{$item->titulo}}</a></h4>
                             <span class="designation">{{$item->cargo->nombre}}</span>
                         </div>
                     </div>
@@ -37,7 +43,7 @@
 </section>
   
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
         <div class="modal-header">
