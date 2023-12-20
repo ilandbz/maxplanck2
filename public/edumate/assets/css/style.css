@@ -4,6 +4,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #151515;
+  background-image: url('../../../imagenes/background.jpg');
 }
 * {
   margin: 0;
@@ -1395,7 +1396,7 @@ input[type="submit"] {
   }
 }
 .slider-area {
-  padding-top: 155px;
+  padding-top: 216px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-area {
@@ -1433,17 +1434,37 @@ input[type="submit"] {
 }
 
 .single-slider {
-  height: 700px;
   background: #00A6FD;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+
+/* @media (min-width: 768px) {
   .single-slider {
-    height: 600px;
+    height: 50vh;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+@media (min-width: 992px) {
   .single-slider {
-    height: 500px;
+    height: 60vh;
+  }
+} */
+
+@media (min-width: 1800px) {
+  .single-slider {
+    height: 820px;
+  }
+}
+
+
+@media only screen and (min-width: 1300px) and (max-width: 1799px) {
+  .single-slider {
+    height: 590px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1299px) {
+  .single-slider {
+    height: 450px;
   }
 }
 @media (max-width: 767px) {

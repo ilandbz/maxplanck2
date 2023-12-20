@@ -1,7 +1,7 @@
 <section class="slider-area slider-active">
     @foreach ($sliders as $slider)
-        <div class="single-slider d-flex align-items-top bg_cover" style="background-image: url({{asset('storage/slider/'.$slider->nombreImagen);}}); 
-        background-size: contain; background-position: center center; background-repeat: round;">
+        <div class="single-slider" style="background-image: url({{asset('storage/slider/'.$slider->nombreImagen);}}); 
+        background-size: contain; background-position: center center; background-repeat: no-repeat;">
             <div class="container pt-10">
                 <div class="slider-content pt-50">
                     <h2 class="title text-info text-center" data-animation="fadeInLeft" data-delay="0.2s">{{$slider->titulo}}</h2>

@@ -65,10 +65,10 @@
                         </div>
                         <div class="blog-content">
                             <?php
-// Supongamos que $registro es un objeto con una propiedad 'fecha_publicacion'
-$fechaPublicacion = Carbon\Carbon::parse($registro->fecha_publicacion);
-$fechaFormateada = $fechaPublicacion->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
-?>
+                                // Supongamos que $registro es un objeto con una propiedad 'fecha_publicacion'
+                                $fechaPublicacion = Carbon\Carbon::parse($registro->fecha_publicacion);
+                                $fechaFormateada = $fechaPublicacion->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
+                            ?>
                             <ul class="meta">
                                 <li><a href="#">{{$fechaFormateada}}</a></li>
                             </ul>
