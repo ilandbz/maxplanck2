@@ -4,6 +4,188 @@
         echo $item->contenido;
     @endphp
 @endforeach
+'<!--====== Servicios ======-->
+<section class="top-courses-area">
+    <div class="container">
+    <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">SERVICIOS</h1><br>
+        <div class="courses-wrapper fadeInUpBig">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 courses-col">
+                    <div class="single-courses-2 mt-30">
+                        <div class="courses-image">
+                            <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                        </div>
+                        <div class="courses-content">
+                            <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA MUNICIPAL</a></h4>
+                            <div class="duration-rating">
+                                <div class="duration-fee">
+                                    <p class="duration">Gerencia Municipal</p>
+                                    <p class="fee">Gerencia Municipal</p>
+                                </div>
+                            </div>
+                            <div class="courses-link">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 courses-col">
+                    <div class="single-courses-2 mt-30">
+                        <div class="courses-image">
+                            <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                        </div>
+                        <div class="courses-content">
+                            <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA DE LA OFICINA DE ATENCIÓN AL CIUDADANO</a></h4>
+                            <div class="duration-rating">
+                                <div class="duration-fee">
+                                    <p class="duration">Gerencia de Oficina</p>
+                                    <p class="fee">de Atencion al Ciudadano</p>
+                                </div>
+                            </div>
+                            <div class="courses-link">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 courses-col">
+                    <div class="single-courses-2 mt-30">
+                        <div class="courses-image">
+                            <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                        </div>
+                        <div class="courses-content">
+                            <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA DE LA OFICINA GENERAL DE ADMINISTRACIÓN</a></h4>
+                            <div class="duration-rating">
+                                <div class="duration-fee">
+                                    <p class="duration">Gerencia de Oficina</p>
+                                    <p class="fee">General de Administracion</p>
+                                </div>
+                            </div>
+                            <div class="courses-link">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 courses-col">
+                    <div class="single-courses-2 mt-30">
+                        <div class="courses-image">
+                            <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                        </div>
+                        <div class="courses-content">
+                            <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA DE LA OFICINA GENERAL DE PLANEAMIENTO Y PRESUPUESTO</a></h4>
+                            <div class="duration-rating">
+                                <div class="duration-fee">
+                                    <p class="duration">GERENCIA DE LA OFICINA GENERAL</p>
+                                    <p class="fee">DE PLANEAMIENTO Y PRESUPUESTO</p>
+                                </div>
+                            </div>
+                            <div class="courses-link">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 courses-col">
+                    <div class="single-courses-2 mt-30">
+                        <div class="courses-image">
+                            <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                        </div>
+                        <div class="courses-content">
+                            <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA TERRITORIAL E INFRAESTRUCTURA</a></h4>
+                            <div class="duration-rating">
+                                <div class="duration-fee">
+                                    <p class="duration">GERENCIA TERRITORIAL</p>
+                                    <p class="fee">INFRAESTRUCTURA</p>
+                                </div>
+                            </div>
+                            <div class="courses-link">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 courses-col">
+                    <div class="single-courses-2 mt-30">
+                        <div class="courses-image">
+                            <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                        </div>
+                        <div class="courses-content">
+                            <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA DE LA OFICINA GENERAL DE ASESORÍA LEGAL</a></h4>
+                            <div class="duration-rating">
+                                <div class="duration-fee">
+                                    <p class="duration">GERENCIA DE LA OFICINA</p>
+                                    <p class="fee">GENERAL DE ASESORÍA LEGAL</p>
+                                </div>
+                            </div>
+                            <div class="courses-link">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>                                                                   
+                <div class="col-lg-3 col-sm-6 courses-col">
+                    <div class="single-courses-2 mt-30">
+                        <div class="courses-image">
+                            <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                        </div>
+                        <div class="courses-content">
+                            <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA DE GESTION AMBIENTAL Y RECURSOS NATURALES</a></h4>
+                            <div class="duration-rating">
+                                <div class="duration-fee">
+                                    <p class="duration">Gestion Ambiental</p>
+                                    <p class="fee">Recursos Naturales</p>
+                                </div>
+                            </div>
+                            <div class="courses-link">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="col-lg-3 col-sm-6 courses-col">
+                    <div class="single-courses-2 mt-30">
+                        <div class="courses-image">
+                            <a href="desarrollo-social"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                        </div>
+                        <div class="courses-content">
+                            <h4 class="courses-title"><a href="desarrollo-social">GERENCIA DE DESARROLLO SOCIAL</a></h4>
+                            <div class="duration-rating">
+                                <div class="duration-fee">
+                                    <p class="duration">Gerencia</span></p>
+                                    <p class="fee">Desarrollo Social</p>
+                                </div>
+                            </div>
+                            <div class="courses-link">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 courses-col">
+                    <div class="single-courses-2 mt-30">
+                        <div class="courses-image">
+                            <a href="desarrollo-economico"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                        </div>
+                        <div class="courses-content">
+                            <h4 class="courses-title"><a href="desarrollo-economico">GERENCIA DE DESARROLLO ECONOMICO Y ADMINISTRACION TRIBUTARIO</a></h4>
+                            <div class="duration-rating">
+                                <div class="duration-fee">
+                                    <p class="duration">Desarrollo Economico</p>
+                                    <p class="fee">Administracion Tributario</p>
+                                </div>
+                            </div>
+                            <div class="courses-link">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--====== Top Courses Ends ======-->'
 <section class="event-area">
     <div class="container">
         <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">COMUNICADOS</h1><br>
