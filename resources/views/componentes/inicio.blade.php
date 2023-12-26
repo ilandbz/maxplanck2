@@ -13,10 +13,10 @@
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses-2 mt-30">
                         <div class="courses-image">
-                            <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="gerencia-municipal"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
                         </div>
                         <div class="courses-content">
-                            <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA MUNICIPAL</a></h4>
+                            <h4 class="courses-title"><a href="gerencia-municipal">GERENCIA MUNICIPAL</a></h4>
                             <div class="duration-rating">
                                 <div class="duration-fee">
                                     <p class="duration">Gerencia Municipal</p>
@@ -32,10 +32,10 @@
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses-2 mt-30">
                         <div class="courses-image">
-                            <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="gerencia-atencion-ciudadano"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
                         </div>
                         <div class="courses-content">
-                            <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA DE LA OFICINA DE ATENCIÓN AL CIUDADANO</a></h4>
+                            <h4 class="courses-title"><a href="gerencia-atencion-ciudadano">GERENCIA DE LA OFICINA DE ATENCIÓN AL CIUDADANO</a></h4>
                             <div class="duration-rating">
                                 <div class="duration-fee">
                                     <p class="duration">Gerencia de Oficina</p>
@@ -51,10 +51,10 @@
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses-2 mt-30">
                         <div class="courses-image">
-                            <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="gerencia-oficina-administracion"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
                         </div>
                         <div class="courses-content">
-                            <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA DE LA OFICINA GENERAL DE ADMINISTRACIÓN</a></h4>
+                            <h4 class="courses-title"><a href="gerencia-oficina-administracion">GERENCIA DE LA OFICINA GENERAL DE ADMINISTRACIÓN</a></h4>
                             <div class="duration-rating">
                                 <div class="duration-fee">
                                     <p class="duration">Gerencia de Oficina</p>
@@ -70,10 +70,10 @@
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses-2 mt-30">
                         <div class="courses-image">
-                            <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="gerencia-oficina-planeamiento"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
                         </div>
                         <div class="courses-content">
-                            <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA DE LA OFICINA GENERAL DE PLANEAMIENTO Y PRESUPUESTO</a></h4>
+                            <h4 class="courses-title"><a href="gerencia-oficina-planeamiento">GERENCIA DE LA OFICINA GENERAL DE PLANEAMIENTO Y PRESUPUESTO</a></h4>
                             <div class="duration-rating">
                                 <div class="duration-fee">
                                     <p class="duration">GERENCIA DE LA OFICINA GENERAL</p>
@@ -89,10 +89,10 @@
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses-2 mt-30">
                         <div class="courses-image">
-                            <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="gerencia-territorial-infraestructura"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
                         </div>
                         <div class="courses-content">
-                            <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA TERRITORIAL E INFRAESTRUCTURA</a></h4>
+                            <h4 class="courses-title"><a href="gerencia-territorial-infraestructura">GERENCIA TERRITORIAL E INFRAESTRUCTURA</a></h4>
                             <div class="duration-rating">
                                 <div class="duration-fee">
                                     <p class="duration">GERENCIA TERRITORIAL</p>
@@ -108,10 +108,10 @@
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses-2 mt-30">
                         <div class="courses-image">
-                            <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="gerencia-asesoria-legal"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
                         </div>
                         <div class="courses-content">
-                            <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA DE LA OFICINA GENERAL DE ASESORÍA LEGAL</a></h4>
+                            <h4 class="courses-title"><a href="gerencia-asesoria-legal">GERENCIA DE LA OFICINA GENERAL DE ASESORÍA LEGAL</a></h4>
                             <div class="duration-rating">
                                 <div class="duration-fee">
                                     <p class="duration">GERENCIA DE LA OFICINA</p>

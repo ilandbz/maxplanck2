@@ -44,6 +44,15 @@ Route::get('mision-vision', [HomeController::class,'misionvision'])->name('misio
 Route::get('contactenos', [HomeController::class,'contactenos'])->name('contactenos');
 Route::get('ambo-historia', [HomeController::class,'historia'])->name('historia');
 Route::get('ambo-turismo', [HomeController::class,'turismo'])->name('turismo');
+Route::get('ambo-turismo', [HomeController::class,'turismo'])->name('turismo');
+Route::get('gerencia-municipal', [HomeController::class, 'gerenciaMunicipal'])->name('gerencia.municipal');
+
+
+Route::get('gerencia-atencion-ciudadano', [HomeController::class, 'gerenciaOficinaAtencion'])->name('atencion-ciudadano');
+Route::get('gerencia-oficina-administracion', [HomeController::class, 'gerenciaOficinaAdministracion'])->name('oficina-administracion');
+Route::get('gerencia-oficina-planeamiento', [HomeController::class, 'gerenciaOficinaPlaneamientoPresupuesto'])->name('oficina-planeamiento-presupuesto');
+Route::get('gerencia-territorial-infraestructura', [HomeController::class, 'gerenciaTerritorialInfraestructura'])->name('territorial-infraestructura');
+Route::get('gerencia-asesoria-legal', [HomeController::class, 'gerenciaAsesoriaLegal'])->name('asesoria-legal');
 Route::get('gestion-ambiental', [HomeController::class, 'gestionAmbiental'])->name('gestion.ambiental');
 Route::get('desarrollo-social', [HomeController::class, 'desarrolloSocial'])->name('desarrollo.social');
 Route::get('desarrollo-economico', [HomeController::class, 'desarrolloEconomico'])->name('desarrollo.economico');
