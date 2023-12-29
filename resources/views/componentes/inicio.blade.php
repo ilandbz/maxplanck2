@@ -357,11 +357,6 @@
             </div>
             <div class="col">
 
-                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@municipalidaddeambo" 
-                data-unique-id="municipalidaddeambo" 
-                data-embed-type="creator" 
-                style="max-width: 780px; min-width: 288px;" > <section>
-                    <a target="_blank" href="https://www.tiktok.com/@municipalidaddeambo?refer=creator_embed">@municipalidaddeambo</a> </section> </blockquote>
                 {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Cstl1ADjGhoqOvhh&amp;list=UULFVmWraKZdpxlQJ97dSGryyQ"
                 title="YouTube video player"
                 frameborder="0"
