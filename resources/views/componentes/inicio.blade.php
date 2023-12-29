@@ -437,5 +437,4 @@
 @section('script')
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v18.0" nonce="MNXupTpv"></script>
-<script async src="https://www.tiktok.com/embed.js"></script>
 @endsection
