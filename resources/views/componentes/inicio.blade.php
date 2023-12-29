@@ -361,7 +361,7 @@
                 data-unique-id="municipalidaddeambo" 
                 data-embed-type="creator" 
                 style="max-width: 780px; min-width: 288px;" > <section>
-                    <a target="_blank" href="https://www.tiktok.com/@municipalidaddeambo?refer=creator_embed">@municipalidaddeambo</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                    <a target="_blank" href="https://www.tiktok.com/@municipalidaddeambo?refer=creator_embed">@municipalidaddeambo</a> </section> </blockquote>
                 {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Cstl1ADjGhoqOvhh&amp;list=UULFVmWraKZdpxlQJ97dSGryyQ"
                 title="YouTube video player"
                 frameborder="0"
@@ -442,4 +442,5 @@
 @section('script')
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v18.0" nonce="MNXupTpv"></script>
+<script async src="https://www.tiktok.com/embed.js"></script>
 @endsection
