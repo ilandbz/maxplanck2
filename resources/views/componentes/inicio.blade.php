@@ -269,29 +269,36 @@
         <div class="row">
             <div class="col">
                 <style>
-                    /* Agregar un poco de espacio en la parte superior para separar el reproductor de la lista */
-           
+                    .playlist-section {
+                        max-height: 250px;
+                        overflow-y: auto;
+                        overflow-x: hidden
+                    }
+                        .playlist-section::-webkit-scrollbar {
+                            width: 0.5em;
+                        }
+
+                        .playlist-section::-webkit-scrollbar-thumb {
+                            background-color: #555;
+                        }
                     .playlist-item {
                         background-color: #333; /* Color de fondo oscuro para cada elemento de la lista */
                         border-color: #555; /* Color del borde */
                         color: white;
                     }
-            
                     .playlist-item img {
                         max-width: 100px; /* Ancho máximo de la imagen previsualizada */
                         margin-right: 10px; /* Espaciado a la derecha de la imagen */
                     }
                 </style>
 
-                <!-- Tu reproductor de YouTube -->
                 <iframe id="youtube-player" width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=d4qEeVLCoSdWLmLm&amp;list=UULFVmWraKZdpxlQJ97dSGryyQ" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-                <!-- Sección para mostrar la lista de reproducción -->
-                <div id="playlist-section" class="list-group">
-                    <!-- La lista de reproducción se mostrará aquí mediante JavaScript -->
+                <div id="playlist-section" class="list-group p-0 playlist-section">
+
                 </div>
                 <script>
                     // Cargar la lista de reproducción utilizando la API de YouTube
@@ -345,11 +352,16 @@
                 </script>                           
             </div>
             <div class="col">
-                <div class="fb-page" data-href="https://www.facebook.com/muniambo.pe" data-tabs="timeline" data-width="400" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/muniambo.pe" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/muniambo.pe">Municipalidad Provincial de Ambo</a></blockquote></div>
+<div class="fb-page" data-href="https://www.facebook.com/muniambo.pe" data-tabs="timeline" data-width="500" data-height="560" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/muniambo.pe" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/muniambo.pe">Municipalidad Provincial de Ambo</a></blockquote></div>
+
             </div>
             <div class="col">
 
-
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@municipalidaddeambo" 
+                data-unique-id="municipalidaddeambo" 
+                data-embed-type="creator" 
+                style="max-width: 780px; min-width: 288px;" > <section>
+                    <a target="_blank" href="https://www.tiktok.com/@municipalidaddeambo?refer=creator_embed">@municipalidaddeambo</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
                 {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Cstl1ADjGhoqOvhh&amp;list=UULFVmWraKZdpxlQJ97dSGryyQ"
                 title="YouTube video player"
                 frameborder="0"
@@ -429,5 +441,5 @@
 
 @section('script')
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v18.0" nonce="2VvKxucW"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v18.0" nonce="MNXupTpv"></script>
 @endsection
