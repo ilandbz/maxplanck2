@@ -17,7 +17,7 @@
                       En la visita de Iñigo Ortiz a la provincia de Ambo se entrevista con Diego Xagua cacique principal del pueblo, a quien pregunta Iñigo cuantos pueblos tiene este repartimiento, y cuantos principales, respondiendo el personaje, treinta y nueve caciques y principales entre ellos Domingo Camari, hijo de Hernando Yoli difunto principal de Tambo. (Fuente “Visita de la provincia de león de Huánuco en 1562 Iñigo Ortiz de Zúñiga).
                     </p>
 
-                    <img src="edumate/assets/images/courses-details.webp" width="845" height="533" alt="Course Details">
+                    <img src="imagenes/territorial.jpg" width="845" height="533" alt="Course Details">
                     <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish</p>
 
                     <h5 class="sub-title">Course Overview</h5>
@@ -401,38 +401,21 @@
                             <h4 class="title">Servicios</h4>
                         </div>
                         <ul class="courses-features-items">
-                          <h6>SUBGERENCIA DE DESARROLLO HUMANO EDUCACION Y SALUD</h6>
-                          <li><a href="">BIBLIOTECA</a></li>
-                          <li><a href="">CENTRO CULTURAL</a></li>
-                          <li><a href="">CASA MATERNA – ESTHER BLANCO DE MARTINEZ</a></li>
+                          <h6>SUBGERENCIA DE OBRAS PUBLICAS</h6>
+
                         </ul>
                         <ul class="courses-features-items">
-                          <h6>SUBGERENCIA DE DEMUNA, CIAM Y OMAPED</h6>
-                          <li><a href="">DEMUNA</a></li>
-                          <li><a href="">CIAM</a></li>
-                          <li><a href="">OMAPED</a></li>
+                          <h6>SUBGERENCIA DE ESTUDIOS Y PROYECTOS</h6>
+
                         </ul>
                         <ul class="courses-features-items">
-                          <h6>SUBGERENCIA DE PROGRAMAS SOCIALES E INCLUSION SOCIAL</h6>
-                          <li><a href="">SISFOH</a></li>
-                          <li><a href="">PROGRAMA PENSION 65</a></li>
-                          <li><a href="">PROGRAMA JUNTOS</a></li>
-                          <li><a href="">SUBGERENCIA DE ALIMENTACION Y NUTRICION</a></li>
-                          <li><a href="">PROGRAMA VASO DE LECHE</a></li>
-                          <li><a href="">COMPLEMENTACION ALIMENTACIÓN</a></li>
+                          <h6>SUBGERENCIA DE ACONDICIONAMIENTO TERRITORIAL Y URBANISMO</h6>
+
                         </ul>
                         <ul class="courses-features-items">
-                          <h6>SUBGERENCIA DE REGISTRO CIVIL</h6>
+                          <h6>SUBGERENCIA DE GESTION DE RIESGO Y DESASTRE</h6>
 
-                        </ul>                        
-                        <ul class="courses-features-items">
-                          <h6>SUBGERENCIA DE RENTAS</h6>
-
-                        </ul> 
-                        <ul class="courses-features-items">
-                          <h6>SUBGERENCIA DE SEGURIDAD CIUDADANA</h6>
-
-                        </ul> 
+                        </ul>
 
                     </div>
 

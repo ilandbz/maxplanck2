@@ -4,16 +4,15 @@
         echo $item->contenido;
     @endphp
 @endforeach
-'<!--====== Servicios ======-->
 <section class="top-courses-area">
     <div class="container">
-    <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">SERVICIOS</h1><br>
+        <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">SERVICIOS</h1><br>
         <div class="courses-wrapper fadeInUpBig">
             <div class="row">
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses-2 mt-30">
                         <div class="courses-image">
-                            <a href="gerencia-municipal"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="gerencia-municipal"><img src="imagenes/gmunicipal.jpg" width="270" height="170" alt="courses"></a>
                         </div>
                         <div class="courses-content">
                             <h4 class="courses-title"><a href="gerencia-municipal">GERENCIA MUNICIPAL</a></h4>
@@ -32,7 +31,7 @@
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses-2 mt-30">
                         <div class="courses-image">
-                            <a href="gerencia-atencion-ciudadano"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="gerencia-atencion-ciudadano"><img src="imagenes/secretaria.jpg" width="270" height="170" alt="courses"></a>
                         </div>
                         <div class="courses-content">
                             <h4 class="courses-title"><a href="gerencia-atencion-ciudadano">GERENCIA DE LA OFICINA DE ATENCIÓN AL CIUDADANO</a></h4>
@@ -51,7 +50,7 @@
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses-2 mt-30">
                         <div class="courses-image">
-                            <a href="gerencia-oficina-administracion"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="gerencia-oficina-administracion"><img src="imagenes/administracion.jpg" width="270" height="170" alt="courses"></a>
                         </div>
                         <div class="courses-content">
                             <h4 class="courses-title"><a href="gerencia-oficina-administracion">GERENCIA DE LA OFICINA GENERAL DE ADMINISTRACIÓN</a></h4>
@@ -70,7 +69,7 @@
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses-2 mt-30">
                         <div class="courses-image">
-                            <a href="gerencia-oficina-planeamiento"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="gerencia-oficina-planeamiento"><img src="imagenes/presupuesto.jpg" width="270" height="170" alt="courses"></a>
                         </div>
                         <div class="courses-content">
                             <h4 class="courses-title"><a href="gerencia-oficina-planeamiento">GERENCIA DE LA OFICINA GENERAL DE PLANEAMIENTO Y PRESUPUESTO</a></h4>
@@ -89,7 +88,7 @@
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses-2 mt-30">
                         <div class="courses-image">
-                            <a href="gerencia-territorial-infraestructura"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="gerencia-territorial-infraestructura"><img src="imagenes/territorial.jpg" width="270" height="170" alt="courses"></a>
                         </div>
                         <div class="courses-content">
                             <h4 class="courses-title"><a href="gerencia-territorial-infraestructura">GERENCIA TERRITORIAL E INFRAESTRUCTURA</a></h4>
@@ -108,7 +107,7 @@
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses-2 mt-30">
                         <div class="courses-image">
-                            <a href="gerencia-asesoria-legal"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="gerencia-asesoria-legal"><img src="imagenes/asesorialegal.jpg" width="270" height="170" alt="courses"></a>
                         </div>
                         <div class="courses-content">
                             <h4 class="courses-title"><a href="gerencia-asesoria-legal">GERENCIA DE LA OFICINA GENERAL DE ASESORÍA LEGAL</a></h4>
@@ -146,7 +145,7 @@
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses-2 mt-30">
                         <div class="courses-image">
-                            <a href="desarrollo-social"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="desarrollo-social"><img src="imagenes/sociales.jpg" width="270" height="170" alt="courses"></a>
                         </div>
                         <div class="courses-content">
                             <h4 class="courses-title"><a href="desarrollo-social">GERENCIA DE DESARROLLO SOCIAL</a></h4>
@@ -165,7 +164,7 @@
                 <div class="col-lg-3 col-sm-6 courses-col">
                     <div class="single-courses-2 mt-30">
                         <div class="courses-image">
-                            <a href="desarrollo-economico"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="desarrollo-economico"><img src="imagenes/economico.jpg" width="270" height="170" alt="courses"></a>
                         </div>
                         <div class="courses-content">
                             <h4 class="courses-title"><a href="desarrollo-economico">GERENCIA DE DESARROLLO ECONOMICO Y ADMINISTRACION TRIBUTARIO</a></h4>
@@ -184,8 +183,7 @@
             </div>
         </div>
     </div>
-    </section>
-    <!--====== Top Courses Ends ======-->'
+</section>
 <section class="event-area">
     <div class="container">
         <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">COMUNICADOS</h1><br>
@@ -264,6 +262,103 @@
         </div>
     </div>
 </section>
+
+<section class="">
+    <div class="container">
+        <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">INFORMACION SOCIAL</h1><br>
+        <div class="row">
+            <div class="col">
+                <style>
+                    /* Agregar un poco de espacio en la parte superior para separar el reproductor de la lista */
+           
+                    .playlist-item {
+                        background-color: #333; /* Color de fondo oscuro para cada elemento de la lista */
+                        border-color: #555; /* Color del borde */
+                        color: white;
+                    }
+            
+                    .playlist-item img {
+                        max-width: 100px; /* Ancho máximo de la imagen previsualizada */
+                        margin-right: 10px; /* Espaciado a la derecha de la imagen */
+                    }
+                </style>
+
+                <!-- Tu reproductor de YouTube -->
+                <iframe id="youtube-player" width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=d4qEeVLCoSdWLmLm&amp;list=UULFVmWraKZdpxlQJ97dSGryyQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <!-- Sección para mostrar la lista de reproducción -->
+                <div id="playlist-section" class="list-group">
+                    <!-- La lista de reproducción se mostrará aquí mediante JavaScript -->
+                </div>
+                <script>
+                    // Cargar la lista de reproducción utilizando la API de YouTube
+                    const playlistSection = document.getElementById('playlist-section');
+                    const playlistId = 'UULFVmWraKZdpxlQJ97dSGryyQ'; // ID de la lista de reproducción
+                    const apiKey = 'AIzaSyD7zQpnJ6wpgcGMjaQoUXeCxHLZWgvoWrs'; // Reemplazar con tu clave de API
+                    const player = document.getElementById('youtube-player');
+
+                    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=${apiKey}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            // Crear la lista de reproducción
+                            data.items.forEach(item => {
+                                const videoTitle = item.snippet.title;
+                                const videoId = item.snippet.resourceId.videoId;
+                                const thumbnailUrl = item.snippet.thumbnails.default.url;
+
+                                // Obtener la duración del video
+                                fetch(`https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=${videoId}&key=${apiKey}`)
+                                    .then(response => response.json())
+                                    .then(videoData => {
+                                        const videoDuration = parseISO8601Duration(videoData.items[0].contentDetails.duration);
+                                        // Crear un enlace para cada video con miniatura, reproducción y duración
+                                        const videoLink = document.createElement('a');
+                                        videoLink.href = `javascript:changeVideo('${videoId}')`; // Llama a la función para cambiar y reproducir el video
+                                        videoLink.classList.add('list-group-item', 'list-group-item-action', 'playlist-item'); // Agregar la clase 'playlist-item'
+                                        videoLink.innerHTML = `<div class="row"><div class="col-md-3"><img src="${thumbnailUrl}" alt="${videoTitle}" class="img-fluid"></div><div class="col-md-9">${videoTitle}<br>Duración: ${videoDuration}</div></div>`;
+                                        // Agregar el enlace a la lista de reproducción
+                                        playlistSection.appendChild(videoLink);
+                                    })
+                                    .catch(error => console.error('Error al obtener la duración del video:', error));
+                            });
+                        })
+                        .catch(error => console.error('Error al cargar la lista de reproducción:', error));
+
+                    // Función para cambiar y reproducir el video en el reproductor iframe
+                    function changeVideo(videoId) {
+                        player.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                    }
+
+                    // Función para convertir la duración de ISO 8601 a un formato más legible
+                    function parseISO8601Duration(duration) {
+                        const match = duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
+
+                        const hours = match[1] ? parseInt(match[1], 10) : 0;
+                        const minutes = match[2] ? parseInt(match[2], 10) : 0;
+                        const seconds = match[3] ? parseInt(match[3], 10) : 0;
+
+                        return `${hours > 0 ? hours + 'h ' : ''}${minutes > 0 ? minutes + 'm ' : ''}${seconds > 0 ? seconds + 's' : ''}`;
+                    }
+                </script>                           
+            </div>
+            <div class="col">
+                <div class="fb-page" data-href="https://www.facebook.com/muniambo.pe" data-tabs="timeline" data-width="400" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/muniambo.pe" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/muniambo.pe">Municipalidad Provincial de Ambo</a></blockquote></div>
+            </div>
+            <div class="col">
+
+
+                {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Cstl1ADjGhoqOvhh&amp;list=UULFVmWraKZdpxlQJ97dSGryyQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> --}}
+            </div>
+        </div>
+    </div>
+</section>
 <section class="section_enlaces_externos">
     <div class="container">
         <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">ENLACES EXTERNOS</h1><br>
@@ -282,7 +377,6 @@
     </div>
 </section>
 @if ($popup)
-    <!-- Modal -->
     <div class="modal fade" id="modalPopup" tabindex="-1" aria-labelledby="modalPopupLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content bg-info">
@@ -333,3 +427,7 @@
 @include('componentes.footer')
 
 
+@section('script')
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v18.0" nonce="2VvKxucW"></script>
+@endsection

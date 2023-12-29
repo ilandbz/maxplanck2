@@ -15,7 +15,7 @@
                       En la visita de Iñigo Ortiz a la provincia de Ambo se entrevista con Diego Xagua cacique principal del pueblo, a quien pregunta Iñigo cuantos pueblos tiene este repartimiento, y cuantos principales, respondiendo el personaje, treinta y nueve caciques y principales entre ellos Domingo Camari, hijo de Hernando Yoli difunto principal de Tambo. (Fuente “Visita de la provincia de león de Huánuco en 1562 Iñigo Ortiz de Zúñiga).
                     </p>
 
-                    <img src="edumate/assets/images/courses-details.webp" width="845" height="533" alt="Course Details">
+                    <img src="imagenes/asesorialegal.jpg" width="845" height="533" alt="Course Details">
                     <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish</p>
 
                     <h5 class="sub-title">Course Overview</h5>
