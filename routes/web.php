@@ -61,6 +61,12 @@ Route::get('municipalidad-alcalde', [HomeController::class,'municipalidadAlcalde
 Route::get('municipalidad-consejomunicipal', [HomeController::class,'concejoMunicipal'])->name('municipalidad.concejomunicipal');
 Route::get('municipalidad-funcionarios', [HomeController::class,'functionariosMunicipales'])->name('municipalidad.funcionarios');
 
+//subgerencias
+Route::get('obras-publicas', [HomeController::class,'obrasPublicas'])->name('municipalidad.obraspublicas');
+Route::get('estudios-proyectos', [HomeController::class,'estudiosProyectos'])->name('municipalidad.estudios.proyectos');
+Route::get('acondicionamiento-territorial', [HomeController::class,'acondicionamientoTerritorial'])->name('municipalidad.acondicionamiento');
+Route::get('riesgo-desastre', [HomeController::class,'riesgoDesastre'])->name('municipalidad.riesgo.desastre');
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
