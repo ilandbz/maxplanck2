@@ -55,12 +55,12 @@
             <div id="navigation" class="navigation navigation-landscape">
                 <div class="container-fluid position-relative">
                     <div class="row align-items-center">
-                        <div class="col-md-2">
+                        <div class="col-md-1">
                             <div class="header-logo p-2 pl-4">
                                 <a href="/"><img src="{{asset('storage/imagenes/'.$organizacion->logo);}}" width="80" height="" alt="Logo"></a>
                             </div>
                         </div>
-                        <div class="col-md-6 position-static">
+                        <div class="col-md-7 position-static">
                             <div class="container">
                                 <div class="nav-toggle d-lg-none" data-toggle="collapse" data-target="#navbarSupportedContent"></div>
                                 <nav class="nav-menus-wrapper">
