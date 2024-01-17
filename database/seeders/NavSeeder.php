@@ -187,37 +187,17 @@ class NavSeeder extends Seeder
         Nav::firstOrCreate(['nombre' => 'Ciudadania', 'url' => '/participacion/ciudadana', 'ruta' => 'participacion.ciudadana','slug' => 'participacion-ciudadana','icono' => '','padre_id' => null,'orden' => 5]);
 
             Nav::firstOrCreate([
-                'nombre' => 'Audiencias Públicas',
-                'url'   => '/participacionciudadana/audienciapublica',
-                'ruta'   => 'participacionciudadana.audienciapublica',
-                'slug' => 'participacionciudadana-audienciapublica',
+                'nombre' => 'Seguridad Ciudadana',
+                'url'   => '/participacionciudadana/Seguridad Ciudadana',
+                'ruta'   => 'participacionciudadana.seguridad.ciudadana',
+                'slug' => 'participacionciudadana-seguridad-ciudadana',
                 'icono' => '',
                 'padre_id' => Nav::where('nombre', 'Ciudadania')->value('id'),
                 'orden' => 1
             ]);
 
-            Nav::firstOrCreate([
-                'nombre' => 'Consultas Ciudadanas',
-                'url'   => '/participacionciudadana/consultaciudadana',
-                'ruta'   => 'participacionciudadana.consultaciudadana',
-                'slug' => 'participacionciudadana-consultaciudadana',
-                'icono' => '',
-                'padre_id' => Nav::where('nombre', 'Ciudadania')->value('id'),
-                'orden' => 2
-            ]);
-
-            Nav::firstOrCreate([
-                'nombre' => 'Voluntariado',
-                'url'   => '/participacionciudadana/voluntariado',
-                'ruta'   => 'participacionciudadana.voluntariado',
-                'slug' => 'participacionciudadana-voluntariado',
-                'icono' => '',
-                'padre_id' => Nav::where('nombre', 'Ciudadania')->value('id'),
-                'orden' => 3
-            ]);
-
         Nav::firstOrCreate([
-            'nombre' => 'Municipales',
+            'nombre' => 'Servicios',
             'url'   => 'serviciosmunicipales',
             'ruta'   => 'serviciosmunicipales',
             'slug' => 'servicios-municipales',
@@ -227,33 +207,23 @@ class NavSeeder extends Seeder
         ]);
 
             Nav::firstOrCreate([
-                'nombre' => 'Museo Historico MANUEL H. CISNEROS ZAVALETA',
-                'url'   => '/noticiaseventos/noticias',
-                'ruta'   => 'noticiaseventos.noticias',
-                'slug' => 'noticiaseventos-noticias',
+                'nombre' => 'Centro Cultural MANUEL H. CISNEROS ZAVALETA',
+                'url'   => '/servicios/noticias',
+                'ruta'   => 'servicios.noticias',
+                'slug' => 'servicios-noticias',
                 'icono' => '',
-                'padre_id' => Nav::where('nombre', 'Municipales')->value('id'),
+                'padre_id' => Nav::where('nombre', 'Servicios')->value('id'),
                 'orden' => 1
             ]);
 
             Nav::firstOrCreate([
-                'nombre' => 'Comunicados',
-                'url'   => '/noticiaseventos/comunicados',
-                'ruta'   => 'noticiaseventos.comunicados',
-                'slug' => 'noticiaseventos-comunicados',
+                'nombre' => 'Biblioteca Virtual',
+                'url'   => '/servicios/biblioteca',
+                'ruta'   => 'servicios.biblioteca',
+                'slug' => 'servicios-biblioteca',
                 'icono' => '',
-                'padre_id' => Nav::where('nombre', 'Municipales')->value('id'),
+                'padre_id' => Nav::where('nombre', 'Servicios')->value('id'),
                 'orden' => 2
-            ]);
-
-            Nav::firstOrCreate([
-                'nombre' => 'Galeria',
-                'url'   => '/noticiaseventos/galeria',
-                'ruta'   => 'noticiaseventos.galeria',
-                'slug' => 'noticiaseventos-galeria',
-                'icono' => '',
-                'padre_id' => Nav::where('nombre', 'Municipales')->value('id'),
-                'orden' => 3
             ]);
 
         Nav::firstOrCreate([
