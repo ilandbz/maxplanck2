@@ -4,6 +4,11 @@
         echo $item->contenido;
     @endphp
 @endforeach
+<style>
+.single-courses-2 {
+    height: 400px; /* Establece la altura deseada */
+}
+</style>
 <section class="top-courses-area">
     <div class="container">
         <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">SERVICIOS</h1><br>
