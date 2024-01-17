@@ -26,8 +26,6 @@ class RedesSocialesSeeder extends Seeder
             'icono' => 'fab fa-youtube',
             'colorfondo' => '#ff0000'
         ]);
-
-
         RedSocial::firstOrCreate([
             'titulo' => 'Tik Tok',
             'url' => 'https://www.tiktok.com/@municipalidaddeambo?_t=8gqH4fQKkar&_r=1',

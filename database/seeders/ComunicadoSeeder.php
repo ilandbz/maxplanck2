@@ -36,6 +36,6 @@ class ComunicadoSeeder extends Seeder
         Comunicado::firstorCreate([
             'titulo'        => '',
             'nombreImagen'  => 'comunicado1.jpg'
-        ]);               
+        ]);         
     }
 }
