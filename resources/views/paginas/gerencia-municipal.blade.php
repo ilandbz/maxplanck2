@@ -8,7 +8,7 @@
             <div class="col-lg-12">
                 <div class="courses-details-content mt-50">
                     <h2 class="title">GERENCIA MUNICIPAL</h2>
-                    <img src="imagenes/gmunicipal.jpg" class="img-fluid thumbnail mt-4" alt="Gerencia Municipal">
+                    <img src="imagenes/gmunicipal.jpg" class="img-fluid img-thumbnail mt-4" alt="Gerencia Municipal">
                     <p style="text-align:justify !important;">
                         La Gerencia Municipal es el órgano de más alto nivel técnico administrativo, responsable de ejecutar y hacer cumplir las políticas del Concejo Municipal y de la Alcaldía, de la obtención de los resultados previstos y de la calidad de los servicios que se brindan.
                     </p>
@@ -33,6 +33,7 @@
                     </ul>
                 </div>
             </div>
+
         </div>
     </div>
 </section>

@@ -2,13 +2,11 @@
 @section('body-content')
   @include('componentes.banner')
 
-  <section class="courses-details mb-20">
+<section class="courses-details mb-20">
     <div class="container bg-white">
         <div class="row flex-row-reverse">
             <div class="col-lg-9">
                 <div class="courses-details-content mt-50">
-                    
-
                     <h2 class="title">GERENCIA TERRITORIAL E INFRAESTRUCTURA</h2>
                     <p style="text-align:justify !important;">
                         La Gerencia de Desarrollo Territorial e Infraestructura, es el órgano de línea encargado de planificar, ejecutar y supervisar las acciones referidas a los proyectos y obras públicas, el planeamiento de los espacios urbanos y rurales, el ornato, catastro y control urbano y de edificaciones.
@@ -16,7 +14,6 @@
 
                     <img src="imagenes/territorial.jpg" width="845" height="533" alt="Course Details">
                     <h5 class="sub-title">Funciones</h5>
-
                     <ul class="courses-details-list">
                         <li>
                             <i class="far fa-check-circle"></i>
@@ -32,7 +29,6 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
             <div class="col-lg-3">
                 <div class="courses-sidebar pt-20">
@@ -40,7 +36,6 @@
                         <div class="sidebar-title">
                             <h4 class="title">Servicios</h4>
                         </div>
-                        
                         <ul class="courses-features-items">
                           <h6><a href="/obras-publicas"> SUBGERENCIA DE OBRAS PUBLICAS</a></h6>
 
@@ -55,11 +50,8 @@
                         </ul>
                         <ul class="courses-features-items">
                           <h6><a href="/riesgo-desastre"> SUBGERENCIA DE GESTION DE RIESGO Y DESASTRE</a></h6>
-
                         </ul>
-
                     </div>
-
                 </div>
             </div>
         </div>

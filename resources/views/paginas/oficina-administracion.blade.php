@@ -5,17 +5,14 @@
   <section class="courses-details mb-20">
     <div class="container bg-white p-2">
         <div class="row flex-row-reverse">
-            <div class="col-lg-12">
+            <div class="col-lg-9">
                 <div class="courses-details-content mt-50">
                     <h2 class="title">OFICINA GENERAL DE ADMINISTRACION</h2>
+                    <img src="imagenes/administracion.jpg" class="img-fluid img-thumbnail mt-4" alt="Course Details">
                     <p style="text-align:justify !important;">
                         La Gerencia de la Oficina General de Administración es el órgano encargado de dirigir, ejecutar, evaluar y controlar la administración del potencial humano, los recursos económicos, financieros, materiales, así como proporcionar los servicios que requieran las diferentes áreas de la Municipalidad Provincial de Ambo.
                     </p>
-
-                    <img src="imagenes/administracion.jpg" width="845" height="533" alt="Course Details">
-
                     <h5 class="sub-title">Funciones</h5>
-
                     <ul class="courses-details-list">
                         <li>
                             <i class="far fa-check-circle"></i>
@@ -43,9 +40,30 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
+            <div class="col-lg-3">
+                <div class="courses-features mt-30">
+                    <div class="sidebar-title">
+                        <h4 class="title mb-4">Oficinas</h4>
+                    </div>
+                    <ul class="courses-features-items mb-4">
+                      <h6><a href="#"> OFICINA DE RECURSOS HUMANOS</a></h6>
 
+                    </ul>
+                    <ul class="courses-features-items mb-4">
+                      <h6><a href="#"> OFICINA DE ABASTECIMIENTO</a></h6>
+                    </ul>
+                    <ul class="courses-features-items mb-4">
+                      <h6><a href="#"> OFICINA DE CONTABILIDAD</a></h6>
+                    </ul>
+                    <ul class="courses-features-items mb-4">
+                      <h6><a href="#"> OFICINA DE TESORERIA</a></h6>
+                    </ul>
+                    <ul class="courses-features-items mb-4">
+                      <h6><a href="#"> OFICINA DE CONTROL PATRIMONIAL, SERVICIOS GENERALES Y MAESTRANZA</a></h6>
+                    </ul>                                                     
+                </div>
+            </div>
         </div>
     </div>
 </section>
