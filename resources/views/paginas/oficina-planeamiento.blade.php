@@ -36,7 +36,7 @@
             <div class="col-md-3">
                 <div class="courses-features mt-30">
                     <div class="sidebar-title">
-                        <h4 class="title mb-4">Oficinas</h4>
+                        <h4 class="title mb-4">Servicios</h4>
                     </div>
                     <ul class="courses-features-items mb-4">
                       <h6><a href="#"> OFICINA DE PLANEAMIENTO Y RACIONALIZACION</a></h6>

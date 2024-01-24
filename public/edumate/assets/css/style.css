@@ -4849,6 +4849,21 @@ input[type="submit"] {
   }
 }
 
+.sidebar-title .title{
+  margin-bottom: 30px; 
+}
+.sidebar-title{
+  margin-bottom: 50px; 
+}
+.img-thumbnail {
+  border: 4px solid #151515; /* Color del marco */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 5px; /* Espaciado interno */
+}
+
+.courses-features-items h6 {
+  margin-bottom: 8px; 
+}
 
 .blog-area-2 {
   position: relative;
