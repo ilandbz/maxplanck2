@@ -20,27 +20,23 @@
                     <ul class="courses-details-list">
                         <li>
                             <i class="far fa-check-circle"></i>
-                            <p>Formular, implementar y ejecutar planes establecidos en el marco del Sistema Nacional de Gestión del Riesgo de Desastres, en concordancia con el Plan Nacional de Gestión de Riesgos de Desastres.</p>
+                            <p>Desarrollar actividades de gestión ambiental de acuerdo con los lineamientos de políticas, objetivos y metas, considerando a las entidades públicas y privadas relacionadas, y a la sociedad civil de acuerdo a la normativa vigente.</p>
                         </li>
                         <li>
                             <i class="far fa-check-circle"></i>
-                            <p>Dirigir y controlar la prestación de servicios técnicos de inspección de seguridad en materia de defensa civil, de acuerdo a lo establecido en el Reglamento de Inspecciones Técnicas de Seguridad en Defensa Civil.</p>
+                            <p>Planificar, organizar, dirigir y controlar el servicio de limpieza pública (recolección, transporte y disposición final de residuos sólidos) y el mantenimiento de áreas verdes de uso público, promoviendo su mejoramiento e incremento.</p>
                         </li>
                         <li>
                             <i class="far fa-check-circle"></i>
-                            <p>Dirigir las inspecciones técnicas de seguridad, ex – post y ex – ante que requiera la Unidad de Promoción Empresarial y turismo, dentro del procedimiento de emisión de licencias de funcionamiento.</p>
+                            <p>Conducir el proceso de determinación de necesidades de bienes y servicios necesarios para la correcta realización de las labores de limpieza pública y mantenimiento de áreas verdes, optimizando el uso de los recursos públicos, para que en coordinación con la unidad de rentas se establezca la estructura de costos de los respectivos arbitrios.</p>
                         </li>
                         <li>
                             <i class="far fa-check-circle"></i>
-                            <p>Programar, organizar y controlar las actividades de capacitación de los Brigadistas Voluntarios de Defensa Civil y/o Brigadistas de Seguridad y Gestión de riesgos de Desastres.</p>
+                            <p>Cumplir con el plan de servicios de limpieza pública y mantenimiento de parques y jardines.</p>
                         </li>
                         <li>
                             <i class="far fa-check-circle"></i>
-                            <p>Elaborar programas de sensibilización a la población, creando una cultura de prevención y de seguridad, con la finalidad de planificar, principalmente acciones de prevención e incrementar la capacidad de respuesta efectiva en caso de desastres.</p>
-                        </li>
-                        <li>
-                            <i class="far fa-check-circle"></i>
-                            <p>Representar a la Municipalidad y coordinar, con las instancias regionales y nacionales del SINAGERD, las acciones que tengan impacto en la Provincia.</p>
+                            <p>Ejecutar programas sobre la responsabilidad y tenencia de animales domésticos, generando una norma específica para el registro, control y desplazamiento en calles y parques de la ciudad, en coordinación con la unidad de desarrollo humano, educación y salud.</p>
                         </li>
                     </ul>
                 </div>
