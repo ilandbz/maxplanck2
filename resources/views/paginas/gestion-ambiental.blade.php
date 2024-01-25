@@ -9,9 +9,9 @@
                 <div class="courses-details-content mt-50">
                     
 
-                    <h2 class="title">GESTION AMBIENTAL</h2>
+                    <h2 class="title">GESTION AMBIENTAL Y RECURSOS NATURALES</h2>
 
-                    <img src="imagenes/srs.jpg" class="img-fluid img-thumbnail mt-4" alt="GESTION AMBIENTAL">
+                    <img src="imagenes/srs.jpg" class="img-fluid img-thumbnail mt-4" alt="GESTION AMBIENTAL Y RECURSOS NATURALES">
 
                     <p style="text-align:justify !important;">
                       LA GERENCIA DE GESTION AMBIENTAL Y RECURSOS NATURALES ES EL ORGANO DE LINEA, ENCARGADA DE PLANIFICAR, ORGANIZAR Y DIRIGIR LA PRESTACIÓN DE LOS SERVICIOS BÁSICOS DE LIMPIEZA PÚBLICA, MANTENIMIENTO, CONSERVACIÓN Y PROMOCIÓN DEL CRECIMIENTO DE SUS AREAS VERDES, EL MANEJO DE LAS ACTIVIDADES DE MEJORAMIENTO Y PROTECCIÓN DEL MEDIO AMBIENTE, BUSCANDO SU IDENTIFICACIÓN, AMBIENTALISTA.
