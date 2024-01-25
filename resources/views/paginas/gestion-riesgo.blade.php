@@ -10,9 +10,7 @@
                     
 
                     <h2 class="title">SUBGERENCIA DE GESTION DE RIESGO Y DESASTRE</h2>
-
                     <h5 class="sub-title">Funciones</h5>
-
                     <ul class="courses-details-list">
                         <li>
                             <i class="far fa-check-circle"></i>

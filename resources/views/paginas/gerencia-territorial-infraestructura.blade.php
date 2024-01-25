@@ -8,11 +8,15 @@
             <div class="col-lg-9">
                 <div class="courses-details-content mt-50">
                     <h2 class="title">GERENCIA TERRITORIAL E INFRAESTRUCTURA</h2>
+
+
+                    <img src="imagenes/territorial.jpg" class="img-fluid img-thumbnail" alt="GERENCIA TERRITORIAL E INFRAESTRUCTURA">
+
+
                     <p style="text-align:justify !important;">
                         La Gerencia de Desarrollo Territorial e Infraestructura, es el órgano de línea encargado de planificar, ejecutar y supervisar las acciones referidas a los proyectos y obras públicas, el planeamiento de los espacios urbanos y rurales, el ornato, catastro y control urbano y de edificaciones.
                     </p>
 
-                    <img src="imagenes/territorial.jpg" width="845" height="533" alt="Course Details">
                     <h5 class="sub-title">Funciones</h5>
                     <ul class="courses-details-list">
                         <li>

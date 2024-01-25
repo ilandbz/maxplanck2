@@ -14,12 +14,35 @@
                     <img src="imagenes/srs.jpg" class="img-fluid img-thumbnail mt-4" alt="GESTION AMBIENTAL">
 
                     <p style="text-align:justify !important;">
-                      El terreno que ocupa actualmente Ambo, antiguamente pertenecía a la hacienda de Yanahuayra, fue allí que se construyeron algunas viviendas, hasta que finalmente se pobló y formó el caserío, y más tarde ciudad.
-                      En los primeros informes indagados sobre la historia de la provincia de Ambo en los años 1539 y 1542, se produce la llegada de Iñigo Ortiz de Zúñiga personaje Español enviado por el Rey para realizar y evaluar la instalación europea como la expansión en la región, desplazándose por toda el área geográfica con el fin de empadronar para recaudar los impuestos, así como crear un “Núcleo y Asentamiento” de conquistadores que podrían dominar la entrada a la zona de la selva y controlar el rió Marañon, como había sido una frontera en tiempos del imperio incaico, al mismo tiempo combatir eficazmente la resistencia que mantenía el caudillo Illatopa en la zona de los andes; como crear centros poblados de soldados, mestizos y aventureros que podrían quebrar la paz colonial, enviando a los futuros encomenderos, empresarios donde la población indígena estaba concentrada.
-                      Huánuco en aquellos tiempos era una ciudad muy importante por ser la zona de paso de actividad comercial andinas, y al mismo tiempo se desarrollaba la exportación de productos agrarios.
-                      En la visita de Iñigo Ortiz a la provincia de Ambo se entrevista con Diego Xagua cacique principal del pueblo, a quien pregunta Iñigo cuantos pueblos tiene este repartimiento, y cuantos principales, respondiendo el personaje, treinta y nueve caciques y principales entre ellos Domingo Camari, hijo de Hernando Yoli difunto principal de Tambo. (Fuente “Visita de la provincia de león de Huánuco en 1562 Iñigo Ortiz de Zúñiga).
+                      LA GERENCIA DE GESTION AMBIENTAL Y RECURSOS NATURALES ES EL ORGANO DE LINEA, ENCARGADA DE PLANIFICAR, ORGANIZAR Y DIRIGIR LA PRESTACIÓN DE LOS SERVICIOS BÁSICOS DE LIMPIEZA PÚBLICA, MANTENIMIENTO, CONSERVACIÓN Y PROMOCIÓN DEL CRECIMIENTO DE SUS AREAS VERDES, EL MANEJO DE LAS ACTIVIDADES DE MEJORAMIENTO Y PROTECCIÓN DEL MEDIO AMBIENTE, BUSCANDO SU IDENTIFICACIÓN, AMBIENTALISTA.
                     </p>
-
+                    <h5 class="sub-title">Funciones</h5>
+                    <ul class="courses-details-list">
+                        <li>
+                            <i class="far fa-check-circle"></i>
+                            <p>Formular, implementar y ejecutar planes establecidos en el marco del Sistema Nacional de Gestión del Riesgo de Desastres, en concordancia con el Plan Nacional de Gestión de Riesgos de Desastres.</p>
+                        </li>
+                        <li>
+                            <i class="far fa-check-circle"></i>
+                            <p>Dirigir y controlar la prestación de servicios técnicos de inspección de seguridad en materia de defensa civil, de acuerdo a lo establecido en el Reglamento de Inspecciones Técnicas de Seguridad en Defensa Civil.</p>
+                        </li>
+                        <li>
+                            <i class="far fa-check-circle"></i>
+                            <p>Dirigir las inspecciones técnicas de seguridad, ex – post y ex – ante que requiera la Unidad de Promoción Empresarial y turismo, dentro del procedimiento de emisión de licencias de funcionamiento.</p>
+                        </li>
+                        <li>
+                            <i class="far fa-check-circle"></i>
+                            <p>Programar, organizar y controlar las actividades de capacitación de los Brigadistas Voluntarios de Defensa Civil y/o Brigadistas de Seguridad y Gestión de riesgos de Desastres.</p>
+                        </li>
+                        <li>
+                            <i class="far fa-check-circle"></i>
+                            <p>Elaborar programas de sensibilización a la población, creando una cultura de prevención y de seguridad, con la finalidad de planificar, principalmente acciones de prevención e incrementar la capacidad de respuesta efectiva en caso de desastres.</p>
+                        </li>
+                        <li>
+                            <i class="far fa-check-circle"></i>
+                            <p>Representar a la Municipalidad y coordinar, con las instancias regionales y nacionales del SINAGERD, las acciones que tengan impacto en la Provincia.</p>
+                        </li>
+                    </ul>
                 </div>
 
             </div>

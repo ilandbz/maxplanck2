@@ -6,13 +6,16 @@
     <div class="container bg-white">
         <div class="row flex-row-reverse">
             <div class="col-lg-12">
-                <div class="courses-details-content mt-50">                   
-                    <h2 class="title">GERENCIA DE ASESORIA LEGAL</h2>
+                <div class="courses-details-content mt-50"> 
+                    <div class="text-center">
+                        <h2 class="title">GERENCIA DE ASESORIA LEGAL</h2>
+                        <img src="imagenes/asesorialegal.jpg" class="img-fluid img-thumbnail" alt="GERENCIA DE ASESORIA LEGAL">
+
+                    </div>                  
+
                     <p style="text-align:justify !important;">
                         La Gerencia de Asesoría Jurídica esta encargada de evaluar y asesorar sobre asuntos de carácter legal, que le sean solicitados por las diferentes dependencias de la Municipalidad, así como, garantizar la legalidad de las decisiones tomadas por la alcaldía y la Gerencia Municipal, además, realizar el análisis técnico jurídico de las normas legales de aplicación municipal, manteniendo la coherencia con el Sistema Jurídico Nacional.
                     </p>
-
-                    <img src="imagenes/asesorialegal.jpg" class="img-fluid img-thumbnail" alt="GERENCIA DE ASESORIA LEGAL">
                     <h5 class="sub-title">Funciones</h5>
 
                     <ul class="courses-details-list">
