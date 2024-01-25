@@ -275,7 +275,7 @@ class HomeController extends Controller
     public function gestionAmbiental(){
         $fechaActual = Carbon::now();
         $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
-        $data['titulo']='GESTION AMBIENTAL';
+        $data['titulo']='GESTION AMBIENTAL Y RECURSOS NATURALES';
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
