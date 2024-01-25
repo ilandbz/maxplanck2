@@ -12,12 +12,43 @@
                     <h2 class="title">GERENCIA DE DESARROLLO SOCIAL</h2>
                     <img src="imagenes/sociales.jpg" class="img-fluid img-thumbnail" alt="GERENCIA DE DESARROLLO SOCIAL">
                     <p style="text-align:justify !important;">
-                      El terreno que ocupa actualmente Ambo, antiguamente pertenecía a la hacienda de Yanahuayra, fue allí que se construyeron algunas viviendas, hasta que finalmente se pobló y formó el caserío, y más tarde ciudad.
-                      En los primeros informes indagados sobre la historia de la provincia de Ambo en los años 1539 y 1542, se produce la llegada de Iñigo Ortiz de Zúñiga personaje Español enviado por el Rey para realizar y evaluar la instalación europea como la expansión en la región, desplazándose por toda el área geográfica con el fin de empadronar para recaudar los impuestos, así como crear un “Núcleo y Asentamiento” de conquistadores que podrían dominar la entrada a la zona de la selva y controlar el rió Marañon, como había sido una frontera en tiempos del imperio incaico, al mismo tiempo combatir eficazmente la resistencia que mantenía el caudillo Illatopa en la zona de los andes; como crear centros poblados de soldados, mestizos y aventureros que podrían quebrar la paz colonial, enviando a los futuros encomenderos, empresarios donde la población indígena estaba concentrada.
-                      Huánuco en aquellos tiempos era una ciudad muy importante por ser la zona de paso de actividad comercial andinas, y al mismo tiempo se desarrollaba la exportación de productos agrarios.
-                      En la visita de Iñigo Ortiz a la provincia de Ambo se entrevista con Diego Xagua cacique principal del pueblo, a quien pregunta Iñigo cuantos pueblos tiene este repartimiento, y cuantos principales, respondiendo el personaje, treinta y nueve caciques y principales entre ellos Domingo Camari, hijo de Hernando Yoli difunto principal de Tambo. (Fuente “Visita de la provincia de león de Huánuco en 1562 Iñigo Ortiz de Zúñiga).
+                      LA GERENCIA DE DESARROLLO SOCIAL ES EL ORGANO DE LINEA, RESPONSABLE DE DIRIGIR Y EJECUTAR LAS POLITICAS EN EL AREA DEL DESARROLLO HUMANO Y LA PARTICIPACIÓN CIUDADANA, TENIENDO COMO EJE PRINCIPAL DE SU TRABAJO, LA PROMOCIÓN DE CAPACIDADES DEL CAPITAL HUMANO, NECESARIAS PARA EL DESARROLLO LOCAL, ASI COMO LAS ACTIVIDADES DESTINADOS A LA PROTECCIÓN Y DEFENSA DE LA INTEGRIDAD FÍSICA DE LA CIUDADANÍA.
                     </p>
-
+                    <h5 class="sub-title">Funciones</h5>
+                    <ul class="courses-details-list">
+                      <li>
+                        <i class="far fa-check-circle"></i>
+                        <p>Coordinar con instituciones públicas y privadas para la implementación de planes, programas y proyectos sociales, con énfasis en la lucha contra la pobreza, desnutrición infantil, violencia familiar y sexual.</p>
+                    </li>
+                    <li>
+                        <i class="far fa-check-circle"></i>
+                        <p>Supervisar el cumplimiento de las actividades destinadas a la promoción del desarrollo humano sostenible, fomentando la recreación, el deporte, la salud y el bienestar social dentro del distrito de Ambo.</p>
+                    </li>
+                    <li>
+                        <i class="far fa-check-circle"></i>
+                        <p>Formular e implementar el Plan de Desarrollo Social y los programas de bienestar en beneficio de niños, adolescentes, jóvenes, adultos, adultos mayores y comunidad en general, articulándose con el Plan de Desarrollo Social Concertado y el Plan Estratégico Institucional.</p>
+                    </li>
+                    <li>
+                        <i class="far fa-check-circle"></i>
+                        <p>Promover en la población su participación activa en las campañas de salud física y mental.</p>
+                    </li>
+                    <li>
+                        <i class="far fa-check-circle"></i>
+                        <p>Liderar los comités, equipos multisectoriales para la disminución de la mortalidad materna y desnutrición infantil.</p>
+                    </li>
+                    <li>
+                        <i class="far fa-check-circle"></i>
+                        <p>Planear, dirigir, controlar, supervisar y evaluar las actividades del Sistema de Focalización de Hogares (SISFOH).</p>
+                    </li>
+                    <li>
+                        <i class="far fa-check-circle"></i>
+                        <p>Programar, dirigir y controlar la administración de la Casa Materna y centros de vigilancia de la madre y del niño a cargo de la municipalidad.</p>
+                    </li>
+                    <li>
+                        <i class="far fa-check-circle"></i>
+                        <p>Organizar, conducir, controlar y actualizar los servicios que brinda la Biblioteca Municipal y la Academia Municipal.</p>
+                    </li>
+                    </ul>
                     
 
                 </div>
