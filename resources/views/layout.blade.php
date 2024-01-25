@@ -55,9 +55,11 @@
             <div id="navigation" class="navigation navigation-landscape">
                 <div class="container-fluid position-relative">
                     <div class="row align-items-center">
-                        <div class="col-md-1">
+                        <div class="col-md-2">
                             <div class="header-logo p-2 pl-4">
-                                <a href="/"><img src="{{asset('storage/imagenes/'.$organizacion->logo);}}" width="80" height="" alt="Logo"></a>
+                                {{-- <a href="/"><img src="{{asset('storage/imagenes/'.$organizacion->logo);}}" width="80" height="" alt="Logo"></a> --}}
+                                <a href="https://www.gob.pe/muniambo"><img src="{{asset('storage/imagenes/portalweb.jpeg');}}" class="img-fluid" height="" alt="Logo"></a>
+
                             </div>
                         </div>
                         <div class="col-md-7 position-static">
@@ -77,14 +79,14 @@
                                 </nav>                                
                             </div>
                         </div>
-                        <div class="col-lg-2 position-static">
+                        {{-- <div class="col-lg-2 position-static">
                             <div class="header-search">
                                 <form action="#">
                                     <input type="text" placeholder="Buscar">
                                     <button><i class="fas fa-search"></i></button>
                                 </form>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="col-md-2">
                             <div style="text-align: right;">
                             <a class="mr-4 p-0 text-right" data-animation="fadeInUp" data-delay="1s" target="_blank" href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=12005">

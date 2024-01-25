@@ -33,12 +33,6 @@
                                 <img src="{{asset('storage/imagenes/reclamaciones.jpg');}}" alt="">
                             </a>
                         </div>
-                        <div class="footer-link mt-2">
-                            <h4 class="footer-title">PORTAL WEB</h4>
-                            <a href="https://www.gob.pe/muniambo" target="_blank">
-                                <img src="{{asset('storage/imagenes/portalweb.jpeg');}}" alt="">
-                            </a>
-                        </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="footer-link mt-2">
