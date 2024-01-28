@@ -58,8 +58,7 @@
                         <div class="col-md-2">
                             <div class="header-logo p-2 pl-4">
                                 {{-- <a href="/"><img src="{{asset('storage/imagenes/'.$organizacion->logo);}}" width="80" height="" alt="Logo"></a> --}}
-                                <a href="https://www.gob.pe/muniambo"><img src="{{asset('storage/imagenes/portalweb.jpeg');}}" class="img-fluid" height="" alt="Logo"></a>
-
+                                <a target="_blank" href="https://www.gob.pe/muniambo"><img src="{{asset('storage/imagenes/portalweb.jpeg');}}" class="img-fluid" height="" alt="Logo"></a>
                             </div>
                         </div>
                         <div class="col-md-7 position-static">

@@ -18,16 +18,16 @@
             <div class="col-lg-7">
                 <div class="about-image mt-50">
                     <div class="single-image image-1">
-                        <img src="edumate/assets/images/about/about-1.webp" width="290" height="290" alt="about">
+                        <img src="edumate/assets/images/about/about-1.jpg" width="290" height="290" alt="about">
                     </div>
                     <div class="single-image image-2">
-                        <img src="edumate/assets/images/about/about-2.webp" width="225" height="225" alt="about">
+                        <img src="edumate/assets/images/about/about-2.jpg" width="225" height="225" alt="about">
                     </div>
                     <div class="single-image image-3">
-                        <img src="edumate/assets/images/about/about-3.webp" width="190" height="190" alt="about">
+                        <img src="edumate/assets/images/about/about-3.jpg" width="190" height="190" alt="about">
                     </div>
                     <div class="single-image image-4">
-                        <img src="edumate/assets/images/about/about-4.webp" width="140" height="140" alt="about">
+                        <img src="edumate/assets/images/about/about-4.jpg" width="140" height="140" alt="about">
                     </div>
 
                     <div class="about-icon icon-1">
