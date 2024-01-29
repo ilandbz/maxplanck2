@@ -25,9 +25,6 @@
                         <span class="department">{{$alcalde->area->nombre}}</span>
                         <ul class="teacher-contact">
                             <li style="text-align: justify"><strong>FUNCIONES: </strong>{{$alcalde->funciones}}</li>
-                            <li><strong>DNI:</strong> <a href="#">{{$alcalde->dni}}</a></li>
-                            <li><strong>Email:</strong> <a href="#">{{$alcalde->email}}</a></li>
-                            <li><strong>Telefono:</strong> <a href="#">{{$alcalde->celular}}</a></li>
                         </ul>
                     </div>
                 </div>

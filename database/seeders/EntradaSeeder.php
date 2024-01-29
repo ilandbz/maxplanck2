@@ -81,7 +81,7 @@ class EntradaSeeder extends Seeder
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-4 col-sm-6" style="height: 258px;">
                             <div class="single-gallery mt-30">
                                 <a class="image-popup" href="edumate/assets/images/gallery/7.jpg">
                                     <img src="edumate/assets/images/gallery/7.jpg" width="371" height="257" alt="gallery">
