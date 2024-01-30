@@ -9,10 +9,10 @@
                             <h4 class="footer-title">Informacion Destacada</h4>
                             <ul class="link-list">
                                 <li><a href="quienes-somos">Quienes Somos</a></li>
-                                <li><a href="#">Mesa de Partes</a></li>
-                                <li><a href="#">Convocatorias</a></li>
+                                <li><a href="https://facilita.gob.pe/t/1258">Mesa de Partes</a></li>
+                                <li><a href="https://www.gob.pe/institucion/muniambo/informes-publicaciones/4306808-convocatoria-cas-transitorion-001-2023-mpa">Convocatorias</a></li>
                                 <li><a href="#">Buson de Sugerencias</a></li>
-                                <li><a href="contact.html">Contactenos</a></li>
+                                <li><a href="contactenos">Contactenos</a></li>
                             </ul>
                         </div>
                     </div>
