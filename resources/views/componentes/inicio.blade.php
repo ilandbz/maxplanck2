@@ -357,11 +357,9 @@
                 </script>                           
             </div>
             <div class="col">
-<div class="fb-page" data-href="https://www.facebook.com/muniambo.pe" data-tabs="timeline" data-width="500" data-height="560" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/muniambo.pe" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/muniambo.pe">Municipalidad Provincial de Ambo</a></blockquote></div>
-
+            <div class="fb-page" data-href="https://www.facebook.com/muniambo.pe" data-tabs="timeline" data-width="500" data-height="560" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/muniambo.pe" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/muniambo.pe">Municipalidad Provincial de Ambo</a></blockquote></div>
             </div>
             <div class="col">
-
                 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@municipalidaddeambo" 
                 data-unique-id="municipalidaddeambo" 
                 data-embed-type="creator" 
