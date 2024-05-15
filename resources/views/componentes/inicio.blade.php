@@ -9,178 +9,171 @@
     height: 400px; /* Establece la altura deseada */
 }
 </style>
-<section class="top-courses-area">
+
+<div class="specialty-area">
+    <div class="container text-bg-light p-5">
+        <div class="row no-gutters wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
+            <div class="cl_logo_slider carousel_slider owl-carousel owl-theme" data-margin="15" data-loop="true" data-autoplay="true" data-dots="false"
+            data-responsive='{"0":{"items": "1"}, "100":{"items": "2"}, "100":{"items": "3"}, "100":{"items": "4"}, "100": {"items": "5"}}'>
+                <div class="item">
+                    <a href="https://facilita.gob.pe/t/1258" target="_blank">
+                        <div class="single-specialty mt-30">
+                            <div class="specialty-box">
+                                <div class="box-icon">
+                                    <img src="edumate/assets/images/icon/icon-1.webp" width="70" height="70" alt="icon">
+                                    <p>Biblioteca Virtual</p>
+                                </div>
+                            </div>
+                        </div>                    
+                    </a>                  
+                </div>
+                <div class="item">
+                    <a href="" target="_blank">
+                        <div class="single-specialty active mt-30">
+                            <div class="specialty-box">
+                                <div class="box-icon">
+                                    <img src="edumate/assets/images/icon/icon-2.webp" width="70" height="70" alt="icon">
+                                    <p>Examen Admision</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>              
+                </div>
+                <div class="item">
+                    <a href="https://facilita.gob.pe/seguimiento" target="_blank">
+                        <div class="single-specialty mt-30">
+                            <div class="specialty-box">
+                                <div class="box-icon">
+                                    <img src="edumate/assets/images/icon/icon-3.webp" width="70" height="70" alt="icon">
+                                    <p>Titulacion</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>       
+                </div>                
+                <div class="item">
+                    <a href="https://facilita.gob.pe/seguimiento" target="_blank">
+                        <div class="single-specialty mt-30">
+                            <div class="specialty-box">
+                                <div class="box-icon">
+                                    <img src="edumate/assets/images/icon/icon-2-6.webp" width="70" height="70" alt="icon">
+                                    <p>Titulo Minedu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>         
+                </div> 
+            </div>                              
+        </div>
+    </div>
+</div>
+
+<div class="counter-area">
     <div class="container">
-        <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">SERVICIOS</h1><br>
-        <div class="courses-wrapper fadeInUpBig">
+        <div class="counter-wrapper bg_cover" style="background-image: url(edumate/assets/images/counter-bg.webp);">
             <div class="row">
-                <div class="col-lg-3 col-sm-6 courses-col">
-                    <div class="single-courses-2 mt-30">
-                        <div class="courses-image">
-                            <a href="gerencia-municipal"><img src="imagenes/gmunicipal.jpg" width="270" height="170" alt="courses"></a>
-                        </div>
-                        <div class="courses-content">
-                            <h4 class="courses-title"><a href="gerencia-municipal">GERENCIA MUNICIPAL</a></h4>
-                            <div class="duration-rating">
-                                <div class="duration-fee">
-                                    <p class="duration">Gerencia Municipal</p>
-                                    <p class="fee">Gerencia Municipal</p>
-                                </div>
-                            </div>
-                            <div class="courses-link">
-                                
-                            </div>
-                        </div>
+                <div class="col-sm-2 col-6 counter-col">
+                    <div class="single-counter mt-30 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <span class="counter-count"><span class="count" data-count="3">0</span> +</span>
+                        <p>Programas de Estudio</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 courses-col">
-                    <div class="single-courses-2 mt-30">
-                        <div class="courses-image">
-                            <a href="gerencia-atencion-ciudadano"><img src="imagenes/secretaria.jpg" width="270" height="170" alt="courses"></a>
-                        </div>
-                        <div class="courses-content">
-                            <h4 class="courses-title"><a href="gerencia-atencion-ciudadano">GERENCIA DE LA OFICINA DE ATENCIÓN AL CIUDADANO</a></h4>
-                            <div class="duration-rating">
-                                <div class="duration-fee">
-                                    <p class="duration">Gerencia de Oficina</p>
-                                    <p class="fee">de Atencion al Ciudadano</p>
-                                </div>
-                            </div>
-                            <div class="courses-link">
-                                
-                            </div>
-                        </div>
+                <div class="col-sm-2 col-6 counter-col">
+                    <div class="single-counter mt-30 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <span class="counter-count"><span class="count" data-count="25">0</span> +</span>
+                        <p>Docentes</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 courses-col">
-                    <div class="single-courses-2 mt-30">
-                        <div class="courses-image">
-                            <a href="gerencia-oficina-administracion"><img src="imagenes/administracion.jpg" width="270" height="170" alt="courses"></a>
-                        </div>
-                        <div class="courses-content">
-                            <h4 class="courses-title"><a href="gerencia-oficina-administracion">GERENCIA DE LA OFICINA GENERAL DE ADMINISTRACIÓN</a></h4>
-                            <div class="duration-rating">
-                                <div class="duration-fee">
-                                    <p class="duration">Gerencia de Oficina</p>
-                                    <p class="fee">General de Administracion</p>
-                                </div>
-                            </div>
-                            <div class="courses-link">
-                                
-                            </div>
-                        </div>
+                <div class="col-sm-2 col-6 counter-col">
+                    <div class="single-counter mt-30 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <span class="counter-count"><span class="count" data-count="150">0</span> +</span>
+                        <p>Estudiantes</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 courses-col">
-                    <div class="single-courses-2 mt-30">
-                        <div class="courses-image">
-                            <a href="gerencia-oficina-planeamiento"><img src="imagenes/presupuesto.jpg" width="270" height="170" alt="courses"></a>
-                        </div>
-                        <div class="courses-content">
-                            <h4 class="courses-title"><a href="gerencia-oficina-planeamiento">GERENCIA DE LA OFICINA GENERAL DE PLANEAMIENTO Y PRESUPUESTO</a></h4>
-                            <div class="duration-rating">
-                                <div class="duration-fee">
-                                    <p class="duration">GERENCIA DE LA OFICINA GENERAL</p>
-                                    <p class="fee">DE PLANEAMIENTO Y PRESUPUESTO</p>
-                                </div>
-                            </div>
-                            <div class="courses-link">
-                                
-                            </div>
-                        </div>
+                <div class="col-sm-2 col-6 counter-col">
+                    <div class="single-counter mt-30 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <span class="counter-count"><span class="count" data-count="500">0</span> +</span>
+                        <p>Egresados</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 courses-col">
-                    <div class="single-courses-2 mt-30">
-                        <div class="courses-image">
-                            <a href="gerencia-territorial-infraestructura"><img src="imagenes/territorial.jpg" width="270" height="170" alt="courses"></a>
-                        </div>
-                        <div class="courses-content">
-                            <h4 class="courses-title"><a href="gerencia-territorial-infraestructura">GERENCIA TERRITORIAL E INFRAESTRUCTURA</a></h4>
-                            <div class="duration-rating">
-                                <div class="duration-fee">
-                                    <p class="duration">GERENCIA TERRITORIAL</p>
-                                    <p class="fee">INFRAESTRUCTURA</p>
-                                </div>
-                            </div>
-                            <div class="courses-link">
-                                
-                            </div>
-                        </div>
+                <div class="col-sm-2 col-6 counter-col">
+                    <div class="single-counter mt-30 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <span class="counter-count"><span class="count" data-count="2024">0</span> +</span>
+                        <p>Ingresantes</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 courses-col">
-                    <div class="single-courses-2 mt-30">
-                        <div class="courses-image">
-                            <a href="gerencia-asesoria-legal"><img src="imagenes/asesorialegal.jpg" width="270" height="170" alt="courses"></a>
-                        </div>
-                        <div class="courses-content">
-                            <h4 class="courses-title"><a href="gerencia-asesoria-legal">GERENCIA DE LA OFICINA GENERAL DE ASESORÍA LEGAL</a></h4>
-                            <div class="duration-rating">
-                                <div class="duration-fee">
-                                    <p class="duration">GERENCIA DE LA OFICINA</p>
-                                    <p class="fee">GENERAL DE ASESORÍA LEGAL</p>
-                                </div>
-                            </div>
-                            <div class="courses-link">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>                                                                   
-                <div class="col-lg-3 col-sm-6 courses-col">
-                    <div class="single-courses-2 mt-30">
-                        <div class="courses-image">
-                            <a href="gestion-ambiental"><img src="imagenes/rga.jpg" width="270" height="170" alt="courses"></a>
-                        </div>
-                        <div class="courses-content">
-                            <h4 class="courses-title"><a href="gestion-ambiental">GERENCIA DE GESTION AMBIENTAL Y RECURSOS NATURALES</a></h4>
-                            <div class="duration-rating">
-                                <div class="duration-fee">
-                                    <p class="duration">Gestion Ambiental</p>
-                                    <p class="fee">Recursos Naturales</p>
-                                </div>
-                            </div>
-                            <div class="courses-link">
-                                
-                            </div>
-                        </div>
+                <div class="col-sm-2 col-6 counter-col">
+                    <div class="single-counter mt-30 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <span class="counter-count"><span class="count" data-count="60">0</span> +</span>
+                        <p>Ingresantes 2024</p>
                     </div>
                 </div>                
-                <div class="col-lg-3 col-sm-6 courses-col">
-                    <div class="single-courses-2 mt-30">
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="top-courses-area">
+    <div class="container">
+        <h1 class="text-center text-white font-weight-bold" style="font-weight: 900; background-color:#07294d"">PROGRAMAS DE ESTUDIO</h1><br>
+        <div class="courses-wrapper fadeInUpBig">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 courses-col">
+                    <div class="single-courses-2 mt-30" style="height:500px">
                         <div class="courses-image">
-                            <a href="desarrollo-social"><img src="imagenes/sociales.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="enfermeria-tecnica"><img src="imagenes/1.png" style="height:350px;" alt="courses"></a>
                         </div>
                         <div class="courses-content">
-                            <h4 class="courses-title"><a href="desarrollo-social">GERENCIA DE DESARROLLO SOCIAL</a></h4>
+                            <h4 class="courses-title"><a href="enfermeria-tecnica">Enfermeria Tecnica</a></h4>
                             <div class="duration-rating">
                                 <div class="duration-fee">
-                                    <p class="duration">Gerencia</span></p>
-                                    <p class="fee">Desarrollo Social</p>
+                                    <p class="duration">Enfermeria Tecnica</p>
+                                    <p class="fee">Enfermeria Tecnica</p>
                                 </div>
                             </div>
                             <div class="courses-link">
-                                
+                                <a class="apply" href="#">Semestres : VI</a>
+                                <a class="more" href="courses-details.html">Horas : 3240</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 courses-col">
-                    <div class="single-courses-2 mt-30">
+                <div class="col-lg-4 col-sm-6 courses-col">
+                    <div class="single-courses-2 mt-30" style="height:500px">
                         <div class="courses-image">
-                            <a href="desarrollo-economico"><img src="imagenes/economico.jpg" width="270" height="170" alt="courses"></a>
+                            <a href="produccion-agropecuaria"><img src="imagenes/2.png" style="height:350px;" alt="courses"></a>
                         </div>
                         <div class="courses-content">
-                            <h4 class="courses-title"><a href="desarrollo-economico">GERENCIA DE DESARROLLO ECONOMICO Y ADMINISTRACION TRIBUTARIO</a></h4>
+                            <h4 class="courses-title"><a href="produccion-agropecuaria">Produccion Agropecuaria</a></h4>
                             <div class="duration-rating">
                                 <div class="duration-fee">
-                                    <p class="duration">Desarrollo Economico</p>
-                                    <p class="fee">Administracion Tributario</p>
+                                    <p class="duration">Produccion Agropecuaria</p>
+                                    <p class="fee">Produccion Agropecuaria</p>
                                 </div>
                             </div>
                             <div class="courses-link">
-                                
+                                <a class="apply" href="#">Semestres : VI</a>
+                                <a class="more" href="courses-details.html">Horas : 3240</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 courses-col">
+                    <div class="single-courses-2 mt-30" style="height:500px">
+                        <div class="courses-image">
+                            <a href="mecanica-automotriz"><img src="imagenes/3.png" style="height:350px;" alt="courses"></a>
+                        </div>
+                        <div class="courses-content">
+                            <h4 class="courses-title"><a href="mecanica-automotriz">Mecanica Automotriz</a></h4>
+                            <div class="duration-rating">
+                                <div class="duration-fee">
+                                    <p class="duration">Mecanica Automotriz</p>
+                                    <p class="fee">Mecanica Automotriz</p>
+                                </div>
+                            </div>
+                            <div class="courses-link">
+                                <a class="apply" href="#">Semestres : VI</a>
+                                <a class="more" href="courses-details.html">Horas : 3240</a>
                             </div>
                         </div>
                     </div>
@@ -191,7 +184,7 @@
 </section>
 <section class="event-area">
     <div class="container">
-        <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">COMUNICADOS</h1><br>
+        <h1 class="text-center text-white font-weight-bold" style="font-weight: 900;  background-color:#07294d"">COMUNICADOS</h1><br>
         <div class="tab-content event-tab-items wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="tab-pane fade show active" id="courses">
                 <div class="row mx-auto my-auto justify-content-center">
@@ -237,7 +230,7 @@
 </section>
 <section class="blog-area">
     <div class="container">
-        <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">NOTICIAS</h1><br>
+        <h1 class="text-center text-white font-weight-bold" style="font-weight: 900;  background-color:#07294d">NOTICIAS</h1><br>
         <div class="blog-wrapper">
             <div class="row-wrapper blog-active">
                 @foreach ($noticias as $registro)
@@ -268,115 +261,45 @@
     </div>
 </section>
 
+<section class="event-page">
+    <div class="container">
+        <h1 class="text-center text-white font-weight-bold" style="font-weight: 900;  background-color:#07294d">EVENTOS</h1><br>
+        <div class="row">
+            @foreach ($eventos as $item)
+            <div class="col-lg-3 col-sm-6">
+                <div class="single-event text-center mt-30">
+                    <span class="time">{{ $item->subtitulo }}</span>
+                    <span class="date">{{ $item->fecha }}</span>
+                    <h4 class="event-title"><a href="event-details.html">{{ $item->titulo }}</a></h4>
+                    <p class="place">{{ $item->lugar }}</p>
+                    <img src="{{ asset('storage/eventos/'.$item->imagen) }}" width="370" height="250" alt="imagen">
+                    <a href="event-details.html" class="more">leer mas <i class="far fa-chevron-right"></i></a>
+                </div>
+            </div>                
+            @endforeach
+        </div>
+    </div>
+</section>
+
 <section class="">
     <div class="container">
-        <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">INFORMACION SOCIAL</h1><br>
+        <h1 class="text-center text-white font-weight-bold" style="font-weight: 900;  background-color:#07294d">INFORMACION SOCIAL</h1><br>
         <div class="row">
             <div class="col">
-                <style>
-                    .playlist-section {
-                        max-height: 250px;
-                        overflow-y: auto;
-                        overflow-x: hidden
-                    }
-                        .playlist-section::-webkit-scrollbar {
-                            width: 0.5em;
-                        }
-
-                        .playlist-section::-webkit-scrollbar-thumb {
-                            background-color: #555;
-                        }
-                    .playlist-item {
-                        background-color: #333; /* Color de fondo oscuro para cada elemento de la lista */
-                        border-color: #555; /* Color del borde */
-                        color: white;
-                    }
-                    .playlist-item img {
-                        max-width: 100px; /* Ancho máximo de la imagen previsualizada */
-                        margin-right: 10px; /* Espaciado a la derecha de la imagen */
-                    }
-                </style>
-
-                <iframe id="youtube-player" width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=d4qEeVLCoSdWLmLm&amp;list=UULFVmWraKZdpxlQJ97dSGryyQ" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-                <div id="playlist-section" class="list-group p-0 playlist-section">
-
-                </div>
-                <script>
-                    // Cargar la lista de reproducción utilizando la API de YouTube
-                    const playlistSection = document.getElementById('playlist-section');
-                    const playlistId = 'UULFVmWraKZdpxlQJ97dSGryyQ'; // ID de la lista de reproducción
-                    const apiKey = 'AIzaSyD7zQpnJ6wpgcGMjaQoUXeCxHLZWgvoWrs'; // Reemplazar con tu clave de API
-                    const player = document.getElementById('youtube-player');
-
-                    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=${apiKey}`)
-                        .then(response => response.json())
-                        .then(data => {
-                            // Crear la lista de reproducción
-                            data.items.forEach(item => {
-                                const videoTitle = item.snippet.title;
-                                const videoId = item.snippet.resourceId.videoId;
-                                const thumbnailUrl = item.snippet.thumbnails.default.url;
-
-                                // Obtener la duración del video
-                                fetch(`https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=${videoId}&key=${apiKey}`)
-                                    .then(response => response.json())
-                                    .then(videoData => {
-                                        const videoDuration = parseISO8601Duration(videoData.items[0].contentDetails.duration);
-                                        // Crear un enlace para cada video con miniatura, reproducción y duración
-                                        const videoLink = document.createElement('a');
-                                        videoLink.href = `javascript:changeVideo('${videoId}')`; // Llama a la función para cambiar y reproducir el video
-                                        videoLink.classList.add('list-group-item', 'list-group-item-action', 'playlist-item'); // Agregar la clase 'playlist-item'
-                                        videoLink.innerHTML = `<div class="row"><div class="col-md-3"><img src="${thumbnailUrl}" alt="${videoTitle}" class="img-fluid"></div><div class="col-md-9">${videoTitle}<br>Duración: ${videoDuration}</div></div>`;
-                                        // Agregar el enlace a la lista de reproducción
-                                        playlistSection.appendChild(videoLink);
-                                    })
-                                    .catch(error => console.error('Error al obtener la duración del video:', error));
-                            });
-                        })
-                        .catch(error => console.error('Error al cargar la lista de reproducción:', error));
-
-                    // Función para cambiar y reproducir el video en el reproductor iframe
-                    function changeVideo(videoId) {
-                        player.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-                    }
-
-                    // Función para convertir la duración de ISO 8601 a un formato más legible
-                    function parseISO8601Duration(duration) {
-                        const match = duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
-
-                        const hours = match[1] ? parseInt(match[1], 10) : 0;
-                        const minutes = match[2] ? parseInt(match[2], 10) : 0;
-                        const seconds = match[3] ? parseInt(match[3], 10) : 0;
-
-                        return `${hours > 0 ? hours + 'h ' : ''}${minutes > 0 ? minutes + 'm ' : ''}${seconds > 0 ? seconds + 's' : ''}`;
-                    }
-                </script>                           
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jom1GilHIyo?si=sJxoB-Ek65W4Dp4p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                           
             </div>
             <div class="col">
-            <div class="fb-page" data-href="https://www.facebook.com/muniambo.pe" data-tabs="timeline" data-width="500" data-height="560" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/muniambo.pe" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/muniambo.pe">Municipalidad Provincial de Ambo</a></blockquote></div>
+            
             </div>
             <div class="col">
-                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@municipalidaddeambo" 
-                data-unique-id="municipalidaddeambo" 
-                data-embed-type="creator" 
-                style="max-width: 780px; min-width: 288px;" > <section>
-                    <a target="_blank" href="https://www.tiktok.com/@municipalidaddeambo?refer=creator_embed">@municipalidaddeambo</a> </section> </blockquote>
-                {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Cstl1ADjGhoqOvhh&amp;list=UULFVmWraKZdpxlQJ97dSGryyQ"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe> --}}
+
             </div>
         </div>
     </div>
 </section>
 <section class="section_enlaces_externos">
     <div class="container">
-        <h1 class="text-center bg-info text-white font-weight-bold" style="font-weight: 900">ENLACES EXTERNOS</h1><br>
+        <h1 class="text-center text-white font-weight-bold" style="font-weight: 900; background-color:#07294d">ENLACES EXTERNOS</h1><br>
         <div class="row">
             <div class="col-md-12 animation" data-animation="fadeInUp">
                 <div class="cl_logo_slider carousel_slider owl-carousel owl-theme" data-margin="15" data-loop="true" data-autoplay="true" data-dots="false"
@@ -394,7 +317,7 @@
 @if ($popup)
     <div class="modal fade" id="modalPopup" tabindex="-1" aria-labelledby="modalPopupLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content bg-info">
+            <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="modalPopupLabel">Emergente</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

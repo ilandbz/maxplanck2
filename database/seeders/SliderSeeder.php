@@ -14,31 +14,22 @@ class SliderSeeder extends Seeder
     public function run(): void
     {
         Slider::firstOrCreate([
-            'titulo' => 'Municipalidad Provincial de Ambo',
+            'titulo' => 'SLIDE TITULO',
             'subtitulo' =>  null,
             'nombrebutton1' => null,
             'nombrebutton2' => null,
             'link1' => 'our-courses-left-sidebar.html',
             'link2' => '#',
-            'nombreImagen' => 'slide1.webp'
+            'nombreImagen' => 'slide1.jpg'
         ]);
         Slider::firstOrCreate([
-            'titulo' => 'Gestión 2023-2026',
+            'titulo' => 'slide 2 titulo',
             'subtitulo' =>  null,
             'nombrebutton1' => null,
             'nombrebutton2' => null,
             'link1' => 'our-courses-left-sidebar.html',
             'link2' => null,
-            'nombreImagen' => 'slide2.webp'
-        ]);
-        Slider::firstOrCreate([
-            'titulo' => null,
-            'subtitulo' =>  null,
-            'nombrebutton1' => null,
-            'nombrebutton2' => null,
-            'link1' => 'our-courses-left-sidebar.html',
-            'link2' => null,
-            'nombreImagen' => 'slide3.webp'
+            'nombreImagen' => 'slide2.jpg'
         ]);
         Slider::firstOrCreate([
             'titulo' => null,
@@ -47,25 +38,7 @@ class SliderSeeder extends Seeder
             'nombrebutton2' => null,
             'link1' => 'our-courses-left-sidebar.html',
             'link2' => null,
-            'nombreImagen' => 'slide4.webp'
-        ]);
-        Slider::firstOrCreate([
-            'titulo' => null,
-            'subtitulo' =>  null,
-            'nombrebutton1' => null,
-            'nombrebutton2' => null,
-            'link1' => 'our-courses-left-sidebar.html',
-            'link2' => null,
-            'nombreImagen' => 'slide5.jpg'
-        ]);  
-        Slider::firstOrCreate([
-            'titulo' => null,
-            'subtitulo' =>  null,
-            'nombrebutton1' => null,
-            'nombrebutton2' => null,
-            'link1' => 'our-courses-left-sidebar.html',
-            'link2' => null,
-            'nombreImagen' => 'slide6.jpg'
-        ]);                
+            'nombreImagen' => 'slide3.jpg'
+        ]);            
     }
 }

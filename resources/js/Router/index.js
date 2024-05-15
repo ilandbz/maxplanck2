@@ -28,6 +28,7 @@ import Usuario from '@/Pages/usuarios/Inicio.vue'
 import MenuRole from '@/Pages/menu-roles/Inicio.vue'
 import Area from '@/Pages/areas/Inicio.vue'
 import Seccion from '@/Pages/secciones/Inicio.vue'
+import Evento from '@/Pages/Eventos/Inicio.vue'
 import TipoConvocatoria from '@/Pages/tipo-convocatoria/Inicio.vue'
 const routes = [
     {
@@ -68,6 +69,10 @@ const routes = [
     },
     {
         path: '/intranet/popup', name:'Popups', component: Popup ,
+        meta:{layout: LayoutDefault}
+    },
+    {
+        path: '/intranet/eventos', name:'Eventos', component: Evento ,
         meta:{layout: LayoutDefault}
     },
     {

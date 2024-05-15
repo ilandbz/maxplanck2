@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="col-md-3 text-left"><h6 class="text-white mt-4">{{$fechaActual}}</h6></div>
                     <div class="col-md-6 text-center">
-                        <h3 class="text-white"><img src="imagenes/logo_header.jpg" class="img-fluid round thumbnail" width="120px" alt="">&nbsp;&nbsp;&nbsp;Ambo "Tierra Bella y Generosa"</h3>
+                        {{-- <h3 class="text-white"><a href="/"><img src="storage/imagenes/logo.png" class="img-fluid round thumbnail" width="400px" alt=""></a></h3> --}}
                     </div>
                     <div class="col-md-3 header-top-wrapper justify-content-end">
                         <div class="header-top-right mt-1 header-top-wrapper">
@@ -57,25 +57,26 @@
                     <div class="row align-items-center">
                         <div class="col-md-2">
                             <div class="header-logo p-2 pl-4">
-                                {{-- <a href="/"><img src="{{asset('storage/imagenes/'.$organizacion->logo);}}" width="80" height="" alt="Logo"></a> --}}
-                                <a target="_blank" href="https://www.gob.pe/muniambo"><img src="{{asset('storage/imagenes/portalweb.jpeg');}}" class="img-fluid" height="" alt="Logo"></a>
+                                <a target="_blank" href="/"><img src="{{asset('storage/imagenes/logo.png');}}" class="img-fluid" height="" alt="Logo"></a>
                             </div>
                         </div>
                         <div class="col-md-7 position-static">
                             <div class="container">
-                                <div class="nav-toggle d-lg-none" data-toggle="collapse" data-target="#navbarSupportedContent"></div>
-                                <nav class="nav-menus-wrapper">
-                                    <ul class="nav-menu">
-                                        @foreach($menus as $menuItem)
-                                            <li>
-                                                <a href="{{ count($menuItem->children) ? '#' : $menuItem->slug }}" class="@if(str_starts_with(Route::currentRouteName(), $menuItem->ruta)) active @endif">{{ $menuItem->nombre }}</a>
-                                                @if(count($menuItem->children))
-                                                    @include('nav', ['menuItems' => $menuItem->children, 'class' => 'nav-dropdown nav-submenu'])
-                                                @endif
-                                            </li>
-                                        @endforeach
-                                    </ul>
-                                </nav>                                
+                                <div class="row"> <!-- Centra horizontalmente el contenido -->
+                                    <div class="nav-toggle d-lg-none" data-toggle="collapse" data-target="#navbarSupportedContent"></div>
+                                    <nav class="nav-menus-wrapper">
+                                        <ul class="nav-menu justify-content-center">
+                                            @foreach($menus as $menuItem)
+                                                <li>
+                                                    <a href="{{ count($menuItem->children) ? '#' : $menuItem->slug }}" class="@if(str_starts_with(Route::currentRouteName(), $menuItem->ruta)) active @endif">{{ $menuItem->nombre }}</a>
+                                                    @if(count($menuItem->children))
+                                                        @include('nav', ['menuItems' => $menuItem->children, 'class' => 'nav-dropdown nav-submenu'])
+                                                    @endif
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </nav> 
+                                </div>                             
                             </div>
                         </div>
                         {{-- <div class="col-lg-2 position-static">
@@ -86,11 +87,11 @@
                                 </form>
                             </div>
                         </div> --}}
-                        <div class="col-md-2">
+                        <div class="col-md-2 d-none d-md-block">
                             <div style="text-align: right;">
-                            <a class="mr-4 p-0 text-right" data-animation="fadeInUp" data-delay="1s" target="_blank" href="https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=12005">
-                                <img class="rounded right" src="{{asset('storage/imagenes/transparencia.png');}}" width="160px" alt="">
-                            </a>
+                                <a class="mr-4 p-0 text-right" data-animation="fadeInUp" data-delay="1s" target="_blank" href="">
+                                    <img class="rounded right" src="{{asset('storage/imagenes/transparencia.png');}}" width="160px" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>

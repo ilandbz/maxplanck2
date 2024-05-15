@@ -33,8 +33,8 @@ class DatabaseSeeder extends Seeder
             PopupSeeder::class,
             ComunicadoSeeder::class,
             NoticiaSeeder::class,
-            ImagenNoticiaSeeder::class
+            ImagenNoticiaSeeder::class,
+            EventoSeeder::class,
         ]);
-
     }
 }

@@ -14,19 +14,22 @@ class OrganizacionSeeder extends Seeder
     public function run(): void
     {
         Organizacion::firstorCreate([
-            'ruc' => '20146008926',
-            'razon_social' => 'Municipalidad Provincial de Ambo',
-            'titulo' => 'Municipalidad Provincial de Ambo - Gestion 2023 - 2026',
-            'slogan' => 'Tierra de Historia y Tradicion',
-            'descripcion' => 'Municipalidad Provincial de Ambo de Huánuco',
-            'director' => 'Santiago Campos Cayo Leonidas',
-            'direccion' => ' Jr. Constitución N° 353 - AMBO',
-            'email' => 'mesadepartesvirtual@muniambo.gob.pe',
-            'telefono' => '062-491011',
-            'url_web'   => 'http://www.muniambo.gob.pe',
-            'quienes_somos' => 'Gobernamos, conducimos y lideramos el desarrollo de la provincia de Ambo, gestionando y promoviendo el desarrollo sostenible e integral, así como el bienestar humano, mediante la concertación institucional y la participación de la sociedad civil organizada.',
-            'vision' => 'Ambo, territorio sostenible, referente en la calidad de vida de su población, con desarrollo competitivo y bajo nivel de riesgo de desastre, cimentado en la atención efectiva al ciudadano.',
-            'mision' => 'Promover el desarrollo local y prestar servicios públicos, en la Provincia de Ambo con eficiencia, eficacia y adecuado control.',
+            'ruc' => '20321370242',
+            'razon_social' => 'INSTITUTO DE EDUCACION SUPERIOR TECNOLOGICO PUBLICO MAX PLANCK DE AMBO',
+            'titulo' => 'INSTITUTO DE EDUCACION SUPERIOR TECNOLOGICO PUBLICO MAX PLANCK DE AMBO',
+            'slogan' => 'Somos una Institución de nivel Superior Revalidada en continua expansión de nuevas carreras profes',
+            'descripcion' => 'Somos una Institución de nivel Superior Revalidada en continua expansión de nuevas carreras profes',
+            'director' => '',
+            'direccion' => 'AV. JAVIER PRADO NRO. S/N HUANCAPATA (COSTADO DEL VIVERO DE LA MUNICIPALIDAD) HUANUCO - AMBO - AMBO',
+            'email' => '',
+            'telefono' => '998534896',
+            'telefono2' => '974966954',
+            'url_web'   => '',
+            'quienes_somos' => 'El Instituto de Educación Superior Tecnológico Público “Max Planck”, es una institución de Nivel Superior Tecnológico, creado con R. M. N° 0258-87-ED, el 20 de mayo de 1987; desde su creación nuestra propuesta ha sido, es, y será hacer de la educación un derecho fundamental e imprescindible del ser humano con la finalidad de formar profesionales de excelencia capaces de afrontar los retos del mundo competitivo en el que vivimos, y sobre todo, jóvenes dispuestos a incorporarse al campo laboral en base a una formación de calidad humanista, científica y tecnológica.',
+            'vision' => 'Somos una institución de educación superior tecnológico público revalidado; que forma profesionales técnicos competitivos para contribuir al desarrollo local, regional y nacional',
+            'mision' => 'Al 2025, ser una institución licenciada en la región Huánuco, con programas de estudios acreditados, formando profesionales técnicos altamente competitivos, comprometidos con el desarrollo regional y nacional',
+            'icono' => 'favicon.ico'
+
         ]);
     }
 }

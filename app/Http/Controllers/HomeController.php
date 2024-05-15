@@ -6,6 +6,7 @@ use App\Models\Cargo;
 use App\Models\Comunicado;
 use App\Models\Directorio;
 use App\Models\Enlace;
+use App\Models\Evento;
 use App\Models\Organizacion;
 use App\Models\Menu;
 use App\Models\Nav;
@@ -40,6 +41,7 @@ class HomeController extends Controller
         $data['noticias']=Noticia::with('imagen')->latest()->limit(3)->get();
         $data['comunicados']=Comunicado::latest()->limit(8)->get();
         $data['popup'] = Popup::where('es_activo', 1)->latest()->first();
+        $data['eventos']=Evento::latest()->limit(4)->get();
         return view('app', $data);
     }
     public function historia(){
@@ -159,21 +161,6 @@ class HomeController extends Controller
         return view('paginas.concejomunipal', $data);    
     }
 
-    public function functionariosMunicipales(){
-        $fechaActual = Carbon::now();
-        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
-        $data['sliders']=Slider::where('es_activo', 1)->get();
-        $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
-        $data['organizacion'] = Organizacion::first();
-        $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
-        $cargosExcluidos = Cargo::whereIn('nombre', ['Alcalde', 'Regidor'])->pluck('id');
-        $data['funcionarios'] = Directorio::with(['cargo:id,nombre', 'area:id,nombre'])
-            ->whereNotIn('cargo_id', $cargosExcluidos)
-            ->get();
-        $data['redessociales'] = RedSocial::get();
-        $data['titulo']='FUNCIONARIO MUNICIPAL';
-        return view('paginas.funcionariosmunicipales', $data);    
-    }
     public function prueba(){
         $fechaActual = Carbon::now();
         $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
@@ -200,41 +187,41 @@ class HomeController extends Controller
         $data['noticia'] = Noticia::with('imagenes')->where('slug', $request->s)->first();
         return view('paginas.noticia', $data);
     }
-    public function gerenciaMunicipal(){
+    public function enfermeriaTecnica(){
         $fechaActual = Carbon::now();
         $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
-        $data['titulo']='GERENCIA MUNICIPAL';
+        $data['titulo']='ENFERMERIA TECNICA';
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
         $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
         $data['enlaces'] = Enlace::get();
         $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
-        return view('paginas.gerencia-municipal', $data);       
+        return view('paginas.enfermeria-tecnica', $data);       
     }
-    public function gerenciaOficinaAtencion(){
+    public function produccionAgropecuaria(){
         $fechaActual = Carbon::now();
         $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
-        $data['titulo']='ATENCION AL CIUDADANO';
+        $data['titulo']='PRODUCCION AGROPECUARIA';
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
         $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
         $data['enlaces'] = Enlace::get();
         $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
-        return view('paginas.gerencia-atencion-ciudadano', $data);       
+        return view('paginas.produccion-agropecuaria', $data);       
     }
-    public function gerenciaOficinaAdministracion(){
+    public function mecanicaAutomotriz(){
         $fechaActual = Carbon::now();
         $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
-        $data['titulo']='OFICINA GENERAL DE ADMINISTRACION';
+        $data['titulo']='MECANICA AUTOMOTRIZ';
         $data['sliders']=Slider::where('es_activo', 1)->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
         $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
         $data['enlaces'] = Enlace::get();
         $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
-        return view('paginas.oficina-administracion', $data);       
+        return view('paginas.mecanica-automotriz', $data);       
     }
     public function gerenciaOficinaPlaneamientoPresupuesto(){
         $fechaActual = Carbon::now();
@@ -259,7 +246,26 @@ class HomeController extends Controller
         $data['enlaces'] = Enlace::get();
         $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
         return view('paginas.asesoria-legal', $data);       
-    }    
+    }
+
+    public function planaJerarquica(){
+        $fechaActual = Carbon::now();
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
+        $data['titulo']='PLANA JERARQUICA';
+        $data['sliders']=Slider::where('es_activo', 1)->get();
+        $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
+        $data['organizacion'] = Organizacion::first();
+        $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
+        $data['enlaces'] = Enlace::get();
+        $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
+        $cargosExcluidos = Cargo::whereIn('nombre', ['Alcalde', 'Regidor'])->pluck('id');
+        $data['personales'] = Directorio::with(['cargo:id,nombre', 'area:id,nombre'])
+            ->whereNotIn('cargo_id', $cargosExcluidos)
+            ->get();
+        $data['redessociales'] = RedSocial::get();
+        return view('paginas.plana-jerarquica', $data);          
+    }
+
     public function gerenciaTerritorialInfraestructura(){
         $fechaActual = Carbon::now();
         $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');

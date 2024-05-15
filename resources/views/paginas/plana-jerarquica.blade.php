@@ -3,22 +3,12 @@
 @include('componentes.banner')
 <section class="teachers-area mt-0 mb-4 pt-0">
     <div class="container">            
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="section-title mt-40">
-                    <h2 class="title">Funcionarios</h2>
-                </div>
-            </div>
-        </div>
         <div class="teachers-wrapper">
             <div class="row teachers-row">
-                @foreach ($funcionarios as $item)
+                @foreach ($personales as $item)
                 <div class="col-md-4 col-sm-6 teachers-col">
                     <div class="single-teacher mt-30 text-center">
                         <div class="teacher-social">
-                            <ul class="social">
-                                <li><a href="{{$item->link}}" target="_blank"><i class="fas fa-link"></i></a></li>
-                            </ul>
                         </div>
                         <div class="teacher-image">
                             <img src="{{asset('storage/fotos/'.$item->foto);}}" width="266" height="359" alt="teacher">
@@ -34,6 +24,8 @@
                                 data-img="{{asset('storage/fotos/'.$item->foto)}}"
                                 >{{$item->titulo}}</a></h4>
                             <span class="designation">{{$item->cargo->nombre}}</span>
+                            <br>
+                            <a href="{{$item->link}}" target="_blank" title="Descargar CV" class="btn btn-success"><i class="fas fa-file-alt"> CV</i></a>
                         </div>
                     </div>
                 </div>

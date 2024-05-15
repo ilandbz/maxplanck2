@@ -17,49 +17,49 @@ class MenuSeeder extends Seeder
         $role1 = Role::select('id')->where('nombre','Super Usuario')->first();
 
 
-        $menuspadres = [
-            [
-                'nombre' => 'Dashboard',
-                'slug' => 'principal',
-                'icono' => 'fas fa-gauge fa-fw',
-                'padre_id' => null,
-                'orden' => 0
-            ],
-            [
-                'nombre' => 'Sistema',
-                'slug' => 'sistema',
-                'icono' => 'fab fa-windows fa-fw',
-                'padre_id' => null,
-                'orden' => 1,
-            ],
-            [
-                'nombre' => 'Configuraciones',
-                'slug' => 'configuracion',
-                'icono' => 'fas fa-cogs',
-                'padre_id' => null,
-                'orden' => 2,
-            ],
-            [
-                'nombre' => 'Portal',
-                'slug' => '/',
-                'icono' => 'fab fa-windows fa-fw',
-                'padre_id' => null,
-                'orden' => 4
-            ],
-            [
-                'nombre' => 'Entradas',
-                'slug' => 'e',
-                'icono' => 'fas fa-id-badge',
-                'padre_id' => null,
-                'orden' => 3,
-            ],
-        ];
+        // $menuspadres = [
+        //     [
+        //         'nombre' => 'Dashboard',
+        //         'slug' => 'principal',
+        //         'icono' => 'fas fa-gauge fa-fw',
+        //         'padre_id' => null,
+        //         'orden' => 0
+        //     ],
+        //     [
+        //         'nombre' => 'Sistema',
+        //         'slug' => 'sistema',
+        //         'icono' => 'fab fa-windows fa-fw',
+        //         'padre_id' => null,
+        //         'orden' => 1,
+        //     ],
+        //     [
+        //         'nombre' => 'Configuraciones',
+        //         'slug' => 'configuracion',
+        //         'icono' => 'fas fa-cogs',
+        //         'padre_id' => null,
+        //         'orden' => 2,
+        //     ],
+        //     [
+        //         'nombre' => 'Portal',
+        //         'slug' => '/',
+        //         'icono' => 'fab fa-windows fa-fw',
+        //         'padre_id' => null,
+        //         'orden' => 4
+        //     ],
+        //     [
+        //         'nombre' => 'Entradas',
+        //         'slug' => 'e',
+        //         'icono' => 'fas fa-id-badge',
+        //         'padre_id' => null,
+        //         'orden' => 3,
+        //     ],
+        // ];
 
-        foreach($menuspadres as $item){
-            $menu = Menu::firstorCreate($item);
-            //$role1->menus()->sync($menu->id);
-            $role1->menus()->attach($menu->id);
-        }
+        // foreach($menuspadres as $item){
+        //     $menu = Menu::firstorCreate($item);
+        //     //$role1->menus()->sync($menu->id);
+        //     $role1->menus()->attach($menu->id);
+        // }
 
 
         $menushijos = [
@@ -133,25 +133,10 @@ class MenuSeeder extends Seeder
                 'padre_id' => Menu::where('nombre', 'Configuraciones')->value('id'),
                 'orden' => Menu::where('nombre', 'Configuraciones')->max('orden')+1,
             ],
-
             [
-                'nombre' => 'Galeria',
-                'slug' => 'galeria',
-                'icono' => 'fas fa-images',
-                'padre_id' => Menu::where('nombre', 'Configuraciones')->value('id'),
-                'orden' => Menu::where('nombre', 'Configuraciones')->max('orden')+1,
-            ],
-            [
-                'nombre' => 'Galeria',
-                'slug' => 'galeria',
-                'icono' => 'fas fa-images',
-                'padre_id' => Menu::where('nombre', 'Configuraciones')->value('id'),
-                'orden' => Menu::where('nombre', 'Configuraciones')->max('orden')+1,
-            ],
-            [
-                'nombre' => 'Galeria',
-                'slug' => 'galeria',
-                'icono' => 'fas fa-images',
+                'nombre' => 'Eventos',
+                'slug' => 'eventos',
+                'icono' => 'fas fa-calendar-alt',
                 'padre_id' => Menu::where('nombre', 'Configuraciones')->value('id'),
                 'orden' => Menu::where('nombre', 'Configuraciones')->max('orden')+1,
             ],

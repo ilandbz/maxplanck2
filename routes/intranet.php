@@ -8,6 +8,7 @@ use App\Http\Controllers\ConvocatoriaController;
 use App\Http\Controllers\DirectorioController;
 use App\Http\Controllers\EnlaceController;
 use App\Http\Controllers\EntradaController;
+use App\Http\Controllers\EventoController;
 use App\Http\Controllers\GaleriaController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\MenuRoleController;
@@ -72,7 +73,14 @@ Route::group(['prefix' => 'comunicado', 'middleware' => 'auth'], function () {
     Route::post('guardar', [ComunicadoController::class, 'store']);
     Route::get('listar', [ComunicadoController::class, 'listar']);
 });
-
+Route::group(['prefix' => 'evento', 'middleware' => 'auth'], function () {
+    Route::get('todos', [EventoController::class, 'todos']);
+    Route::get('mostrar', [EventoController::class, 'show']);
+    Route::post('actualizar', [EventoController::class, 'update']);
+    Route::post('eliminar', [EventoController::class, 'destroy']);
+    Route::post('guardar', [EventoController::class, 'store']);
+    Route::get('listar', [EventoController::class, 'listar']);
+});
 Route::group(['prefix' => 'convocatoria', 'middleware' => 'auth'], function () {
     Route::get('todos', [ConvocatoriaController::class, 'todos']);
     Route::get('mostrar', [ConvocatoriaController::class, 'show']);

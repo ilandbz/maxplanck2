@@ -41,15 +41,20 @@ Route::post('/intranet/login',[LoginController::class,'validarLogin'])->name('lo
 Route::get('/prueba', [HomeController::class,'prueba'])->name('prueba');
 Route::get('quienes-somos', [HomeController::class,'quienessomos'])->name('quienessomos');
 Route::get('mision-vision', [HomeController::class,'misionvision'])->name('misionvision');
+Route::get('plana-jerarquica', [HomeController::class,'planaJerarquica'])->name('planajerarquica');
+
+
 Route::get('contactenos', [HomeController::class,'contactenos'])->name('contactenos');
 Route::get('ambo-historia', [HomeController::class,'historia'])->name('historia');
 Route::get('ambo-turismo', [HomeController::class,'turismo'])->name('turismo');
 Route::get('ambo-turismo', [HomeController::class,'turismo'])->name('turismo');
-Route::get('gerencia-municipal', [HomeController::class, 'gerenciaMunicipal'])->name('gerencia.municipal');
+//programas de estudio
+Route::get('enfermeria-tecnica', [HomeController::class, 'enfermeriaTecnica'])->name('enfermeria.tecnica');
+Route::get('produccion-agropecuaria', [HomeController::class, 'produccionAgropecuaria'])->name('produccion-agropecuaria');
+Route::get('mecanica-automotriz', [HomeController::class, 'mecanicaAutomotriz'])->name('mecanica-automotriz');
 
 
-Route::get('gerencia-atencion-ciudadano', [HomeController::class, 'gerenciaOficinaAtencion'])->name('atencion-ciudadano');
-Route::get('gerencia-oficina-administracion', [HomeController::class, 'gerenciaOficinaAdministracion'])->name('oficina-administracion');
+
 Route::get('gerencia-oficina-planeamiento', [HomeController::class, 'gerenciaOficinaPlaneamientoPresupuesto'])->name('oficina-planeamiento-presupuesto');
 Route::get('gerencia-territorial-infraestructura', [HomeController::class, 'gerenciaTerritorialInfraestructura'])->name('territorial-infraestructura');
 Route::get('gerencia-asesoria-legal', [HomeController::class, 'gerenciaAsesoriaLegal'])->name('asesoria-legal');
