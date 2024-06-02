@@ -238,7 +238,7 @@
                     <div class="single-blog mt-30">
                         <div class="blog-image" style="height: 190px">
                             <a href="noticia?s={{$registro->slug}}">
-                                <img src="{{ asset('storage/noticias/'.$registro->id .'/'. $registro->imagen->nombreimagen) }}" width="370" height="250" alt="blog">
+                                <img src="{{ asset('storage/noticias/'.$registro->imagen->nombreimagen) }}" width="370" height="250" alt="blog">
                             </a>
                         </div>
                         <div class="blog-content">

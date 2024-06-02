@@ -21,7 +21,14 @@ use Inertia\Inertia;
 |
 */
 
+
 Route::get('/', HomeController::class)->name('home');
+
+// Route::get('/abc', function(){
+//     echo 'asdads';
+// })->name('intranet');
+
+Route::get('/intranet/principal', [IntranetController::class, 'index'])->name('intranet');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -34,7 +41,7 @@ Route::group(['middleware' => ['auth:sanctum']],function(){
     Route::post('/actualizar-perfil',[UserController::class,'actualizarperfil']);
     Route::post('/cambiar-clave',[UserController::class,'cambiarclaveperfil']);
 });
-Route::get('/intranet/principal', [IntranetController::class, 'index'])->name('intranet');
+
 Route::get('/intranet/{path}',[IntranetController::class,'index'])->where('path','.*');
 Route::post('/intranet/login',[LoginController::class,'validarLogin'])->name('login');
 

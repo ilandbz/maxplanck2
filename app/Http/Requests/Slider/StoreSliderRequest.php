@@ -25,7 +25,7 @@ class StoreSliderRequest extends FormRequest
     {
         return [
             'titulo'            => 'required|max:35|string|unique:sliders,titulo',
-            'imagen'            => 'required|image|mimes:jpg,jpeg,png,gif,webp|max:2000', 
+            'imagen'            => 'required|image|mimes:jpg,jpeg,png,gif,webp|max:4000', 
         ];
 
 
@@ -35,7 +35,6 @@ class StoreSliderRequest extends FormRequest
     {
         return [
             'required' => '* Dato Obligatorio',
-            'max' => 'Ingrese Máximo :max caracteres',
             'string' => 'Ingrese caracteres alfanuméricos',
             'number' => 'Ingrese solo numeros',
             'unique' => 'El :nombre ya existe',

@@ -17,12 +17,12 @@ class UserSeeder extends Seeder
     {
         User::firstOrCreate([
             'name'          => 'ilandbz',
-            'password'      => Hash::make('818949'),
+            'password'      => Hash::make('123456'),
             'role_id'       => Role::where('nombre', 'Super Usuario')->value('id')
         ]);
         User::firstOrCreate([
-            'name'          => 'Cynthia',
-            'password'      => Hash::make('123456'),
+            'name'          => 'alvacorperu@hotmail.com',
+            'password'      => Hash::make('44062785'),
             'role_id'       => Role::where('nombre', 'Super Usuario')->value('id')
         ]);        
     }

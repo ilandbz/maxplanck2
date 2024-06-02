@@ -41,7 +41,7 @@ class SliderController extends Controller
         $slider = Slider::findOrFail($request->id);
         if ($request->hasFile('imagen')) {
             $reglasArchivo = [
-                'imagen' => 'image|max:2000|mimes:jpg,jpeg,png,gif,webp',
+                'imagen' => 'image|max:4000|mimes:jpg,jpeg,png,gif,webp',
             ];
             $mensajesArchivo = [
                 'imagen.mimes' => 'La imagen debe ser solo de tipo: jpg, jpeg, png, gif, webp.',

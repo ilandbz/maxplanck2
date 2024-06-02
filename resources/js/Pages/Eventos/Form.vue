@@ -60,42 +60,50 @@ const guardar = () => {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="titulo" class="form-label">Titulo</label>
-                        <input type="text" class="form-control" v-model="form.titulo" :class="{ 'is-invalid': form.errors.titulo }" placeholder="Titulo" @keyup="form.slug=slugify(form.titulo)">
-                        <small class="text-danger" v-for="error in form.errors.titulo" :key="error">{{ error
-                                }}</small>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="titulo" class="form-label">Titulo</label>
+                                <input type="text" class="form-control" v-model="form.titulo" :class="{ 'is-invalid': form.errors.titulo }" placeholder="Titulo" @keyup="form.slug=slugify(form.titulo)">
+                                <small class="text-danger" v-for="error in form.errors.titulo" :key="error">{{ error
+                                        }}</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Subtitulo" class="form-label">Subtitulo</label>
+                                <input type="text" class="form-control" v-model="form.subtitulo" :class="{ 'is-invalid': form.errors.subtitulo }" placeholder="Subtitulo">
+                                <small class="text-danger" v-for="error in form.errors.subtitulo" :key="error">{{ error
+                                        }}</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lugar" class="form-label">Lugar</label>
+                                <input type="text" class="form-control" v-model="form.lugar" :class="{ 'is-invalid': form.errors.lugar }" placeholder="Lugar">
+                                <small class="text-danger" v-for="error in form.errors.lugar" :key="error">{{ error
+                                        }}</small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fecha" class="form-label">Fecha</label>
+                                <input type="text" class="form-control" v-model="form.fecha" :class="{ 'is-invalid': form.errors.fecha }" placeholder="Fecha">
+                                <small class="text-danger" v-for="error in form.errors.fecha" :key="error">{{ error
+                                        }}</small>
+                            </div>                               
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="imagen" class="form-label">Imagen</label>
+                                <input class="form-control" type="file" accept="image/*" @change="cambiarImagen">
+                                <div class="card">
+                                    <img id="inputImagen" :src="form.imagen" class="img-fluid img-thumbnail">
+                                </div>
+                                <small class="text-danger" v-for="error in form.errors.imagen" :key="error">{{ error }}<br></small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contenido" class="form-label">Contenido</label>
+                                <textarea id="summernote" v-model="form.contenido" class="form-control" :class="{ 'is-invalid': form.errors.contenido }" rows="10"></textarea>
+                                <small class="text-danger" v-for="error in form.errors.contenido" :key="error">{{ error
+                                        }}</small>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="Subtitulo" class="form-label">Subtitulo</label>
-                        <input type="text" class="form-control" v-model="form.subtitulo" :class="{ 'is-invalid': form.errors.subtitulo }" placeholder="Subtitulo">
-                        <small class="text-danger" v-for="error in form.errors.subtitulo" :key="error">{{ error
-                                }}</small>
-                    </div>                      
-                    <div class="mb-3">
-                        <label for="imagen" class="form-label">Imagen</label>
-                        <input type="text" class="form-control" v-model="form.imagen" :class="{ 'is-invalid': form.errors.imagen }" placeholder="Imagen">
-                        <small class="text-danger" v-for="error in form.errors.imagen" :key="error">{{ error
-                                }}</small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="lugar" class="form-label">Lugar</label>
-                        <input type="text" class="form-control" v-model="form.lugar" :class="{ 'is-invalid': form.errors.lugar }" placeholder="Lugar">
-                        <small class="text-danger" v-for="error in form.errors.lugar" :key="error">{{ error
-                                }}</small>
-                    </div>
-                    <div class="mb-3">
-                        <label for="fecha" class="form-label">Fecha</label>
-                        <input type="text" class="form-control" v-model="form.fecha" :class="{ 'is-invalid': form.errors.fecha }" placeholder="Fecha">
-                        <small class="text-danger" v-for="error in form.errors.fecha" :key="error">{{ error
-                                }}</small>
-                    </div>                                  
-                    <div class="mb-3">
-                        <label for="contenido" class="form-label">Contenido</label>
-                        <textarea id="summernote" v-model="form.contenido" class="form-control" :class="{ 'is-invalid': form.errors.contenido }" rows="10"></textarea>
-                        <small class="text-danger" v-for="error in form.errors.contenido" :key="error">{{ error
-                                }}</small>
-                    </div>   
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -105,4 +113,7 @@ const guardar = () => {
         </div>
     </div>
     </form>
+
+
+
 </template>
