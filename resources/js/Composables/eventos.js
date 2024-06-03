@@ -6,7 +6,7 @@ export default function useEvento() {
     const errors = ref('')
     const evento = ref({})
     const respuesta = ref([])
-    
+    const carpetaEventos =  '/storage/eventos/';
     const obtenerEvento = async(id) => {
         let respuesta = await axios.get('/evento/mostrar?id='+id,getConfigHeader())
         evento.value = respuesta.data
@@ -59,6 +59,6 @@ export default function useEvento() {
     }
     return {
         errors, eventos, listaEventos, evento, obtenerEvento, obtenerEventos, 
-        agregarEvento, actualizarEvento, eliminarEvento, respuesta
+        agregarEvento, actualizarEvento, eliminarEvento, respuesta, carpetaEventos
     }
 }

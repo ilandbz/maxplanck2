@@ -1,5 +1,5 @@
 <script setup>
-import { toRefs, onMounted } from 'vue';
+import { toRefs, onMounted, ref } from 'vue';
 import useEvento from '@/Composables/eventos.js';
 import useHelper from '@/Helpers';  
 const { hideModal, Toast, slugify } = useHelper();
@@ -15,7 +15,14 @@ const  emit  =defineEmits(['onListar'])
 const crud = {
     'nuevo': async() => {
         form.value.contenido= $('.note-editable').html();
-        await agregarEvento(form.value)
+        let formData = new FormData();
+        formData.append('imagen', file.value);
+        formData.append('titulo', form.value.titulo);
+        formData.append('subtitulo', form.value.subtitulo);
+        formData.append('lugar', form.value.lugar);
+        formData.append('contenido', form.value.contenido);
+        formData.append('fecha', form.value.fecha);
+        await agregarEvento(formData)
         form.value.errors = []
         if(errors.value)
         {
@@ -30,7 +37,14 @@ const crud = {
     },
     'editar': async() => {
         form.value.contenido= $('.note-editable').html();
-        await actualizarEvento(form.value)
+        let formData = new FormData();
+        formData.append('imagen', file.value);
+        formData.append('titulo', form.value.titulo);
+        formData.append('subtitulo', form.value.subtitulo);
+        formData.append('lugar', form.value.lugar);
+        formData.append('contenido', form.value.contenido);
+        formData.append('fecha', form.value.fecha);
+        await actualizarEvento(formData)
         form.value.errors = []
         if(errors.value)
         {
@@ -47,13 +61,19 @@ const crud = {
 const guardar = () => {
     crud[form.value.estadoCrud]()
 }
-
+const file = ref(null);
+const cambiarImagen = (e)=>{
+    file.value = e.target.files[0]
+    if (file) {
+        form.value.imagen=URL.createObjectURL(file.value);
+    }
+}
 </script>
 <template>
     <form @submit.prevent="guardar">
     <div class="modal fade" id="modalevento" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="modaleventoLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="modaleventoLabel">Modal title</h1>
@@ -82,10 +102,16 @@ const guardar = () => {
                             </div>
                             <div class="mb-3">
                                 <label for="fecha" class="form-label">Fecha</label>
-                                <input type="text" class="form-control" v-model="form.fecha" :class="{ 'is-invalid': form.errors.fecha }" placeholder="Fecha">
+                                <input type="date" class="form-control" v-model="form.fecha" :class="{ 'is-invalid': form.errors.fecha }" placeholder="Fecha">
                                 <small class="text-danger" v-for="error in form.errors.fecha" :key="error">{{ error
                                         }}</small>
-                            </div>                               
+                            </div> 
+                            <div class="mb-3">
+                                <label for="contenido" class="form-label">Contenido</label>
+                                <textarea id="summernote" v-model="form.contenido" class="form-control" :class="{ 'is-invalid': form.errors.contenido }" rows="10"></textarea>
+                                <small class="text-danger" v-for="error in form.errors.contenido" :key="error">{{ error
+                                        }}</small>
+                            </div>                      
                         </div>
                         <div class="col">
                             <div class="mb-3">
@@ -95,12 +121,6 @@ const guardar = () => {
                                     <img id="inputImagen" :src="form.imagen" class="img-fluid img-thumbnail">
                                 </div>
                                 <small class="text-danger" v-for="error in form.errors.imagen" :key="error">{{ error }}<br></small>
-                            </div>
-                            <div class="mb-3">
-                                <label for="contenido" class="form-label">Contenido</label>
-                                <textarea id="summernote" v-model="form.contenido" class="form-control" :class="{ 'is-invalid': form.errors.contenido }" rows="10"></textarea>
-                                <small class="text-danger" v-for="error in form.errors.contenido" :key="error">{{ error
-                                        }}</small>
                             </div>
                         </div>
                     </div>

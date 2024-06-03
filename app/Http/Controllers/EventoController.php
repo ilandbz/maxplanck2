@@ -5,22 +5,28 @@ namespace App\Http\Controllers;
 use App\Http\Requests\eventos\StoreEventoRequest;
 use App\Http\Requests\eventos\UpdateEventoRequest;
 use App\Models\Evento;
+use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class EventoController extends Controller
 {
     public function store(StoreEventoRequest $request)
     {
         $request->validated();
-
-        $entrada = Evento::create([
+        $file = $request->file('imagen');
+        $evento = Evento::create([
             'titulo'        => $request->titulo,
             'subtitulo'     => $request->subtitulo,
             'lugar'         => $request->lugar,
+            'imagen'        => '',
             'fecha'         => $request->fecha,
-            'imagen'        => $request->imagen,
             'contenido'     => $request->contenido
         ]);
+        $nombre_archivo = $evento->id.$file->extension();
+        Storage::disk('eventos')->put($nombre_archivo,File::get($file));
+        $evento->imagen=$nombre_archivo;
+        $evento->save();
         return response()->json([
             'ok' => 1,
             'mensaje' => 'Evento Registrado satisfactoriamente'

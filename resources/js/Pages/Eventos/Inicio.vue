@@ -9,8 +9,8 @@
   const { openModal, Toast, Swal } = useHelper();
   const {
         eventos, errors, evento, respuesta,
-        obtenerEventos, obtenerEvento, eliminarEvento
-        
+        obtenerEventos, obtenerEvento, eliminarEvento,
+        carpetaEventos
     } = useEvento();
     const titleHeader = ref({
       titulo: "Eventos",
@@ -39,7 +39,7 @@
         form.value.id='',
         form.value.titulo='',
         form.value.subtitulo='',
-        form.value.imagen='',
+        form.value.imagen=carpetaEventos+'default.webp',
         form.value.lugar='',
         form.value.fecha= '',
         form.value.contenido= '',
@@ -58,6 +58,7 @@
             form.value.lugar=evento.value.lugar;
             form.value.fecha= evento.value.fecha;
             form.value.contenido= evento.value.contenido;
+            form.value.imagen=carpetaEventos+evento.value.imagen
         }
     }
     const editar = (id) => {
@@ -106,6 +107,7 @@
             listarEventos(eventos.value.current_page)
         }
     }
+
     // PAGINACION
     const isActived = () => {
         return eventos.value.current_page
