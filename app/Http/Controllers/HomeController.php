@@ -187,6 +187,19 @@ class HomeController extends Controller
         $data['noticia'] = Noticia::with('imagenes')->where('slug', $request->s)->first();
         return view('paginas.noticia', $data);
     }
+    public function evento(Request $request){
+        $fechaActual = Carbon::now();
+        $data['titulo']='EVENTOS';
+        $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
+        $data['sliders']=Slider::where('es_activo', 1)->get();
+        $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
+        $data['organizacion'] = Organizacion::first();
+        $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();
+        $data['enlaces'] = Enlace::get();
+        $data['menus'] = Nav::with('children')->whereNull('padre_id')->get();
+        $data['evento'] = Evento::where('id', $request->id)->first();
+        return view('paginas.evento', $data);
+    }    
     public function enfermeriaTecnica(){
         $fechaActual = Carbon::now();
         $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');

@@ -1449,7 +1449,7 @@ input[type="submit"] {
 
 @media (min-width: 1800px) {
   .single-slider {
-    height: 520px;
+    height: 750px;
   }
 }
 
@@ -1520,6 +1520,9 @@ input[type="submit"] {
     font-size: 36px;
   }
 }
+
+
+
 .slider-content .slider-btn {
   padding-top: 40px;
 }

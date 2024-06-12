@@ -11,7 +11,7 @@
 </style>
 
 <div class="specialty-area">
-    <div class="container text-bg-light p-5">
+    <div class="container text-bg-light p-5 pt-0">
         <div class="row no-gutters wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="cl_logo_slider carousel_slider owl-carousel owl-theme" data-margin="15" data-loop="true" data-autoplay="true" data-dots="false"
             data-responsive='{"0":{"items": "1"}, "100":{"items": "2"}, "100":{"items": "3"}, "100":{"items": "4"}, "100": {"items": "5"}}'>
@@ -273,7 +273,7 @@
                     <h4 class="event-title"><a href="event-details.html">{{ $item->titulo }}</a></h4>
                     <p class="place">{{ $item->lugar }}</p>
                     <img src="{{ asset('storage/eventos/'.$item->imagen) }}" width="370" height="250" alt="imagen">
-                    <a href="event-details.html" class="more">leer mas <i class="far fa-chevron-right"></i></a>
+                    <a href="evento?id={{$item->id}}" class="more">leer mas <i class="far fa-chevron-right"></i></a>
                 </div>
             </div>                
             @endforeach
