@@ -16,6 +16,7 @@ const crud = {
     'nuevo': async() => {
         form.value.contenido= $('.note-editable').html();
         let formData = new FormData();
+        formData.append('id', form.value.id);
         formData.append('imagen', file.value);
         formData.append('titulo', form.value.titulo);
         formData.append('subtitulo', form.value.subtitulo);
@@ -38,6 +39,7 @@ const crud = {
     'editar': async() => {
         form.value.contenido= $('.note-editable').html();
         let formData = new FormData();
+        formData.append('id', form.value.id);
         formData.append('imagen', file.value);
         formData.append('titulo', form.value.titulo);
         formData.append('subtitulo', form.value.subtitulo);

@@ -57,7 +57,7 @@
                     <div class="row align-items-center">
                         <div class="col-md-2">
                             <div class="header-logo p-2 pl-4">
-                                <a target="_blank" href="/"><img src="{{asset('storage/imagenes/logo.png');}}" class="img-fluid" height="" alt="Logo"></a>
+                                <a target="" href="/"><img src="{{asset('storage/imagenes/logo.png');}}" class="img-fluid" height="" alt="Logo"></a>
                             </div>
                         </div>
                         <div class="col-md-7 position-static">

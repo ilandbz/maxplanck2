@@ -32,7 +32,9 @@ class HomeController extends Controller
     public function __invoke(){
         $fechaActual = Carbon::now();
         $data['fechaActual'] = $fechaActual->isoFormat('dddd D [de] MMMM [de] YYYY', 'Do [de] MMMM [de] YYYY');
-        $data['sliders']=Slider::where('es_activo', 1)->get();
+        $data['sliders']=Slider::where('es_activo', 1)
+        ->orderBy('created_at', 'desc')
+        ->get();
         $data['secciones']=SeccionesPrincipal::where('es_activo', 1)->get();
         $data['organizacion'] = Organizacion::first();
         $data['redessociales'] = RedSocial::where('url', '!=', '#')->get();

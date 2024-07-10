@@ -19,7 +19,5 @@
 </section>
 <!--====== About Ends ======-->
 
-
-
 @include('componentes.footer')
 @endsection

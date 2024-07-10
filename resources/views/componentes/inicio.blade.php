@@ -260,7 +260,6 @@
         </div>
     </div>
 </section>
-
 <section class="event-page">
     <div class="container">
         <h1 class="text-center text-white font-weight-bold" style="font-weight: 900;  background-color:#07294d">EVENTOS</h1><br>
@@ -270,7 +269,7 @@
                 <div class="single-event text-center mt-30">
                     <span class="time">{{ $item->subtitulo }}</span>
                     <span class="date">{{ $item->fecha }}</span>
-                    <h4 class="event-title"><a href="event-details.html">{{ $item->titulo }}</a></h4>
+                    <h4 class="event-title"><a href="evento?id={{$item->id}}">{{ $item->titulo }}</a></h4>
                     <p class="place">{{ $item->lugar }}</p>
                     <img src="{{ asset('storage/eventos/'.$item->imagen) }}" width="370" height="250" alt="imagen">
                     <a href="evento?id={{$item->id}}" class="more">leer mas <i class="far fa-chevron-right"></i></a>
@@ -280,7 +279,6 @@
         </div>
     </div>
 </section>
-
 <section class="">
     <div class="container">
         <h1 class="text-center text-white font-weight-bold" style="font-weight: 900;  background-color:#07294d">INFORMACION SOCIAL</h1><br>

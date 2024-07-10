@@ -24,7 +24,8 @@ class UpdateEventoRequest extends FormRequest
     public function rules()
     {
         return [
-            'titulo'        => 'required|max:25|string|unique:eventos,titulo',
+            // 'titulo'        => 'required|max:25|string',
+            // 'titulo'        => 'required|max:25|string|unique:eventos,titulo,'.$this->id,            
             'subtitulo'     => 'required|max:25|string',
         ];
     }
@@ -36,7 +37,7 @@ class UpdateEventoRequest extends FormRequest
             'max' => 'Ingrese Máximo :max caracteres',
             'string' => 'Ingrese caracteres alfanuméricos',
             'number' => 'Ingrese solo numeros',
-            'unique' => 'El :email ya existe'
+            'unique' => 'El :campo ya existe'
         ];
     }
 

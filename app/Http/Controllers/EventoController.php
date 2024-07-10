@@ -37,15 +37,15 @@ class EventoController extends Controller
         $entrada = Evento::where('id', $request->id)->first();
         return $entrada;
     }
-    public function update(UpdateEventoRequest $request)
+    public function update(Request $request)
     {
-        $request->validated();
+        //$request->validated();
         $entrada = Evento::where('id',$request->id)->first();
         $entrada->titulo = $request->titulo;
         $entrada->subtitulo = $request->subtitulo;
         $entrada->lugar = $request->lugar;
         $entrada->fecha = $request->fecha;
-        $entrada->imagen = $request->imagen;
+        // $entrada->imagen = $request->imagen;
         $entrada->contenido = $request->contenido;
         $entrada->save();
         return response()->json([

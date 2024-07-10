@@ -8,7 +8,7 @@
                     <h2 class="title text-info text-center" style="color: white;" data-animation="fadeInLeft" data-delay="0.2s">{{$slider->subtitulo}}</h2>
                     <ul class="slider-btn">
                         @if($slider->nombrebutton1)
-                        <li><a data-animation="fadeInUp" data-delay="0.6s" class="main-btn main-btn-2" href="our-courses-left-sidebar.html">{{$slider->nombrebutton1}}</a></li>
+                        <li><a data-animation="fadeInUp" data-delay="0.6s" target="_blank" class="main-btn main-btn-2" href="{{$slider->link1}}">{{$slider->nombrebutton1}}</a></li>
                         @endif
                         @if($slider->nombrebutton2)
                         <li><a data-animation="fadeInUp" data-delay="1s" class="main-btn" href="#">{{$slider->nombrebutton2}}</a></li>
