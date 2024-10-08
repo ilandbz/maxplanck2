@@ -15,7 +15,7 @@
  
          <link type="text/css" rel="stylesheet" href="{{ asset("adminlte4/plugins/fontawesome-free/css/all.min.css") }}">
            <!-- summernote -->
-  <link rel="stylesheet" href="{{ asset("adminlte4/plugins/summernote/summernote-bs4.min.css") }}">
+        <link rel="stylesheet" href="{{ asset("adminlte4/plugins/summernote/summernote-bs4.min.css") }}">
  
          <link type="text/css" rel="stylesheet" href="{{ asset("adminlte4/plugins/steps/steps.css") }}">
  
@@ -37,22 +37,16 @@
     <body>
         <div class="wrapper" id="wrapper">
             <App></App>
-
-            <script src="{{ asset("adminlte4/plugins/overlayscrollbars/js/overlayscrollbars.browser.es6.min.js") }}"></script>
+            
+            
             <script src="{{ asset("adminlte4/plugins/popper/popper.min.js") }}"></script>
-            <script src="{{ asset("adminlte4/plugins/bootstrap/js/bootstrap.min.js") }}"></script>
             <script src="{{ asset("adminlte4/js/adminlte.min.js") }}"></script>
+            <script src="{{ asset("adminlte4/plugins/overlayscrollbars/js/overlayscrollbars.browser.es6.min.js") }}"></script>
             <script src="{{ asset("edumate/assets/js/vendor/jquery-3.6.0.min.js") }}"></script>
+            <script src="{{ asset("adminlte4/plugins/bootstrap/js/bootstrap.min.js") }}"></script>
+            {{-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> --}}
             <script src="{{ asset("adminlte4/plugins/summernote/summernote-bs4.min.js") }}"></script>
 
-<script>
-    $(function () {
-      // Summernote
-      $('#summernote').summernote()
-  
-
-    })
-  </script>
             <script>
                 const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";
                 const Default = {
@@ -77,6 +71,16 @@
                     }
                 });
             </script>
+
+            <script>
+                $(function () {
+                // Summernote
+                $('#summernote').summernote()
+            
+
+                })
+            </script>
+
         </div>
     </body>
 </html>

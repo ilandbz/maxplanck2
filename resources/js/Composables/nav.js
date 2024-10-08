@@ -50,7 +50,7 @@ export default function useNav() {
             }
         }
     }
-    const eliminarnav = async(id) => {
+    const eliminarNav = async(id) => {
         const respond = await axios.post('/nav/eliminar', {id:id},getConfigHeader())
         if(respond.data.ok==1)
         {
@@ -59,6 +59,6 @@ export default function useNav() {
     }
     return {
         errors, navs, listaNavs, nav, obtenerNav, obtenerNavs, 
-        agregarNav, actualizarNav, eliminarnav, respuesta
+        agregarNav, actualizarNav, eliminarNav, respuesta
     }
 }

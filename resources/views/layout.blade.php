@@ -26,6 +26,7 @@
     <!--====== Main Style CSS ======-->
     <!-- <link rel="stylesheet" href="edumate/assets/css/style.css"> -->
     <link rel="stylesheet" href="edumate/assets/css/style.css">
+
 </head>
 
 <body>
@@ -132,15 +133,13 @@
     <!-- scripts js --> 
     <script src="componentes/owlcarousel/js/scripts.js"></script>
 
-
     <!--====== Main Activation  js ======-->
     <script src="edumate/assets/js/main.js"></script>
     @yield('script')
     
     <script>
         $(document).ready(function(){
-          $('#modalPopup').modal('show');
-
+            $('#modalPopup').modal('show');
         })
     
 

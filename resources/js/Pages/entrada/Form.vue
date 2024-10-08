@@ -32,6 +32,7 @@ const crud = {
     },
     'editar': async() => {
         form.value.contenido= $('.note-editable').html();
+        console.log(form.value.contenido)
         await actualizarEntrada(form.value)
         form.value.errors = []
         if(errors.value)
@@ -85,7 +86,9 @@ const guardar = () => {
                         <textarea id="summernote" v-model="form.contenido" class="form-control" :class="{ 'is-invalid': form.errors.contenido }" rows="10"></textarea>
                         <small class="text-danger" v-for="error in form.errors.contenido" :key="error">{{ error
                                 }}</small>
-                    </div>   
+                    </div>  
+
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

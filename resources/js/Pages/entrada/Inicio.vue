@@ -180,6 +180,7 @@
     onMounted(() => {
         defineTitle(titleHeader.value.titulo)
         listarEntradas()
+
     })
 </script>
 <template>
